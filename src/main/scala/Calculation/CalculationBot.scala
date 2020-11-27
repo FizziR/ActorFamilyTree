@@ -1,7 +1,9 @@
+package Calculation
+
 import akka.actor.{Actor, Props}
 import akka.event.Logging
 
-  class CalculationBot extends Actor{
+class CalculationBot extends Actor{
     val log = Logging(context.system, this)
     val additionBot = context.actorOf(Props[AdditionBot], name = "additionBot")
     val subtractionBot = context.actorOf(Props[SubtractionBot], name = "subtractionBot")
