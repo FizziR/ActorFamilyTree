@@ -6,6 +6,19 @@ import akka.actor.{Actor, ActorSystem, Props}
 
 import scala.io.StdIn.readLine
 
+/*
+    Messages:
+      !Hello
+      !Goodbye
+
+    Lecture:
+
+    Calculations:
+      !Calc1+1
+      !Calc1-1
+      !Calc1*1
+      !Calc1/1
+*/
 
 
 class ChatServer extends Actor {
@@ -36,11 +49,4 @@ object Main extends App {
     input = readLine()
     chatServer ! input
   }while( !input.equals("!Goodbye"))
-
-  /*chatServer ! "!Hello"
-  chatServer ! "Test"
-  chatServer ! "!Calc10+13"
-  chatServer ! "!Calc15-10"
-  chatServer ! "!Calc2*2"
-  chatServer ! "!Calc2/2"*/
 }
