@@ -1,4 +1,5 @@
 import Calculation.CalculationBot
+import Discord.{DiscordClient, MyCommands}
 import Message.MessageBot
 import Lecture.LectureBot
 import akka.event.Logging
@@ -45,8 +46,18 @@ object Main extends App {
 
   var input: String = "";
 
-  do{
+  println("Hello!")
+
+  val discordClient = DiscordClient()
+  discordClient.login()
+
+  for(i <- 0 to 1){
     input = readLine()
     chatServer ! input
-  }while( !input.equals("!Goodbye"))
+  }
+
+  println("Byebye!")
+
+  discordClient.logout()
+
 }
