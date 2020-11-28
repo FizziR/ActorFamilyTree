@@ -8,9 +8,5 @@ object Main{
   val discordBot = system.actorOf(Props[DiscordBot], name = "discordBot")
 
   def main(args: Array[String]) = {
-    do{
-
-    }while("" != "!Goodbye")
-
   }
 }
