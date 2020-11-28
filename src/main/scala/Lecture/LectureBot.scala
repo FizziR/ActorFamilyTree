@@ -2,6 +2,13 @@ package Lecture
 
 import akka.actor.{Actor, ActorRef, Props}
 import akka.event.{Logging, LoggingAdapter}
+import akka.pattern.ask
+import akka.util.Timeout
+
+import scala.concurrent.Await
+import scala.concurrent.duration.DurationInt
+
+import scala.language.postfixOps
 
 class LectureBot extends Actor{
   val log: LoggingAdapter = Logging(context.system, this)
@@ -11,8 +18,14 @@ class LectureBot extends Actor{
   val functionalStyleAndMonads: ActorRef = context.actorOf(Props[FunctionalStyleAndMonads], name = "fucntionalStylasAndMonads")
   val scalaDsls : ActorRef = context.actorOf(Props[ScalaDSLs], name = "dsls")
   val scalaActors : ActorRef = context.actorOf(Props[ScalaActors], name = "actors")
+
+  implicit val timeout: Timeout = Timeout(2 seconds)
+
   override def receive: Receive = {
-    case msg:String if msg.equals("Basics") => scalaBasic1 ! msg
+    case msg:String if msg.equals("Basics") => //scalaBasic1 ! msg
+      val future = scalaBasic1 ? msg.substring(0)
+      val result = Await.result(future, timeout.duration)
+      sender() ! result
     case msg:String if msg.equals("more Basics") => scalaBasic2 ! msg
     case msg:String if msg.equals("Tests") => scalaTests ! msg
     case msg:String if msg.equals("Monads") => functionalStyleAndMonads ! msg
@@ -36,7 +49,8 @@ class ScalaBasic1 extends Actor{
       |https://drive.google.com/file/d/1FNExE2C95TTIsSNxkSIxPq76ykkWMMxB/view
       |""".stripMargin
   override def receive: Receive = {
-    case "Basics" => log.info(basicsOne)
+    case "Basics" =>
+      sender() ! basicsOne
     case _ =>
   }
 }

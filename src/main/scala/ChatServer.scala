@@ -3,8 +3,13 @@ import Message.MessageBot
 import Lecture.LectureBot
 import akka.event.Logging
 import akka.actor.{Actor, ActorSystem, Props}
+import akka.pattern.ask
+import akka.util.Timeout
 
+import scala.concurrent.Await
+import scala.concurrent.duration.DurationInt
 import scala.io.StdIn.readLine
+import scala.language.postfixOps
 
 /*
     Messages:
@@ -31,13 +36,21 @@ class ChatServer extends Actor {
   val messageBot = context.actorOf(Props[MessageBot], name = "messageBot")
   val calculationBot = context.actorOf(Props[CalculationBot], name = "calculationBot")
   val lectureBot = context.actorOf(Props[LectureBot], name = "lectureBot")
+
+  implicit val timeout: Timeout = Timeout(2 seconds)
+  //val future = chatServer ? "Hello"
+  //val result = Await.result(future, timeout.duration)
+
   def receive = {
     case msg:String if msg.charAt(0).equals('!') => {
         val rawString = msg.substring(1)
          rawString match {
            case msg:String if msg.contains("Calc") => calculationBot ! msg.substring(4)
            case msg:String if msg.contains("Tests") => lectureBot ! msg.substring(0)
-           case msg:String if msg.contains("Basics") => lectureBot ! msg.substring(0)
+           case msg:String if msg.contains("Basics") => //lectureBot ! msg.substring(0)
+             val future = lectureBot ? msg.substring(0)
+             val result = Await.result(future, timeout.duration)
+             log.info(result.toString)
            case msg:String if msg.contains("Monads") => lectureBot ! msg.substring(0)
            case msg:String if msg.contains("Functional Style") => lectureBot ! msg.substring(0)
            case msg:String if msg.equals("Internal DSL") => lectureBot ! msg.substring(0)
@@ -48,6 +61,7 @@ class ChatServer extends Actor {
            case _ => log.info("No bot implemented yet")
          }
       }
+    //case msg:String if msg.contains("Hello") => log.info(msg)
     case _  => log.info("Message not for me")
   }
 }
