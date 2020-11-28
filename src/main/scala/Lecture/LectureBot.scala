@@ -19,7 +19,7 @@ class LectureBot extends Actor{
   val scalaDsls : ActorRef = context.actorOf(Props[ScalaDSLs], name = "dsls")
   val scalaActors : ActorRef = context.actorOf(Props[ScalaActors], name = "actors")
 
-  implicit val timeout: Timeout = Timeout(2 seconds)
+  implicit val timeout: Timeout = Timeout(5 seconds)
 
   override def receive: Receive = {
     case msg:String if msg.equals("Basics") => //scalaBasic1 ! msg
@@ -42,14 +42,6 @@ class LectureBot extends Actor{
       val future = functionalStyleAndMonads ? msg
       val result = Await.result(future, timeout.duration)
       sender() ! result
-    case msg:String if msg.equals("Internal DSL") => scalaDsls ! msg
-    case msg:String if msg.equals("External DSL") => scalaDsls ! msg
-    case msg:String if msg.equals("DSL") => scalaDsls ! msg
-    case msg:String if msg.equals("Actors") => scalaActors ! msg
-    case msg:String if msg.equals("more Basics") => scalaBasic2 ! msg
-    case msg:String if msg.equals("Tests") => scalaTests ! msg
-    case msg:String if msg.equals("Monads") => functionalStyleAndMonads ! msg
-    case msg:String if msg.equals("Functional Style") => functionalStyleAndMonads ! msg
     case msg:String if msg.equals("Internal DSL") =>
       val future = scalaDsls ? msg.substring(0)
       val result = Await.result(future, timeout.duration)
@@ -137,7 +129,7 @@ class FunctionalStyleAndMonads extends Actor{
 
 
 class ScalaDSLs extends Actor{
-  implicit val timeout: Timeout = Timeout(2 seconds)
+  implicit val timeout: Timeout = Timeout(3 seconds)
   val log: LoggingAdapter = Logging(context.system, this)
   val internalDSL: ActorRef = context.actorOf(Props[InternalDSL], name = "internalDSL")
   val externalDSL: ActorRef = context.actorOf(Props[ExternalDSL], name = "externalDSL")

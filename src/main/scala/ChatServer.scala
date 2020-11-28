@@ -37,7 +37,7 @@ class ChatServer extends Actor {
   val calculationBot = context.actorOf(Props[CalculationBot], name = "calculationBot")
   val lectureBot = context.actorOf(Props[LectureBot], name = "lectureBot")
 
-  implicit val timeout: Timeout = Timeout(2 seconds)
+  implicit val timeout: Timeout = Timeout(10 seconds)
   //val future = chatServer ? "Hello"
   //val result = Await.result(future, timeout.duration)
 
