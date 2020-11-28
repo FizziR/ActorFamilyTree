@@ -46,13 +46,22 @@ class ChatServer extends Actor {
         val rawString = msg.substring(1)
          rawString match {
            case msg:String if msg.contains("Calc") => calculationBot ! msg.substring(4)
-           case msg:String if msg.contains("Tests") => lectureBot ! msg.substring(0)
+           case msg:String if msg.contains("Tests") =>
+             val future = lectureBot ? msg.substring(0)
+             val result = Await.result(future, timeout.duration)
+             log.info(result.toString)
            case msg:String if msg.contains("Basics") => //lectureBot ! msg.substring(0)
              val future = lectureBot ? msg.substring(0)
              val result = Await.result(future, timeout.duration)
              log.info(result.toString)
-           case msg:String if msg.contains("Monads") => lectureBot ! msg.substring(0)
-           case msg:String if msg.contains("Functional Style") => lectureBot ! msg.substring(0)
+           case msg:String if msg.contains("Monads") =>
+             val future = lectureBot ? msg.substring(0)
+             val result = Await.result(future, timeout.duration)
+             log.info(result.toString)
+           case msg:String if msg.contains("Functional Style") =>
+             val future = lectureBot ? msg.substring(0)
+             val result = Await.result(future, timeout.duration)
+             log.info(result.toString)
            case msg:String if msg.equals("Internal DSL") => lectureBot ! msg.substring(0)
            case msg:String if msg.equals("External DSL") => lectureBot ! msg.substring(0)
            case msg:String if msg.equals("DSL") => lectureBot ! msg.substring(0)

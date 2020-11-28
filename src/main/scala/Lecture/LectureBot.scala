@@ -26,10 +26,22 @@ class LectureBot extends Actor{
       val future = scalaBasic1 ? msg.substring(0)
       val result = Await.result(future, timeout.duration)
       sender() ! result
-    case msg:String if msg.equals("more Basics") => scalaBasic2 ! msg
-    case msg:String if msg.equals("Tests") => scalaTests ! msg
-    case msg:String if msg.equals("Monads") => functionalStyleAndMonads ! msg
-    case msg:String if msg.equals("Functional Style") => functionalStyleAndMonads ! msg
+    case msg:String if msg.equals("more Basics") =>
+      val future = scalaBasic2 ? msg
+      val result = Await.result(future, timeout.duration)
+      sender() ! result
+    case msg:String if msg.equals("Tests") =>
+      val future = scalaTests ? msg
+      val result = Await.result(future, timeout.duration)
+      sender() ! result
+    case msg:String if msg.equals("Monads") =>
+      val future = functionalStyleAndMonads ? msg
+      val result = Await.result(future, timeout.duration)
+      sender() ! result
+    case msg:String if msg.equals("Functional Style") =>
+      val future = functionalStyleAndMonads ? msg
+      val result = Await.result(future, timeout.duration)
+      sender() ! result
     case msg:String if msg.equals("Internal DSL") => scalaDsls ! msg
     case msg:String if msg.equals("External DSL") => scalaDsls ! msg
     case msg:String if msg.equals("DSL") => scalaDsls ! msg
@@ -49,8 +61,7 @@ class ScalaBasic1 extends Actor{
       |https://drive.google.com/file/d/1FNExE2C95TTIsSNxkSIxPq76ykkWMMxB/view
       |""".stripMargin
   override def receive: Receive = {
-    case "Basics" =>
-      sender() ! basicsOne
+    case "Basics" => sender() ! basicsOne
     case _ =>
   }
 }
@@ -66,7 +77,7 @@ class ScalaBasic2 extends Actor{
       |https://drive.google.com/file/d/1wM7K7AexBntjsIEAuqjWnvFwwp0s5Vtf/view
       |""".stripMargin
   override def receive: Receive = {
-    case "more Basics" => log.info(basicsTwo)
+    case "more Basics" => sender() ! basicsTwo
     case _ =>
   }
 }
@@ -82,7 +93,7 @@ class ScalaTests extends Actor{
       |https://drive.google.com/file/d/1oAo37XBqSewUicqhBsTQ2tEJ9j094Hoh/view
       |""".stripMargin
   override def receive: Receive = {
-    case "Tests" => log.info(tests)
+    case "Tests" => sender() ! tests
     case _ =>
   }
 }
@@ -98,8 +109,8 @@ class FunctionalStyleAndMonads extends Actor{
       |https://drive.google.com/file/d/17-5iM1nHwiyfxrhIvwXJgaIDYwMQLFak/view
       |""".stripMargin
   override def receive: Receive = {
-    case "Monads" => log.info(functionsAndMonads)
-    case "Functional Style" => log.info(functionsAndMonads)
+    case "Monads" => sender() ! functionsAndMonads
+    case "Functional Style" => sender() ! functionsAndMonads
     case _ =>
   }
 }
