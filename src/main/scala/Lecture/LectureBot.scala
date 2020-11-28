@@ -5,14 +5,19 @@ import akka.event.{Logging, LoggingAdapter}
 
 class LectureBot extends Actor{
   val log: LoggingAdapter = Logging(context.system, this)
-  val testsBot: ActorRef = context.actorOf(Props[TestsBot], name = "testsBot")
+  val scalaBasic1: ActorRef = context.actorOf(Props[ScalaBasic1], name = "basic1")
+  val scalaBasic2: ActorRef = context.actorOf(Props[ScalaBasic2], name = "basic2")
+  val scalaTests: ActorRef = context.actorOf(Props[ScalaTests], name = "tests")
+  val functionalStyleAndMonads: ActorRef = context.actorOf(Props[FunctionalStyleAndMonads], name = "fucntionalStylasAndMonads")
+  val scalaDsls : ActorRef = context.actorOf(Props[ScalaDSLs], name = "dsls")
+  val scalaActors : ActorRef = context.actorOf(Props[ScalaActors], name = "actors")
   override def receive: Receive = {
     case msg:String if msg.equals("Tests") => testsBot ! msg
     case _ =>
   }
 }
 
-class TestsBot extends Actor{
+class ScalaBasic1 extends Actor{
   val log: LoggingAdapter = Logging(context.system, this)
   var tests: String =
     """
@@ -26,4 +31,33 @@ class TestsBot extends Actor{
     case "Tests" => log.info(tests)
     case _ =>
   }
+}
+
+class ScalaBasic2 extends Actor{
+
+}
+
+class ScalaTests extends Actor{
+
+}
+
+class FunctionalStyleAndMonads extends Actor{
+
+}
+
+class ScalaDSLs extends Actor{
+  val internalDSL: ActorRef = context.actorOf(Props[InternalDSL], name = "internalDSL")
+  val externalDSL: ActorRef = context.actorOf(Props[ExternaDSL], name = "externalDSL")
+}
+
+class ScalaActors extends Actor{
+
+}
+
+class InternalDSL extends Actor{
+
+}
+
+class ExternaDSL extends Actor{
+
 }
