@@ -1,6 +1,3 @@
-import Calculation.CalculationBot
-import Message.MessageBot
-import Lecture.LectureBot
 import akka.event.Logging
 import akka.actor.{Actor, ActorSystem, Props}
 import akka.pattern.ask

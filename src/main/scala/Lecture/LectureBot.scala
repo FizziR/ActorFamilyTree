@@ -1,4 +1,3 @@
-package Lecture
 
 import akka.actor.{Actor, ActorRef, Props}
 import akka.event.{Logging, LoggingAdapter}
