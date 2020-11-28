@@ -11,9 +11,8 @@ class ChatServer extends Actor {
   val calculationBot = context.actorOf(Props[CalculationBot], name = "calculationBot")
 
   def receive = {
-    case msg:String if msg.charAt(0).equals('!') => {
-        val rawString = msg.substring(1)
-         rawString match {
+    case msg:String => {
+         msg match {
            case msg:String if msg.contains("Calc") => calculationBot ! msg.substring(4)
            case msg:String => messageBot ! msg
            case _ => log.info("No bot implemented yet")

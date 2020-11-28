@@ -1,16 +1,16 @@
-import Controller.Controller
+import Controller.DiscordBot
 import _root_.Controller.Discord.DiscordClient
+import akka.actor.{ActorSystem, Props}
 
 object Main{
-  val discordClient = new DiscordClient
-  discordClient.login()
-  val controller = new Controller(discordClient)
+
+  val system = ActorSystem("chatBot")
+  val discordBot = system.actorOf(Props[DiscordBot], name = "discordBot")
 
   def main(args: Array[String]) = {
     do{
 
-    }while(discordClient.discordInput != "!Goodbye")
+    }while("" != "!Goodbye")
 
-    discordClient.logout()
   }
 }
