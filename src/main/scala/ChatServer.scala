@@ -12,6 +12,7 @@ import scala.io.StdIn.readLine
       !Goodbye
 
     Lecture:
+      !Tests
 
     Calculations:
       !Calc1+1
@@ -25,12 +26,13 @@ class ChatServer extends Actor {
   val log = Logging(context.system, this)
   val messageBot = context.actorOf(Props[MessageBot], name = "messageBot")
   val calculationBot = context.actorOf(Props[CalculationBot], name = "calculationBot")
-
+  val lectureBot = context.actorOf(Props[LectureBot], name = "lectureBot")
   def receive = {
     case msg:String if msg.charAt(0).equals('!') => {
         val rawString = msg.substring(1)
          rawString match {
            case msg:String if msg.contains("Calc") => calculationBot ! msg.substring(4)
+           case msg:String if msg.contains("Tests") => lectureBot ! msg.substring(0)
            case msg:String => messageBot ! msg
            case _ => log.info("No bot implemented yet")
          }
