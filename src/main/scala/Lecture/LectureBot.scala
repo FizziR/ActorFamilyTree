@@ -46,6 +46,26 @@ class LectureBot extends Actor{
     case msg:String if msg.equals("External DSL") => scalaDsls ! msg
     case msg:String if msg.equals("DSL") => scalaDsls ! msg
     case msg:String if msg.equals("Actors") => scalaActors ! msg
+    case msg:String if msg.equals("more Basics") => scalaBasic2 ! msg
+    case msg:String if msg.equals("Tests") => scalaTests ! msg
+    case msg:String if msg.equals("Monads") => functionalStyleAndMonads ! msg
+    case msg:String if msg.equals("Functional Style") => functionalStyleAndMonads ! msg
+    case msg:String if msg.equals("Internal DSL") =>
+      val future = scalaDsls ? msg.substring(0)
+      val result = Await.result(future, timeout.duration)
+      sender() ! result
+    case msg:String if msg.equals("External DSL") =>
+      val future = scalaDsls ? msg.substring(0)
+      val result = Await.result(future, timeout.duration)
+      sender() ! result
+    case msg:String if msg.equals("DSL") =>
+      val future = scalaDsls ? msg.substring(0)
+      val result = Await.result(future, timeout.duration)
+      sender() ! result
+    case msg:String if msg.equals("Actors") =>
+      val future = scalaActors ? msg.substring(0)
+      val result = Await.result(future, timeout.duration)
+      sender() ! result
     case _ =>
   }
 }
@@ -117,6 +137,7 @@ class FunctionalStyleAndMonads extends Actor{
 
 
 class ScalaDSLs extends Actor{
+  implicit val timeout: Timeout = Timeout(2 seconds)
   val log: LoggingAdapter = Logging(context.system, this)
   val internalDSL: ActorRef = context.actorOf(Props[InternalDSL], name = "internalDSL")
   val externalDSL: ActorRef = context.actorOf(Props[ExternalDSL], name = "externalDSL")
@@ -133,9 +154,15 @@ class ScalaDSLs extends Actor{
       |https://drive.google.com/file/d/1GqdxtvDhzzNSubH42fQKRaPf987VScM1/view
       |""".stripMargin
   override def receive: Receive = {
-    case msg:String if msg.equals("Internal DSL") => internalDSL ! msg
-    case msg:String if msg.equals("External DSL") => externalDSL ! msg
-    case msg:String if msg.equals("DSL") => log.info(dsl)
+    case msg:String if msg.equals("Internal DSL") =>
+      val future = internalDSL ? msg.substring(0)
+      val result = Await.result(future, timeout.duration)
+      sender() ! result
+    case msg:String if msg.equals("External DSL") =>
+      val future = externalDSL ? msg.substring(0)
+      val result = Await.result(future, timeout.duration)
+      sender() ! result
+    case msg:String if msg.equals("DSL") => sender ! dsl
     case _ =>
   }
 }
@@ -151,7 +178,7 @@ class ScalaActors extends Actor{
       |https://drive.google.com/file/d/1TKm7F44ttuB1wJNbDvE9YzEXeiywjpom/view
       |""".stripMargin
   override def receive: Receive = {
-    case "Actors" => log.info(actors)
+    case "Actors" => sender ! actors
     case _ =>
   }
 }
@@ -168,7 +195,7 @@ class InternalDSL extends Actor{
       |""".stripMargin
 
   override def receive: Receive = {
-    case "Internal DSL" => log.info(internalDSL)
+    case "Internal DSL" => sender ! internalDSL
     case _ =>
   }
 }
@@ -185,7 +212,7 @@ class ExternalDSL extends Actor{
       |""".stripMargin
 
   override def receive: Receive = {
-    case "External DSL" => log.info(externalDSL)
+    case "External DSL" =>  sender ! externalDSL
     case _ =>
   }
 }

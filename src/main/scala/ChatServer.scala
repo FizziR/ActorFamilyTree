@@ -62,10 +62,22 @@ class ChatServer extends Actor {
              val future = lectureBot ? msg.substring(0)
              val result = Await.result(future, timeout.duration)
              log.info(result.toString)
-           case msg:String if msg.equals("Internal DSL") => lectureBot ! msg.substring(0)
-           case msg:String if msg.equals("External DSL") => lectureBot ! msg.substring(0)
-           case msg:String if msg.equals("DSL") => lectureBot ! msg.substring(0)
-           case msg:String if msg.equals("Actors") => lectureBot ! msg.substring(0)
+           case msg:String if msg.equals("Internal DSL") =>
+             val future = lectureBot ? msg.substring(0)
+             val result = Await.result(future, timeout.duration)
+             log.info(result.toString)
+           case msg:String if msg.equals("External DSL") =>
+             val future = lectureBot ? msg.substring(0)
+             val result = Await.result(future, timeout.duration)
+             log.info(result.toString)
+           case msg:String if msg.equals("DSL") =>
+             val future = lectureBot ? msg.substring(0)
+             val result = Await.result(future, timeout.duration)
+             log.info(result.toString)
+           case msg:String if msg.equals("Actors") =>
+             val future = lectureBot ? msg.substring(0)
+             val result = Await.result(future, timeout.duration)
+             log.info(result.toString)
            case msg:String => messageBot ! msg
            case _ => log.info("No bot implemented yet")
          }
