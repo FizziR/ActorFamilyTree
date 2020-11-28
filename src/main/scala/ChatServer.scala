@@ -40,6 +40,10 @@ class ChatServer extends Actor {
            case msg:String if msg.contains("Basics") => lectureBot ! msg.substring(0)
            case msg:String if msg.contains("Monads") => lectureBot ! msg.substring(0)
            case msg:String if msg.contains("Functional Style") => lectureBot ! msg.substring(0)
+           case msg:String if msg.equals("Internal DSL") => lectureBot ! msg.substring(0)
+           case msg:String if msg.equals("External DSL") => lectureBot ! msg.substring(0)
+           case msg:String if msg.equals("DSL") => lectureBot ! msg.substring(0)
+           case msg:String if msg.equals("Actors") => lectureBot ! msg.substring(0)
            case msg:String => messageBot ! msg
            case _ => log.info("No bot implemented yet")
          }

@@ -17,6 +17,10 @@ class LectureBot extends Actor{
     case msg:String if msg.equals("Tests") => scalaTests ! msg
     case msg:String if msg.equals("Monads") => functionalStyleAndMonads ! msg
     case msg:String if msg.equals("Functional Style") => functionalStyleAndMonads ! msg
+    case msg:String if msg.equals("Internal DSL") => scalaDsls ! msg
+    case msg:String if msg.equals("External DSL") => scalaDsls ! msg
+    case msg:String if msg.equals("DSL") => scalaDsls ! msg
+    case msg:String if msg.equals("Actors") => scalaActors ! msg
     case _ =>
   }
 }
@@ -88,11 +92,25 @@ class FunctionalStyleAndMonads extends Actor{
 
 
 class ScalaDSLs extends Actor{
+  val log: LoggingAdapter = Logging(context.system, this)
   val internalDSL: ActorRef = context.actorOf(Props[InternalDSL], name = "internalDSL")
   val externalDSL: ActorRef = context.actorOf(Props[ExternalDSL], name = "externalDSL")
+  val dsl: String =
+    """
+      |Hello
+      |Here are the slides to internal DSLs in Scala:
+      |https://docs.google.com/presentation/d/17qvdKHoIsxzfbcmF7Ay8VU_NGNayXsZjVsRmu6tcqug/edit#slide=id.g2fb348ba68_0_466
+      |Here is the video to internal DSLs in Scala:
+      |https://drive.google.com/file/d/1j_3oH5cj8aMKA0OZm6dDFVWVJfDwohyF/view
+      |Here are the slides to external DSLs in Scala:
+      |https://docs.google.com/presentation/d/1hZ73RtewIFgercCpan2EwT6fAv0ZmmQLMEUb4rUrSp8/edit#slide=id.g2fb348ba68_0_466
+      |Here is the video to external DSLs in Scala:
+      |https://drive.google.com/file/d/1GqdxtvDhzzNSubH42fQKRaPf987VScM1/view
+      |""".stripMargin
   override def receive: Receive = {
     case msg:String if msg.equals("Internal DSL") => internalDSL ! msg
     case msg:String if msg.equals("External DSL") => externalDSL ! msg
+    case msg:String if msg.equals("DSL") => log.info(dsl)
     case _ =>
   }
 }
