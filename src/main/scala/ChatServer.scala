@@ -12,7 +12,11 @@ import scala.io.StdIn.readLine
       !Goodbye
 
     Lecture:
+      !Basics
+      !more Basics
       !Tests
+      !Monads
+      !Functional Style
 
     Calculations:
       !Calc1+1
@@ -33,6 +37,9 @@ class ChatServer extends Actor {
          rawString match {
            case msg:String if msg.contains("Calc") => calculationBot ! msg.substring(4)
            case msg:String if msg.contains("Tests") => lectureBot ! msg.substring(0)
+           case msg:String if msg.contains("Basics") => lectureBot ! msg.substring(0)
+           case msg:String if msg.contains("Monads") => lectureBot ! msg.substring(0)
+           case msg:String if msg.contains("Functional Style") => lectureBot ! msg.substring(0)
            case msg:String => messageBot ! msg
            case _ => log.info("No bot implemented yet")
          }
