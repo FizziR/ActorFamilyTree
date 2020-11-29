@@ -45,8 +45,19 @@ class CalculationBot extends Actor{
     override def receive: Receive = {
       case msg:String => {
         val result = "\\+".r.split(msg)
-        val addition = "Result: " + result(0) + " + " + result(1) + " = " + (result(0).toInt + result(1).toInt)
-        sender() ! addition
+
+        val numberOne = result(0).toDouble
+        val numberTwo = result(1).toDouble
+        val tmpSum = numberOne + numberTwo
+
+        if(tmpSum == Math.rint(tmpSum)) {
+          val addition = "Result: " + result(0) + " + " + result(1) + " = " + tmpSum.toInt
+          sender() ! addition
+        }
+        else{
+          val addition = "Result: " + result(0) + " + " + result(1) + " = " + tmpSum
+          sender() ! addition
+        }
       }
     }
   }
@@ -55,8 +66,19 @@ class CalculationBot extends Actor{
     override def receive: Receive = {
       case msg:String => {
         val result = "\\-".r.split(msg)
-        val subtraction = "Result: " + result(0) + " - " + result(1) + " = " + (result(0).toInt - result(1).toInt)
-        sender() ! subtraction
+        val numberOne = result(0).toDouble
+        val numberTwo = result(1).toDouble
+
+        val tmpSubtraction = numberOne - numberTwo
+
+        if(tmpSubtraction == Math.rint(tmpSubtraction)) {
+          val subtraction = "Result: " + result(0) + " - " + result(1) + " = " + tmpSubtraction.toInt
+          sender() ! subtraction
+        }
+        else{
+          val subtraction = "Result: " + result(0) + " - " + result(1) + " = " + tmpSubtraction
+          sender() ! subtraction
+        }
       }
     }
   }
@@ -65,8 +87,19 @@ class CalculationBot extends Actor{
     override def receive: Receive = {
       case msg:String => {
         val result = "\\*".r.split(msg)
-        val multiplication = "Result: " + result(0) + " * " + result(1) + " = " + (result(0).toInt * result(1).toInt)
-        sender() ! multiplication
+
+        val numberOne = result(0).toDouble
+        val numberTwo = result(1).toDouble
+
+        val tmpMultiplication = numberOne * numberTwo
+        if(tmpMultiplication == Math.rint(tmpMultiplication)){
+          val multiplication = "Result: " + result(0) + " * " + result(1) + " = " + tmpMultiplication.toInt
+          sender() ! multiplication
+        }
+        else{
+          val multiplication = "Result: " + result(0) + " * " + result(1) + " = " + tmpMultiplication
+          sender() ! multiplication
+        }
       }
     }
   }
@@ -75,8 +108,24 @@ class CalculationBot extends Actor{
     override def receive: Receive = {
       case msg:String => {
         val result = "\\/".r.split(msg)
-        val division = "Result: " + result(0) + " / " + result(1) + " = " + (result(0).toInt / result(1).toInt)
-        sender() ! division
+
+        val numberOne = result(0).toDouble
+        val numberTwo = result(1).toDouble
+
+        if(numberTwo == 0.0) {
+          sender() ! "This is not fair ;-)"
+        }
+        else {
+          val tmpDivision = numberOne / numberTwo
+          if(tmpDivision == Math.rint(tmpDivision)){
+            val division = "Result: " + result(0) + " / " + result(1) + " = " + tmpDivision.toInt
+            sender() ! division
+          }
+          else{
+            val division = "Result: " + result(0) + " / " + result(1) + " = " + tmpDivision
+            sender() ! division
+          }
+        }
       }
     }
   }
