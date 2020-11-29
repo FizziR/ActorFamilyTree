@@ -1,12 +1,7 @@
-import Main.system
-
 import org.scalatest.matchers.must.Matchers
 import org.scalatest.wordspec.{AnyWordSpec, AnyWordSpecLike}
 import akka.testkit.{ImplicitSender, TestActors, TestKit}
 import akka.actor.{Actor, ActorRef, ActorSystem, Props, ActorContext}
-import akka.pattern.ask
-import akka.util.Timeout
-import akka.event.Logging
 import org.scalatest.BeforeAndAfterAll
 
 class ChatServerSpec ()
