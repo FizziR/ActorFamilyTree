@@ -48,7 +48,6 @@ class CalculationBot extends Actor{
         val addition = "Result: " + result(0) + " + " + result(1) + " = " + (result(0).toInt + result(1).toInt)
         sender() ! addition
       }
-      case _ => log.info("Not correctly implemented")
     }
   }
   class SubtractionBot extends Actor {
@@ -59,7 +58,6 @@ class CalculationBot extends Actor{
         val subtraction = "Result: " + result(0) + " - " + result(1) + " = " + (result(0).toInt - result(1).toInt)
         sender() ! subtraction
       }
-      case _ => log.info("Not correctly implemented")
     }
   }
   class MultiplicationBot extends Actor {
@@ -70,7 +68,6 @@ class CalculationBot extends Actor{
         val multiplication = "Result: " + result(0) + " * " + result(1) + " = " + (result(0).toInt * result(1).toInt)
         sender() ! multiplication
       }
-      case _ => log.info("Not correctly implemented")
     }
   }
   class DivisionBot extends Actor {
@@ -81,6 +78,5 @@ class CalculationBot extends Actor{
         val division = "Result: " + result(0) + " / " + result(1) + " = " + (result(0).toInt / result(1).toInt)
         sender() ! division
       }
-      case _ => log.info("Not correctly implemented")
     }
   }

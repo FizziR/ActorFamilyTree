@@ -38,7 +38,6 @@ class HelloBot extends Actor {
   val log = Logging(context.system, this)
   override def receive: Receive = {
     case msg:String => sender() ! s"Hello ${msg.substring(5)}! How are you doing?"
-    case _ =>
   }
 }
 
@@ -47,12 +46,10 @@ class GoodbyeBot extends Actor {
 
   override def receive: Receive = {
     case "Goodbye" => sender() ! "Is it already time for leaving? Goodbye!"
-    case _ =>
   }
 }
 class PingBot extends Actor {
     override def receive: Receive = {
       case "Ping" => sender() ! "Pong"
-      case _ =>
     }
 }
