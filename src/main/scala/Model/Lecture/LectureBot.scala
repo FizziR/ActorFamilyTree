@@ -56,7 +56,7 @@ class LectureBot extends Actor{
       val future = scalaActors ? msg.substring(0)
       val result = Await.result(future, timeout.duration)
       sender() ! result
-    case _ =>
+    case _ => sender() ! "Sorry - I can't understand your message"
   }
 }
 
@@ -72,7 +72,6 @@ class ScalaBasic1 extends Actor{
       |""".stripMargin
   override def receive: Receive = {
     case "Basics" => sender() ! basicsOne
-    case _ =>
   }
 }
 
@@ -88,7 +87,6 @@ class ScalaBasic2 extends Actor{
       |""".stripMargin
   override def receive: Receive = {
     case "more Basics" => sender() ! basicsTwo
-    case _ =>
   }
 }
 
@@ -104,7 +102,6 @@ class ScalaTests extends Actor{
       |""".stripMargin
   override def receive: Receive = {
     case "Tests" => sender() ! tests
-    case _ =>
   }
 }
 
@@ -121,7 +118,6 @@ class FunctionalStyleAndMonads extends Actor{
   override def receive: Receive = {
     case "Monads" => sender() ! functionsAndMonads
     case "Functional Style" => sender() ! functionsAndMonads
-    case _ =>
   }
 }
 
@@ -153,7 +149,6 @@ class ScalaDSLs extends Actor{
       val result = Await.result(future, timeout.duration)
       sender() ! result
     case msg:String if msg.equals("DSL") => sender ! dsl
-    case _ =>
   }
 }
 
@@ -169,7 +164,6 @@ class ScalaActors extends Actor{
       |""".stripMargin
   override def receive: Receive = {
     case "Actors" => sender ! actors
-    case _ =>
   }
 }
 
@@ -186,7 +180,6 @@ class InternalDSL extends Actor{
 
   override def receive: Receive = {
     case "Internal DSL" => sender ! internalDSL
-    case _ =>
   }
 }
 
@@ -203,6 +196,5 @@ class ExternalDSL extends Actor{
 
   override def receive: Receive = {
     case "External DSL" =>  sender ! externalDSL
-    case _ =>
   }
 }
