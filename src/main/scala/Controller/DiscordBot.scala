@@ -4,15 +4,26 @@ import akka.actor.{Actor, Props}
 import akka.event.Logging
 import akka.pattern.ask
 import akka.util.Timeout
+import io.circe.Json
 
 import scala.concurrent.Await
 import scala.concurrent.duration.{Duration, DurationInt}
+import scala.io.Source
+import io.circe._, io.circe.parser._
 
 class DiscordBot extends Actor{
   val log = Logging(context.system, this)
   val chatServer = context.actorOf(Props[ChatServer], name = "chatServer")
 
-  val clientSettings = ClientSettings(DiscordToken().Token)
+  val fileContent = Source.fromFile("Credentials/discordToken.json").getLines().mkString
+
+  val parseResult = parse(fileContent)
+
+  val removeCharacters = "\"".toSet
+  val token = parseResult.right.get.\\("token")(0).toString().filterNot(removeCharacters)
+
+  val clientSettings = ClientSettings(token)
+
   val client = Await.result(clientSettings.createClient(), Duration.Inf)
 
   implicit val timeout: Timeout = Timeout(3 seconds)
