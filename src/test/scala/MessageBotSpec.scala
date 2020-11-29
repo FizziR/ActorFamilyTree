@@ -4,27 +4,25 @@ import akka.testkit.{ImplicitSender, TestActors, TestKit}
 import akka.actor.{Actor, ActorRef, ActorSystem, Props, ActorContext}
 import org.scalatest.BeforeAndAfterAll
 
-class ChatServerSpec ()
+
+class MessageBotSpec()
   extends TestKit(ActorSystem("chatBot"))
     with ImplicitSender
     with AnyWordSpecLike
     with Matchers
     with BeforeAndAfterAll{
-  override def afterAll(): Unit = {
+
+    override def afterAll(): Unit = {
     TestKit.shutdownActorSystem(system)
-  }
-
-  val chatServer = system.actorOf(Props[ChatServer], name = "chatServer")
-
-  "The chat server Actor has three actor children and" must{
-    /*"return the following" in{
-      chatServer ! "!wrk"
-      expectMsg("Message not for me")
     }
-    "return the following info" in{
-      chatServer ! "Tests"
+
+  val messageBot = system.actorOf(Props[MessageBot], name = "messageServer")
+
+  "The message Bot sends messages according to the input he gets and" must{
+    "return the following answer for Hello" in{
+      messageBot ! "Hello"
       expectMsg()
-    }*/
+    }
   }
 
 }
