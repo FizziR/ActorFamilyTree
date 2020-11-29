@@ -1,4 +1,4 @@
-package Lecture
+package Model.Lecture
 
 import akka.actor.Actor
 
