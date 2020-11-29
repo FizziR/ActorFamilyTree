@@ -3,9 +3,6 @@ import org.scalatest.matchers.must.Matchers
 import org.scalatest.wordspec.{AnyWordSpec, AnyWordSpecLike}
 import akka.testkit.{ImplicitSender, TestActors, TestKit}
 import akka.actor.{Actor, ActorRef, ActorSystem, Props}
-import akka.pattern.ask
-import akka.util.Timeout
-import akka.event.{Logging, LoggingAdapter}
 import org.scalatest.BeforeAndAfterAll
 
 
