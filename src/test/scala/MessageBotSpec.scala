@@ -20,8 +20,16 @@ class MessageBotSpec()
 
   "The message Bot sends messages according to the input he gets and" must{
     "return the following answer for Hello" in{
-      messageBot ! "Hello"
-      expectMsg()
+      messageBot ! "HelloFelicitas Maurer"
+      expectMsg("Hello Felicitas Maurer! How are you doing?")
+    }
+    "return the following answer for Goodbye" in{
+      messageBot ! "Goodbye"
+      expectMsg("Is it already time for leaving? Goodbye!")
+    }
+    "return the following answer for Ping" in{
+      messageBot ! "Ping"
+      expectMsg("Pong")
     }
   }
 
