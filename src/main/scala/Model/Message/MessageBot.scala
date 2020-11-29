@@ -6,7 +6,6 @@ import akka.util.Timeout
 import scala.concurrent.Await
 import scala.concurrent.duration.DurationInt
 
-
 class MessageBot extends Actor {
   val log = Logging(context.system, this)
   val helloBot = context.actorOf(Props[HelloBot], name = "helloBot")
@@ -16,7 +15,7 @@ class MessageBot extends Actor {
   implicit val timeout: Timeout = Timeout(2 seconds)
 
   override def receive: Receive = {
-    case msg:String if msg.equals("Hello") => {
+    case msg:String if msg.contains("Hello") => {
       val future = helloBot ? msg
       val result = Await.result(future, timeout.duration)
       sender() ! result
@@ -38,7 +37,7 @@ class MessageBot extends Actor {
 class HelloBot extends Actor {
   val log = Logging(context.system, this)
   override def receive: Receive = {
-    case "Hello" => sender() ! "Hello! How are you doing?"
+    case msg:String => sender() ! s"Hello ${msg.substring(5)}! How are you doing?"
     case _ =>
   }
 }

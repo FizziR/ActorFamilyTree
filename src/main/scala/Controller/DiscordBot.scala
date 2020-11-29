@@ -22,11 +22,15 @@ class DiscordBot extends Actor{
   client.onEventSideEffects { implicit c => {
     case APIMessage.MessageCreate(_, message, _) => {
       if (message.content.startsWith("!")) {
-        self ! message.content
+        if(message.content.equals("!Hello")){
+          self ! message.content + message.authorUsername
+        }
+        else {
+          self ! message.content
+        }
         Thread.sleep(500)
-
-          client.requestsHelper.run(CreateMessage(message.channelId, CreateMessageData(content = actorOutput))
-            .map(_ => ()))
+        client.requestsHelper.run(CreateMessage(message.channelId, CreateMessageData(content = actorOutput))
+          .map(_ => ()))
         if(message.content.equals("!Goodbye")){
           clientSettings.system.terminate()
         }

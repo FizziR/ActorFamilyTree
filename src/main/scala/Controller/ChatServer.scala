@@ -21,13 +21,13 @@ class ChatServer extends Actor {
              val result = Await.result(future, timeout.duration)
              sender() ! result
            }
-           case msg:String => {
-             val future = messageBot ? msg
+           case msg:String if msg.contains("Scala") => {
+             val future = lectureBot ? msg.substring(5)
              val result = Await.result(future, timeout.duration)
              sender() ! result
            }
            case msg:String => {
-             val future = lectureBot ? msg
+             val future = messageBot ? msg
              val result = Await.result(future, timeout.duration)
              sender() ! result
            }
