@@ -1,5 +1,4 @@
 import Controller.DiscordBot
-import _root_.Controller.Discord.DiscordClient
 import akka.actor.{ActorSystem, Props}
 
 object Main{

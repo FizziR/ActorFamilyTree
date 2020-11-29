@@ -43,4 +43,5 @@ project/.sbtserver
 .sonar/
 
 # Application
-KilometersInOneYear.log
+ActorFamiliTree.log
+src/main/scala/Controller/Discord/DiscordToken.scala
