@@ -1,7 +1,3 @@
-package Controller
-
-import Model.Calculation.CalculationBot
-import Model.Message.MessageBot
 import akka.actor.{Actor, Props}
 import akka.event.Logging
 import akka.pattern.ask

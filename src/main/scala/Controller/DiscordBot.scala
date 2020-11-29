@@ -1,6 +1,3 @@
-package Controller
-
-import Controller.Discord.DiscordToken
 import ackcord.{APIMessage, ClientSettings}
 import ackcord.requests.{CreateMessage, CreateMessageData}
 import akka.actor.{Actor, Props}
