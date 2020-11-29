@@ -1,15 +1,12 @@
 package Controller
 
 import Controller.Discord.DiscordToken
-import ackcord.EventListenerMessage.findCache
-import ackcord.commands.CommandMessage.findCache
 import ackcord.{APIMessage, ClientSettings}
 import ackcord.requests.{CreateMessage, CreateMessageData}
 import akka.actor.{Actor, Props}
 import akka.event.Logging
 import akka.pattern.ask
 import akka.util.Timeout
-import shapeless.CachedMacros.cache
 
 import scala.concurrent.Await
 import scala.concurrent.duration.{Duration, DurationInt}
@@ -29,9 +26,13 @@ class DiscordBot extends Actor{
     case APIMessage.MessageCreate(_, message, _) => {
       if (message.content.startsWith("!")) {
         self ! message.content
-        client.requestsHelper.run(CreateMessage(message.channelId, CreateMessageData(content = actorOutput))
-          .map(_ => ()))
-        actorOutput = ""
+        Thread.sleep(500)
+
+          client.requestsHelper.run(CreateMessage(message.channelId, CreateMessageData(content = actorOutput))
+            .map(_ => ()))
+        if(message.content.equals("!Goodbye")){
+          clientSettings.system.terminate()
+        }
       }
       else {
         log.info(message.content)
@@ -47,9 +48,6 @@ class DiscordBot extends Actor{
       val result = Await.result(future, timeout.duration)
       log.info(result.toString)
       actorOutput = result.toString
-      if(msg.equals("!Goodbye")){
-        clientSettings.system.terminate()
-      }
     }
     case _ =>
   }
