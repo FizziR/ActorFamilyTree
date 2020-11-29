@@ -24,10 +24,13 @@ class ChatServer extends Actor {
              val result = Await.result(future, timeout.duration)
              sender() ! result
            }
-           case msg:String => messageBot ! msg
+           case msg:String => {
+             val future = messageBot ? msg
+             val result = Await.result(future, timeout.duration)
+             sender() ! result
+           }
            case _ => log.info("No bot implemented yet")
          }
       }
-    case _  => log.info("Message not for me")
   }
 }

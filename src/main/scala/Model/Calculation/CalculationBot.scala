@@ -23,9 +23,21 @@ class CalculationBot extends Actor{
         val result = Await.result(future, timeout.duration)
         sender() ! result
       }
-      case msg:String if msg.contains('-') => subtractionBot ! msg
-      case msg:String if msg.contains('*') => multiplicationBot ! msg
-      case msg:String if msg.contains('/') => divisionBot ! msg
+      case msg:String if msg.contains('-') => {
+        val future = subtractionBot ? msg
+        val result = Await.result(future, timeout.duration)
+        sender() ! result
+      }
+      case msg:String if msg.contains('*') => {
+        val future = multiplicationBot ? msg
+        val result = Await.result(future, timeout.duration)
+        sender() ! result
+      }
+      case msg:String if msg.contains('/') => {
+        val future = divisionBot ? msg
+        val result = Await.result(future, timeout.duration)
+        sender() ! result
+      }
       case _ => log.info("No possible operation")
     }
   }
@@ -46,7 +58,8 @@ class CalculationBot extends Actor{
     override def receive: Receive = {
       case msg:String => {
         val result = "\\-".r.split(msg)
-        log.info("Result: " + result(0) + " - " + result(1) + " = " + (result(0).toInt - result(1).toInt))
+        val subtraction = "Result: " + result(0) + " - " + result(1) + " = " + (result(0).toInt - result(1).toInt)
+        sender() ! subtraction
       }
       case _ => log.info("Not correctly implemented")
     }
@@ -56,7 +69,8 @@ class CalculationBot extends Actor{
     override def receive: Receive = {
       case msg:String => {
         val result = "\\*".r.split(msg)
-        log.info("Result: " + result(0) + " * " + result(1) + " = " + (result(0).toInt * result(1).toInt))
+        val multiplication = "Result: " + result(0) + " * " + result(1) + " = " + (result(0).toInt * result(1).toInt)
+        sender() ! multiplication
       }
       case _ => log.info("Not correctly implemented")
     }
@@ -66,7 +80,8 @@ class CalculationBot extends Actor{
     override def receive: Receive = {
       case msg:String => {
         val result = "\\/".r.split(msg)
-        log.info("Result: " + result(0) + " / " + result(1) + " = " + (result(0).toInt / result(1).toInt))
+        val division = "Result: " + result(0) + " / " + result(1) + " = " + (result(0).toInt / result(1).toInt)
+        sender() ! division
       }
       case _ => log.info("Not correctly implemented")
     }
