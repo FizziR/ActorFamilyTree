@@ -39,7 +39,7 @@ class CalculationBot extends Actor{
         val result = Await.result(future, timeout.duration)
         sender() ! result
       }
-      case _ => log.info("No possible operation")
+      case _ => sender() ! "There is no valid operator found :-("
     }
   }
 
