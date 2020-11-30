@@ -32,8 +32,8 @@ class CalculationBotSpec()
 
       calculationBot ! "4*6"
       expectMsg("Result: 4 * 6 = 24")
-      calculationBot ! "4*1.5"
-      expectMsg("Result: 4 * 1.5 = 6")
+      calculationBot ! "1.5*1.5"
+      expectMsg("Result: 1.5 * 1.5 = 2.25")
 
       calculationBot ! "24/6"
       expectMsg("Result: 24 / 6 = 4")
