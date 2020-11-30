@@ -1,10 +1,13 @@
+import akka.actor.Status.Success
 import akka.actor.{Actor, Props}
 import akka.event.Logging
 import akka.pattern.ask
 import akka.util.Timeout
+import com.fasterxml.jackson.databind.JsonSerializer
 
 import scala.concurrent.Await
 import scala.concurrent.duration.DurationInt
+import scala.util.Try
 
 class CalculationBot extends Actor{
     val log = Logging(context.system, this)
@@ -46,17 +49,30 @@ class CalculationBot extends Actor{
       case msg:String => {
         val result = "\\+".r.split(msg)
 
-        val numberOne = result(0).toDouble
-        val numberTwo = result(1).toDouble
-        val tmpSum = numberOne + numberTwo
+        val numberOne = Try { result(0).toDouble }.toOption
+        val numberTwo = Try { result(1).toDouble }.toOption
+        var resultOne = 0.0
+        var resultTwo = 0.0
 
-        if(tmpSum == Math.rint(tmpSum)) {
-          val addition = "Result: " + result(0) + " + " + result(1) + " = " + tmpSum.toInt
-          sender() ! addition
+        if(numberOne != None && numberTwo != None){
+          numberOne match {
+            case Some(number:Double) => resultOne = number
+          }
+          numberTwo match {
+            case Some(number:Double) => resultTwo = number
+          }
+          val tmpSum = resultOne + resultTwo
+          if(tmpSum == Math.rint(tmpSum)) {
+            val addition = "Result: " + result(0) + " + " + result(1) + " = " + tmpSum.toInt
+            sender() ! addition
+          }
+          else{
+            val addition = "Result: " + result(0) + " + " + result(1) + " = " + tmpSum
+            sender() ! addition
+          }
         }
         else{
-          val addition = "Result: " + result(0) + " + " + result(1) + " = " + tmpSum
-          sender() ! addition
+          sender() ! "There are no valid numbers to calculate. Sorry :-("
         }
       }
     }
@@ -66,18 +82,37 @@ class CalculationBot extends Actor{
     override def receive: Receive = {
       case msg:String => {
         val result = "\\-".r.split(msg)
-        val numberOne = result(0).toDouble
-        val numberTwo = result(1).toDouble
 
-        val tmpSubtraction = numberOne - numberTwo
+        val numberOne = Try {
+          result(0).toDouble
+        }.toOption
+        val numberTwo = Try {
+          result(1).toDouble
+        }.toOption
+        var resultOne = 0.0
+        var resultTwo = 0.0
 
-        if(tmpSubtraction == Math.rint(tmpSubtraction)) {
-          val subtraction = "Result: " + result(0) + " - " + result(1) + " = " + tmpSubtraction.toInt
-          sender() ! subtraction
+        if (numberOne != None && numberTwo != None) {
+          numberOne match {
+            case Some(number: Double) => resultOne = number
+          }
+          numberTwo match {
+            case Some(number: Double) => resultTwo = number
+          }
+
+          val tmpSubtraction = resultOne - resultTwo
+
+          if (tmpSubtraction == Math.rint(tmpSubtraction)) {
+            val subtraction = "Result: " + result(0) + " - " + result(1) + " = " + tmpSubtraction.toInt
+            sender() ! subtraction
+          }
+          else {
+            val subtraction = "Result: " + result(0) + " - " + result(1) + " = " + tmpSubtraction
+            sender() ! subtraction
+          }
         }
-        else{
-          val subtraction = "Result: " + result(0) + " - " + result(1) + " = " + tmpSubtraction
-          sender() ! subtraction
+        else {
+          sender() ! "There are no valid numbers to calculate. Sorry :-("
         }
       }
     }
@@ -88,17 +123,31 @@ class CalculationBot extends Actor{
       case msg:String => {
         val result = "\\*".r.split(msg)
 
-        val numberOne = result(0).toDouble
-        val numberTwo = result(1).toDouble
+        val numberOne = Try { result(0).toDouble }.toOption
+        val numberTwo = Try { result(1).toDouble }.toOption
+        var resultOne = 0.0
+        var resultTwo = 0.0
 
-        val tmpMultiplication = numberOne * numberTwo
-        if(tmpMultiplication == Math.rint(tmpMultiplication)){
-          val multiplication = "Result: " + result(0) + " * " + result(1) + " = " + tmpMultiplication.toInt
-          sender() ! multiplication
+        if(numberOne != None && numberTwo != None) {
+          numberOne match {
+            case Some(number: Double) => resultOne = number
+          }
+          numberTwo match {
+            case Some(number: Double) => resultTwo = number
+          }
+
+          val tmpMultiplication = resultOne * resultTwo
+          if (tmpMultiplication == Math.rint(tmpMultiplication)) {
+            val multiplication = "Result: " + result(0) + " * " + result(1) + " = " + tmpMultiplication.toInt
+            sender() ! multiplication
+          }
+          else {
+            val multiplication = "Result: " + result(0) + " * " + result(1) + " = " + tmpMultiplication
+            sender() ! multiplication
+          }
         }
-        else{
-          val multiplication = "Result: " + result(0) + " * " + result(1) + " = " + tmpMultiplication
-          sender() ! multiplication
+        else {
+          sender() ! "There are no valid numbers to calculate. Sorry :-("
         }
       }
     }
@@ -109,22 +158,36 @@ class CalculationBot extends Actor{
       case msg:String => {
         val result = "\\/".r.split(msg)
 
-        val numberOne = result(0).toDouble
-        val numberTwo = result(1).toDouble
+        val numberOne = Try { result(0).toDouble }.toOption
+        val numberTwo = Try { result(1).toDouble }.toOption
+        var resultOne = 0.0
+        var resultTwo = 0.0
 
-        if(numberTwo == 0.0) {
-          sender() ! "This is not fair ;-)"
+        if(numberOne != None && numberTwo != None) {
+          numberOne match {
+            case Some(number: Double) => resultOne = number
+          }
+          numberTwo match {
+            case Some(number: Double) => resultTwo = number
+          }
+
+          if (resultTwo == 0.0) {
+            sender() ! "This is not fair ;-)"
+          }
+          else {
+            val tmpDivision = resultOne / resultTwo
+            if (tmpDivision == Math.rint(tmpDivision)) {
+              val division = "Result: " + result(0) + " / " + result(1) + " = " + tmpDivision.toInt
+              sender() ! division
+            }
+            else {
+              val division = "Result: " + result(0) + " / " + result(1) + " = " + tmpDivision
+              sender() ! division
+            }
+          }
         }
-        else {
-          val tmpDivision = numberOne / numberTwo
-          if(tmpDivision == Math.rint(tmpDivision)){
-            val division = "Result: " + result(0) + " / " + result(1) + " = " + tmpDivision.toInt
-            sender() ! division
-          }
-          else{
-            val division = "Result: " + result(0) + " / " + result(1) + " = " + tmpDivision
-            sender() ! division
-          }
+        else{
+          sender() ! "There are no valid numbers to calculate. Sorry :-("
         }
       }
     }
