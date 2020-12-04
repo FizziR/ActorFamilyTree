@@ -1,5 +1,9 @@
-import ackcord.{APIMessage, ClientSettings}
-import ackcord.requests.{CreateMessage, CreateMessageData}
+import ackcord.cachehandlers.CacheSnapshotBuilder
+import ackcord.data.ChannelId
+import ackcord.data.raw.RawMessage
+import ackcord.{APIMessage, CacheSnapshot, ClientSettings, MemoryCacheSnapshot, Requests}
+import ackcord.requests.{CreateMessage, CreateMessageData, GetChannelMessages, GetChannelMessagesData}
+import akka.actor.typed.delivery.internal.ProducerControllerImpl.Request
 import akka.actor.{Actor, Props}
 import akka.event.Logging
 import akka.pattern.ask
@@ -9,7 +13,8 @@ import io.circe.Json
 import scala.concurrent.Await
 import scala.concurrent.duration.{Duration, DurationInt}
 import scala.io.Source
-import io.circe._, io.circe.parser._
+import io.circe._
+import io.circe.parser._
 
 class DiscordBot extends Actor{
   val log = Logging(context.system, this)
@@ -35,6 +40,11 @@ class DiscordBot extends Actor{
       if (message.content.startsWith("!")) {
         if(message.content.equals("!Hello")){
           self ! message.content + message.authorUsername
+        }
+        else if(message.content.equals("!Start")){
+          val rawMessages = c.getChannelMessages(message.channelId).toList
+          val messages = rawMessages.map(i => i._2.content)
+          log.info(messages.toString())
         }
         else {
           self ! message.content
