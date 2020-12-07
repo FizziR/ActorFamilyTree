@@ -1,3 +1,5 @@
+import java.io.{BufferedWriter, File, FileWriter}
+
 import ackcord.data.raw.RawMessage
 import ackcord.{APIMessage, ClientSettings, data}
 import ackcord.requests.{CreateMessage, CreateMessageData, GetChannelMessage, GetChannelMessages, GetChannelMessagesData}
@@ -62,9 +64,10 @@ class DiscordBot extends Actor {
           }while(iterations < 20)
 
           val messageList = listBuffer.toList
-          println("Total Iterations: " + iterations)
-          println("Message List: " + messageList)
-          println("Lenght: " + messageList.length)
+
+          val stringList = messageList.map(content => content._1 + " " + content._2 + " " + content._3 + "\n")
+          writeFile("Source.txt", stringList)
+          println("Done")
         }
         else {
           self ! message.content
@@ -92,5 +95,13 @@ class DiscordBot extends Actor {
       actorOutput = result.toString
     }
     case _ =>
+  }
+  def writeFile(filename: String, lines: List[String]): Unit = {
+    val file = new File(filename)
+    val bw = new BufferedWriter(new FileWriter(file))
+    for(line <- lines){
+      bw.write(line)
+    }
+    bw.close()
   }
 }
