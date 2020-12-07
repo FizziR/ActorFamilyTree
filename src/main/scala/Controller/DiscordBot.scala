@@ -1,5 +1,6 @@
-import ackcord.{APIMessage, CacheSnapshot, ClientSettings, data}
-import ackcord.requests.{CreateMessage, CreateMessageData}
+import ackcord.data.raw.RawMessage
+import ackcord.{APIMessage, ClientSettings, data}
+import ackcord.requests.{CreateMessage, CreateMessageData, GetChannelMessage, GetChannelMessages, GetChannelMessagesData}
 import akka.actor.{Actor, Props}
 import akka.event.Logging
 import akka.pattern.ask
@@ -9,55 +10,61 @@ import scala.concurrent.Await
 import scala.concurrent.duration.{Duration, DurationInt}
 import io.circe.parser._
 
-import scala.collection.mutable.{ArrayBuffer, Queue}
-import akka.stream.scaladsl.{Flow, GraphDSL, Sink, Source}
+import scala.collection.mutable.ListBuffer
 
 class DiscordBot extends Actor {
   val log = Logging(context.system, this)
   val chatServer = context.actorOf(Props[ChatServer], name = "chatServer")
 
   val fileContent = scala.io.Source.fromFile("Credentials/discordToken.json").getLines().mkString
-
   val parseResult = parse(fileContent)
-
   val removeCharacters = "\"".toSet
   val token = parseResult.right.get.\\("token")(0).toString().filterNot(removeCharacters)
 
   val clientSettings = ClientSettings(token)
-
   val client = Await.result(clientSettings.createClient(), Duration.Inf)
+
+
 
   implicit val timeout: Timeout = Timeout(3 seconds)
 
   var actorOutput = ""
-  var bufferQueue = Queue[String]()
-
-  val thread = new Thread {
-    override def run: Unit = {
-      while (true) {
-        if (bufferQueue.length != 0) {
-          println("Queue: " + bufferQueue)
-          Main.runGraph(bufferQueue.dequeueAll(_.length > 0).toList)
-        }
-        Thread.sleep(5000)
-      }
-    }
-  }.start()
 
   client.onEventSideEffects { implicit c => {
     case APIMessage.MessageCreate(_, message, _) => {
       if (message.content.startsWith("!")) {
 
-        //  Stream implementation
-        bufferQueue.enqueue(message.content)
-
         if (message.content.equals("!Hello")) {
           self ! message.content + message.authorUsername
         }
         else if (message.content.equals("!Start")) {
-          val rawMessages = c.getChannelMessages(message.channelId).toList
-          val messages = rawMessages.map(i => i._2.content)
-          log.info(messages.toString())
+
+          var listBuffer = new ListBuffer[(String, String, String)]()
+          var messageId: Option[data.MessageId] = Some(message.id)
+          var iterations = 0
+          do{
+            messageId match {
+              case Some(id: data.MessageId) => {
+                val test = Await.result(client.requestsHelper.run(GetChannelMessages(message.channelId, GetChannelMessagesData(before = Some(id), limit = Some(100)))).value, 1 minute)
+                test match {
+                  case Some(value: List[RawMessage]) => {
+                    value.map(cont => {
+                      listBuffer. += ((cont.timestamp.toString, cont.author.username,cont.content))
+                      messageId = Some(cont.id)
+                    })
+                  }
+                  case None => messageId = None
+                }
+              }
+              case None => messageId = None
+            }
+            iterations = iterations + 1
+          }while(iterations < 20)
+
+          val messageList = listBuffer.toList
+          println("Total Iterations: " + iterations)
+          println("Message List: " + messageList)
+          println("Lenght: " + messageList.length)
         }
         else {
           self ! message.content
@@ -86,20 +93,4 @@ class DiscordBot extends Actor {
     }
     case _ =>
   }
-
-  /*def createGraph(buffer: Seq[(String, data.TextChannelId)]): Graph[Unit, NotUsed] = {
-    val graph = GraphDSL.create() { implicit builder: GraphDSL.Builder[NotUsed] => {
-      //  Source
-      val input = builder.add(Source(buffer.toList))
-
-      // FLows
-      val messageHandler = builder.add(Flow[(String, data.TextChannelId)].map(x => self ! x._1))
-
-      // Sink
-      val output = builder.add(Sink.foreach[(String, data.TextChannelId)](println))
-
-      }
-    }
-    graph
-  }*/
 }
