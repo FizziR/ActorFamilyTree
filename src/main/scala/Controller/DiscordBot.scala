@@ -1,3 +1,5 @@
+package Controller
+
 import ackcord.cachehandlers.CacheSnapshotBuilder
 import ackcord.data.ChannelId
 import ackcord.data.raw.RawMessage
@@ -20,14 +22,15 @@ class DiscordBot extends Actor{
   val log = Logging(context.system, this)
   val chatServer = context.actorOf(Props[ChatServer], name = "chatServer")
 
-  val fileContent = Source.fromFile("Credentials/discordToken.json").getLines().mkString
+  val tokenPhilipo = "Nzg1NDMxODczNTg0NDk2NjQy.X83wbw.aUCKGGrSpA6FZug3WY_CNN1WU3o"
+ // val fileContent = Source.fromFile("Credentials/discordToken.json").getLines().mkString
 
-  val parseResult = parse(fileContent)
+ // val parseResult = parse(fileContent)
 
   val removeCharacters = "\"".toSet
-  val token = parseResult.right.get.\\("token")(0).toString().filterNot(removeCharacters)
+ // val token = parseResult.right.get.\\("token")(0).toString().filterNot(removeCharacters)
 
-  val clientSettings = ClientSettings(token)
+  val clientSettings = ClientSettings(tokenPhilipo)
 
   val client = Await.result(clientSettings.createClient(), Duration.Inf)
 

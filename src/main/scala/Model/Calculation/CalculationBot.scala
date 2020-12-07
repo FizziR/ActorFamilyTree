@@ -1,3 +1,5 @@
+package Model.Calculation
+
 import akka.actor.Status.Success
 import akka.actor.{Actor, Props}
 import akka.event.Logging

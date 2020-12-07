@@ -13,4 +13,6 @@ libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.2" % "test"
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.2" % "test"
 val AkkaVersion = "2.6.6"
 libraryDependencies += "com.typesafe.akka" %% "akka-testkit" % AkkaVersion % Test
+libraryDependencies += "com.typesafe.akka" %% "akka-stream" % AkkaVersion
+libraryDependencies += "com.typesafe.akka" %% "akka-actor-typed" % AkkaVersion
 

@@ -1,3 +1,5 @@
+package Model.Message
+
 import akka.actor.{Actor, Props}
 import akka.event.Logging
 import akka.pattern.ask
