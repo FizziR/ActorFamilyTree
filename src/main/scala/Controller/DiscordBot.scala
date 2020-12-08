@@ -66,7 +66,8 @@ class DiscordBot extends Actor {
           val messageList = listBuffer.toList
 
           val stringList = messageList.map(content => content._1 + "%" + content._2 + "%" + content._3 + "\n")
-          writeFile("Source.txt", stringList)
+          val reversedStringList = stringList.reverse
+          writeFile("Source.txt", reversedStringList)
           println("Done")
         }
         else {
