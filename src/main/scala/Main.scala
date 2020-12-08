@@ -21,7 +21,8 @@ object Main{
 
     val splitStringsInTuples = builder.add(Flow[String].map(i => {
       i.split("\\%+") match {
-        case Array(timestamp, author, message) => (timestamp, author, message)
+        case Array(timestamp: String, author: String, message: String) => (timestamp, author, message)
+        case _ => ("", "", "")
       }
     }))
 
