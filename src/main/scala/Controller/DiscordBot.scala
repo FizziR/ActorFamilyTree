@@ -34,12 +34,14 @@ class DiscordBot extends Actor {
 
   client.onEventSideEffects { implicit c => {
     case APIMessage.MessageCreate(_, message, _) => {
-      if (message.content.startsWith("!")) {
+      val messageMetaString = message.timestamp + "%" + message.authorUsername + "%" + message.content.replaceAll("\r\n", "{NL}") + "\n"
+      addMessageToSourceFile("Source.txt", messageMetaString)
 
+      if (message.content.startsWith("!")) {
         if (message.content.equals("!Hello")) {
           self ! message.content + message.authorUsername
         }
-        else if (message.content.equals("!Start")) {
+        /*else if (message.content.equals("!Start")) {
 
           var listBuffer = new ListBuffer[(String, String, String)]()
           var messageId: Option[data.MessageId] = Some(message.id)
@@ -69,7 +71,7 @@ class DiscordBot extends Actor {
           val reversedStringList = stringList.reverse
           writeFile("Source.txt", reversedStringList)
           println("Done")
-        }
+        }*/
         else {
           self ! message.content
         }
@@ -104,5 +106,10 @@ class DiscordBot extends Actor {
       bw.write(line)
     }
     bw.close()
+  }
+  def addMessageToSourceFile(filename: String, message: String): Unit ={
+    val fw = new FileWriter(filename, true)
+    fw.write(message)
+    fw.close()
   }
 }
