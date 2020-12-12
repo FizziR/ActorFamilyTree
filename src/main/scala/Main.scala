@@ -19,14 +19,11 @@ object Main{
     // step 2 - add the necessary components of this graph
     val input = builder.add(Source(readSource()))
 
-    val splitStringsInTuples = builder.add(Flow[String].map(i => {
-      i.split("\\%+") match {
-        case Array(timestamp: String, author: String, message: String) => (timestamp, author, message)
-        case _ => ("", "", "")
-      }
-    }))
+    val pasteSpaceBetweenArguments = builder.add(Flow[String].map(string => string.replace('%', ' ')))
+    val messageParserModel = new MessageParserModel()
+    val convertsStringToMessage = builder.add(Flow[String].map(message => messageParserModel.generateMessageFromString(message)))
 
-    val output = builder.add(Sink.foreach[(String, String, String)](println))
+    val output = builder.add(Sink.foreach[Option[Message]](println))
 
 
     //val broadcast = builder.add(Broadcast[String](2))
@@ -34,7 +31,7 @@ object Main{
 
     // step 3 - tying up the components
 
-    input ~> splitStringsInTuples ~> output
+    input ~> pasteSpaceBetweenArguments ~> convertsStringToMessage ~> output
 
     /*input ~> broadcast
     broadcast.out(0) ~> splitStringsInTuples ~> zip.in0

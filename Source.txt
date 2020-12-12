@@ -732,7 +732,6 @@
 2020-12-04T10:57:53.302Z%ScalaChatBot%Hello Sebastian Kaltenbach! How are you doing?
 2020-12-04T10:57:53.525Z%Sebastian Kaltenbach%Hallo
 2020-12-04T10:57:55.748Z%Sebastian Kaltenbach%Test
-Test
 2020-12-04T10:57:57.714Z%Sebastian Kaltenbach%Test
 2020-12-04T10:57:59.118Z%Sebastian Kaltenbach%Hallo
 2020-12-04T10:58:01.667Z%Sebastian Kaltenbach%!Hallo
