@@ -45,3 +45,4 @@ project/.sbtserver
 # Application
 ActorFamiliTree.log
 src/main/scala/Controller/Discord/DiscordToken.scala
+/Credentials/
