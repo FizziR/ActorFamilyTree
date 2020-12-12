@@ -34,6 +34,7 @@ class DiscordBot extends Actor {
 
   client.onEventSideEffects { implicit c => {
     case APIMessage.MessageCreate(_, message, _) => {
+
       val messageMetaString = message.timestamp + "%" + message.authorUsername + "%" + message.content.replaceAll("\r\n", "{NL}") + "\n"
       addMessageToSourceFile("Source.txt", messageMetaString)
 
