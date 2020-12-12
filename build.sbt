@@ -11,6 +11,7 @@ libraryDependencies += "org.scalactic" %% "scalactic" % "3.2.2"
 
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.2" % "test"
 libraryDependencies += "org.scalatest" %% "scalatest" % "3.2.2" % "test"
+libraryDependencies += "org.scala-lang.modules" %% "scala-parser-combinators" % "1.1.2"
 val AkkaVersion = "2.6.6"
 libraryDependencies += "com.typesafe.akka" %% "akka-testkit" % AkkaVersion % Test
 
