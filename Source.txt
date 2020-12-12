@@ -1,921 +1,926 @@
-2020-11-27T17:11:26.594Z%ScalaChatBot%
-2020-11-27T17:14:03.057Z%Sebastian Kaltenbach%Hallo
-2020-11-27T18:20:14.079Z%Sebastian Kaltenbach%hello
-2020-11-27T18:39:42.144Z%Sebastian Kaltenbach%Hello
-2020-11-27T18:39:48.618Z%Sebastian Kaltenbach%Test
-2020-11-27T18:45:16.523Z%Sebastian Kaltenbach%Hallo
-2020-11-27T18:52:04.059Z%Sebastian Kaltenbach%\<#781929620001390634>
-2020-11-27T19:02:15.140Z%Sebastian Kaltenbach%Hallo
-2020-11-27T19:18:01.922Z%Sebastian Kaltenbach%Hallo
-2020-11-27T19:19:10.847Z%Sebastian Kaltenbach%Hallo
-2020-11-27T19:21:04.799Z%Sebastian Kaltenbach%Test
-2020-11-27T19:26:24.883Z%Sebastian Kaltenbach%Hallo
-2020-11-27T19:26:56.739Z%Sebastian Kaltenbach%🙂
-2020-11-27T19:27:00.439Z%Sebastian Kaltenbach%Test
-2020-11-27T19:27:05.934Z%Sebastian Kaltenbach%!Bot
-2020-11-27T19:27:11.855Z%Sebastian Kaltenbach%!Huhu
-2020-11-27T19:31:18.471Z%Sebastian Kaltenbach%Hallo Bot
-2020-11-27T19:32:43.410Z%Sebastian Kaltenbach%Hello
-2020-11-27T19:42:08.163Z%Sebastian Kaltenbach%Hello
-2020-11-27T19:44:21.742Z%Sebastian Kaltenbach%Hello
-2020-11-28T09:27:28.198Z%Sebastian Kaltenbach%Hello
-2020-11-28T09:27:28.481Z%ScalaChatBot%Hello
-2020-11-28T09:27:28.830Z%ScalaChatBot%Hello
-2020-11-28T09:27:29.032Z%ScalaChatBot%Hello
-2020-11-28T09:27:29.293Z%ScalaChatBot%Hello
-2020-11-28T09:27:29.544Z%ScalaChatBot%Hello
-2020-11-28T09:27:34.399Z%ScalaChatBot%Hello
-2020-11-28T09:27:34.611Z%ScalaChatBot%Hello
-2020-11-28T09:27:34.875Z%ScalaChatBot%Hello
-2020-11-28T09:27:35.085Z%ScalaChatBot%Hello
-2020-11-28T09:27:35.272Z%ScalaChatBot%Hello
-2020-11-28T09:27:40.304Z%ScalaChatBot%Hello
-2020-11-28T09:27:40.617Z%ScalaChatBot%Hello
-2020-11-28T09:27:40.835Z%ScalaChatBot%Hello
-2020-11-28T09:27:41.070Z%ScalaChatBot%Hello
-2020-11-28T09:27:41.297Z%ScalaChatBot%Hello
-2020-11-28T09:27:46.179Z%ScalaChatBot%Hello
-2020-11-28T09:27:46.419Z%ScalaChatBot%Hello
-2020-11-28T09:27:46.572Z%ScalaChatBot%Hello
-2020-11-28T09:27:46.888Z%ScalaChatBot%Hello
-2020-11-28T09:27:47.098Z%ScalaChatBot%Hello
-2020-11-28T09:29:15.138Z%Sebastian Kaltenbach%Hallo
-2020-11-28T09:29:15.443Z%ScalaChatBot%Hallo
-2020-11-28T09:29:15.859Z%ScalaChatBot%Hallo
-2020-11-28T09:29:16.050Z%ScalaChatBot%Hallo
-2020-11-28T09:29:16.266Z%ScalaChatBot%Hallo
-2020-11-28T09:29:16.363Z%ScalaChatBot%Hallo
-2020-11-28T09:32:28.430Z%Sebastian Kaltenbach%T
-2020-11-28T09:32:28.796Z%ScalaChatBot%T
-2020-11-28T09:32:29.063Z%ScalaChatBot%T
-2020-11-28T09:32:29.266Z%ScalaChatBot%T
-2020-11-28T09:32:29.588Z%ScalaChatBot%T
-2020-11-28T09:32:29.715Z%ScalaChatBot%T
-2020-11-28T09:32:34.733Z%ScalaChatBot%T
-2020-11-28T09:32:34.939Z%ScalaChatBot%T
-2020-11-28T09:32:35.085Z%ScalaChatBot%T
-2020-11-28T09:32:35.310Z%ScalaChatBot%T
-2020-11-28T09:32:35.499Z%ScalaChatBot%T
-2020-11-28T09:32:40.614Z%ScalaChatBot%T
-2020-11-28T09:32:40.775Z%ScalaChatBot%T
-2020-11-28T09:32:41.019Z%ScalaChatBot%T
-2020-11-28T09:32:41.214Z%ScalaChatBot%T
-2020-11-28T09:32:41.537Z%ScalaChatBot%T
-2020-11-28T09:35:05.665Z%Sebastian Kaltenbach%hallo
-2020-11-28T09:35:09.958Z%Sebastian Kaltenbach%!Hallo
-2020-11-28T09:35:10.200Z%ScalaChatBot%!Hallo
-2020-11-28T09:35:10.602Z%ScalaChatBot%!Hallo
-2020-11-28T09:35:10.838Z%ScalaChatBot%!Hallo
-2020-11-28T09:35:11.046Z%ScalaChatBot%!Hallo
-2020-11-28T09:35:11.239Z%ScalaChatBot%!Hallo
-2020-11-28T09:35:16.104Z%ScalaChatBot%!Hallo
-2020-11-28T09:35:16.376Z%ScalaChatBot%!Hallo
-2020-11-28T09:35:16.596Z%ScalaChatBot%!Hallo
-2020-11-28T09:35:16.810Z%ScalaChatBot%!Hallo
-2020-11-28T09:35:17.041Z%ScalaChatBot%!Hallo
-2020-11-28T09:37:10.372Z%Sebastian Kaltenbach%Hallo
-2020-11-28T09:37:13.394Z%Sebastian Kaltenbach%!Hallo
-2020-11-28T09:37:13.586Z%ScalaChatBot%!Hallo
-2020-11-28T09:37:14.077Z%ScalaChatBot%!Hallo
-2020-11-28T09:37:14.255Z%ScalaChatBot%!Hallo
-2020-11-28T09:37:14.551Z%ScalaChatBot%!Hallo
-2020-11-28T09:37:14.749Z%ScalaChatBot%!Hallo
-2020-11-28T09:37:19.547Z%ScalaChatBot%!Hallo
-2020-11-28T09:37:19.765Z%ScalaChatBot%!Hallo
-2020-11-28T09:37:19.995Z%ScalaChatBot%!Hallo
-2020-11-28T09:37:20.263Z%ScalaChatBot%!Hallo
-2020-11-28T09:37:20.454Z%ScalaChatBot%!Hallo
-2020-11-28T09:38:11.186Z%Sebastian Kaltenbach%Hallo
-2020-11-28T09:38:14.477Z%Sebastian Kaltenbach%!Hello
-2020-11-28T09:38:14.799Z%ScalaChatBot%Hello World
-2020-11-28T09:38:26.567Z%Sebastian Kaltenbach%!Ping
-2020-11-28T09:38:26.836Z%ScalaChatBot%Hello World
-2020-11-28T09:43:57.566Z%Sebastian Kaltenbach%!Hi
-2020-11-28T09:43:57.953Z%ScalaChatBot%Hello World
-2020-11-28T09:44:02.991Z%Sebastian Kaltenbach%!Goodbye
-2020-11-28T09:44:03.194Z%ScalaChatBot%Hello World
-2020-11-28T10:08:35.838Z%Sebastian Kaltenbach%Hallo
-2020-11-28T10:08:41.455Z%Sebastian Kaltenbach%!Hallo
-2020-11-28T10:08:51.380Z%Sebastian Kaltenbach%Hallo
-2020-11-28T10:08:59.249Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-28T10:09:06.113Z%Sebastian Kaltenbach%!Goodbye
-2020-11-28T10:09:15.670Z%Sebastian Kaltenbach%!Goodbye
-2020-11-28T10:16:32.158Z%Sebastian Kaltenbach%\<#781929620001390634>
-2020-11-28T10:26:15.172Z%Sebastian Kaltenbach%Hallo
-2020-11-28T10:26:15.596Z%ScalaChatBot%Hello From Actors!
-2020-11-28T10:26:15.974Z%ScalaChatBot%Hello From Actors!
-2020-11-28T10:26:16.239Z%ScalaChatBot%Hello From Actors!
-2020-11-28T10:26:16.444Z%ScalaChatBot%Hello From Actors!
-2020-11-28T10:26:16.692Z%ScalaChatBot%Hello From Actors!
-2020-11-28T10:26:21.387Z%ScalaChatBot%Hello From Actors!
-2020-11-28T10:26:21.665Z%ScalaChatBot%Hello From Actors!
-2020-11-28T10:26:21.873Z%ScalaChatBot%Hello From Actors!
-2020-11-28T10:26:22.111Z%ScalaChatBot%Hello From Actors!
-2020-11-28T10:26:22.313Z%ScalaChatBot%Hello From Actors!
-2020-11-28T10:26:27.415Z%ScalaChatBot%Hello From Actors!
-2020-11-28T10:26:27.613Z%ScalaChatBot%Hello From Actors!
-2020-11-28T10:26:27.839Z%ScalaChatBot%Hello From Actors!
-2020-11-28T10:26:28.030Z%ScalaChatBot%Hello From Actors!
-2020-11-28T10:26:28.250Z%ScalaChatBot%Hello From Actors!
-2020-11-28T10:28:09.566Z%Sebastian Kaltenbach%!Hallo
-2020-11-28T10:28:09.968Z%ScalaChatBot%Hello From Actors!
-2020-11-28T10:28:16.162Z%Sebastian Kaltenbach%Hallo
-2020-11-28T10:28:20.245Z%Sebastian Kaltenbach%!Goodbye
-2020-11-28T10:28:20.517Z%ScalaChatBot%Hello From Actors!
-2020-11-28T10:32:26.234Z%Philipo289%
-2020-11-28T10:32:27.234Z%Felicitas Maurer%
-2020-11-28T10:32:53.619Z%Sebastian Kaltenbach%!Hallo
-2020-11-28T10:32:54.042Z%ScalaChatBot%Hello From Actors!
-2020-11-28T10:33:00.090Z%Philipo289%!Hallo
-2020-11-28T10:33:00.391Z%ScalaChatBot%Hello From Actors!
-2020-11-28T10:33:03.632Z%Sebastian Kaltenbach%Hallo
-2020-11-28T10:33:12.105Z%Sebastian Kaltenbach%!Goodbye
-2020-11-28T10:33:12.414Z%ScalaChatBot%Hello From Actors!
-2020-11-28T11:06:35.613Z%Sebastian Kaltenbach%Hallo
-2020-11-28T11:06:38.023Z%Sebastian Kaltenbach%!Hallo
-2020-11-28T11:06:38.378Z%ScalaChatBot%()
-2020-11-28T11:06:46.477Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-28T11:06:46.715Z%ScalaChatBot%()
-2020-11-28T11:06:57.331Z%Sebastian Kaltenbach%!Goodbye
-2020-11-28T11:06:57.581Z%ScalaChatBot%()
-2020-11-28T11:07:54.031Z%Sebastian Kaltenbach%!Hallo
-2020-11-28T11:07:54.302Z%ScalaChatBot%()
-2020-11-28T11:07:57.067Z%Sebastian Kaltenbach%!Test
-2020-11-28T11:07:57.289Z%ScalaChatBot%()
-2020-11-28T11:08:01.627Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-28T11:08:01.796Z%ScalaChatBot%()
-2020-11-28T11:08:04.942Z%Sebastian Kaltenbach%!Goodbye
-2020-11-28T11:08:05.123Z%ScalaChatBot%()
-2020-11-28T11:09:29.315Z%Sebastian Kaltenbach%Hallo
-2020-11-28T11:09:32.182Z%Sebastian Kaltenbach%!Hallo
-2020-11-28T11:09:32.469Z%ScalaChatBot%()
-2020-11-28T11:09:43.891Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-28T11:09:44.083Z%ScalaChatBot%()
-2020-11-28T12:16:49.751Z%Sebastian Kaltenbach%!Hallo
-2020-11-28T12:16:50.181Z%ScalaChatBot%()
-2020-11-28T12:16:54.630Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-28T12:16:54.820Z%ScalaChatBot%()
-2020-11-28T12:17:05.107Z%Sebastian Kaltenbach%!Goodbye
-2020-11-28T12:17:05.281Z%ScalaChatBot%()
-2020-11-28T12:18:08.501Z%Sebastian Kaltenbach%!Hallo
-2020-11-28T12:18:08.880Z%ScalaChatBot%()
-2020-11-28T12:18:11.455Z%Sebastian Kaltenbach%!Goodbye
-2020-11-28T12:18:11.710Z%ScalaChatBot%()
-2020-11-28T12:20:14.658Z%Sebastian Kaltenbach%!Hallo
-2020-11-28T12:20:15.019Z%ScalaChatBot%()
-2020-11-28T12:20:43.010Z%Sebastian Kaltenbach%!Goodbye
-2020-11-28T12:20:43.295Z%ScalaChatBot%()
-2020-11-28T12:21:05.924Z%Sebastian Kaltenbach%!Hallo
-2020-11-28T12:21:06.283Z%ScalaChatBot%()
-2020-11-28T12:22:00.094Z%Sebastian Kaltenbach%!Hallo
-2020-11-28T12:22:00.370Z%ScalaChatBot%()
-2020-11-28T12:23:14.531Z%Sebastian Kaltenbach%!Hallo
-2020-11-28T12:23:14.874Z%ScalaChatBot%()
-2020-11-28T12:23:28.368Z%Sebastian Kaltenbach%!Hey
-2020-11-28T12:23:28.567Z%ScalaChatBot%()
-2020-11-28T12:24:07.219Z%Sebastian Kaltenbach%!Hallo
-2020-11-28T12:24:07.616Z%ScalaChatBot%()
-2020-11-28T12:24:14.796Z%Sebastian Kaltenbach%!Test
-2020-11-28T12:24:14.928Z%ScalaChatBot%()
-2020-11-28T12:24:59.480Z%Sebastian Kaltenbach%!Hallo
-2020-11-28T12:25:00.003Z%ScalaChatBot%()
-2020-11-28T12:25:09.146Z%Sebastian Kaltenbach%!Hey
-2020-11-28T12:25:09.314Z%ScalaChatBot%()
-2020-11-28T12:25:57.760Z%Sebastian Kaltenbach%!Test
-2020-11-28T12:25:58.162Z%ScalaChatBot%()
-2020-11-28T12:26:03.879Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-28T12:26:04.088Z%ScalaChatBot%()
-2020-11-28T12:28:10.332Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-28T12:28:10.690Z%ScalaChatBot%()
-2020-11-28T12:28:15.140Z%Sebastian Kaltenbach%!Calc
-2020-11-28T12:28:15.411Z%ScalaChatBot%()
-2020-11-28T12:28:25.953Z%Sebastian Kaltenbach%!Calc
-2020-11-28T12:28:26.153Z%ScalaChatBot%()
-2020-11-28T12:28:40.676Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-28T12:28:40.957Z%ScalaChatBot%()
-2020-11-28T12:30:00.013Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-28T12:30:00.355Z%ScalaChatBot%()
-2020-11-28T12:31:07.095Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-28T12:31:07.447Z%ScalaChatBot%()
-2020-11-28T12:31:49.971Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-28T12:31:50.422Z%ScalaChatBot%()
-2020-11-28T12:32:18.994Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-28T12:32:19.399Z%ScalaChatBot%()
-2020-11-28T12:34:44.561Z%Sebastian Kaltenbach%!Hallo
-2020-11-28T12:34:45.018Z%ScalaChatBot%()
-2020-11-28T12:34:56.758Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-28T12:34:56.984Z%ScalaChatBot%()
-2020-11-28T12:39:26.428Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-28T12:39:26.779Z%ScalaChatBot%()
-2020-11-28T12:40:05.439Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-28T12:40:05.797Z%ScalaChatBot%()
-2020-11-28T12:40:46.567Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-28T12:40:46.948Z%ScalaChatBot%()
-2020-11-28T12:42:51.212Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-28T12:42:51.490Z%ScalaChatBot%()
-2020-11-28T13:56:56.187Z%Sebastian Kaltenbach%!Hallo
-2020-11-28T13:57:34.150Z%Sebastian Kaltenbach%Hallo
-2020-11-28T13:57:37.493Z%Sebastian Kaltenbach%!Test
-2020-11-28T13:58:18.957Z%Sebastian Kaltenbach%!Hallo
-2020-11-28T13:58:19.317Z%ScalaChatBot%Hello From Actors!
-2020-11-28T13:59:10.501Z%Sebastian Kaltenbach%!Goodbye
-2020-11-28T14:06:14.647Z%Sebastian Kaltenbach%!Hallo
-2020-11-28T14:08:26.573Z%Sebastian Kaltenbach%!Hallo
-2020-11-28T14:08:26.845Z%ScalaChatBot%Hello From Actors!
-2020-11-28T14:08:31.595Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-28T14:08:31.806Z%ScalaChatBot%Hello From Actors!
-2020-11-28T14:12:13.955Z%Sebastian Kaltenbach%!Hallo
-2020-11-28T14:12:14.313Z%ScalaChatBot%Hello From Actors!
-2020-11-28T14:12:18.397Z%Sebastian Kaltenbach%!Goodbye
-2020-11-28T14:12:18.663Z%ScalaChatBot%Hello From Actors!
-2020-11-28T19:21:13.627Z%Sebastian Kaltenbach%!Hallo
-2020-11-28T19:21:14.392Z%ScalaChatBot%Hello From Actors!
-2020-11-28T19:22:29.836Z%Sebastian Kaltenbach%!Goodbye
-2020-11-28T19:41:11.276Z%Sebastian Kaltenbach%!Hallo
-2020-11-28T19:41:11.753Z%ScalaChatBot%Hallo
-2020-11-28T19:41:33.284Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-28T19:41:33.481Z%ScalaChatBot%Hallo
-2020-11-28T19:42:41.122Z%Sebastian Kaltenbach%!Hallo
-2020-11-28T19:42:41.564Z%ScalaChatBot%Hallo
-2020-11-28T19:42:44.726Z%Sebastian Kaltenbach%!Test
-2020-11-28T19:42:44.945Z%ScalaChatBot%Hallo
-2020-11-28T19:43:00.772Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-28T19:43:00.984Z%ScalaChatBot%Hallo
-2020-11-28T19:54:27.484Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-28T19:54:55.292Z%Sebastian Kaltenbach%!Hallo
-2020-11-28T19:56:33.258Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-28T19:57:16.232Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-28T19:59:47.279Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-28T19:59:47.658Z%ScalaChatBot%Test
-2020-11-28T20:02:21.264Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-28T20:03:05.326Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-28T20:05:42.055Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-28T20:07:12.932Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-28T20:08:48.071Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-28T20:10:28.702Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-28T20:10:29.016Z%ScalaChatBot%Result: 1 + 1 = 2
-2020-11-28T20:10:38.491Z%Sebastian Kaltenbach%!Calc5+5
-2020-11-28T20:10:38.774Z%ScalaChatBot%Test
-2020-11-28T20:10:47.973Z%Sebastian Kaltenbach%!Calc5+5
-2020-11-28T20:10:48.190Z%ScalaChatBot%Test
-2020-11-28T20:10:59.060Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-28T20:10:59.189Z%ScalaChatBot%Test
-2020-11-28T20:11:27.022Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-28T20:11:27.519Z%ScalaChatBot%Result: 1 + 1 = 2
-2020-11-28T20:11:34.261Z%Sebastian Kaltenbach%!Calc5+5
-2020-11-28T20:11:34.582Z%ScalaChatBot%Result: 1 + 1 = 2
-2020-11-28T20:13:19.357Z%Sebastian Kaltenbach%!Calc5+5
-2020-11-28T20:13:19.720Z%ScalaChatBot%Result: 5 + 5 = 10
-2020-11-28T20:13:29.616Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-28T20:13:29.889Z%ScalaChatBot%Result: 5 + 5 = 10
-2020-11-28T20:14:18.662Z%Sebastian Kaltenbach%!Calc10+10
-2020-11-28T20:14:18.943Z%ScalaChatBot%Result: 10 + 10 = 20
-2020-11-28T20:14:29.211Z%Sebastian Kaltenbach%!Calc5+5
-2020-11-28T20:14:29.424Z%ScalaChatBot%Result: 10 + 10 = 20
-2020-11-28T20:15:19.988Z%Sebastian Kaltenbach%!Calc5+5
-2020-11-28T20:15:20.280Z%ScalaChatBot%Result: 5 + 5 = 10
-2020-11-28T20:15:24.091Z%Sebastian Kaltenbach%Hallo
-2020-11-28T20:15:27.289Z%Sebastian Kaltenbach%!Hallo
-2020-11-28T20:15:34.250Z%Sebastian Kaltenbach%!Calc5+4
-2020-11-28T20:15:46.080Z%Sebastian Kaltenbach%!Calc5+4
-2020-11-28T20:15:46.209Z%ScalaChatBot%Result: 5 + 4 = 9
-2020-11-28T20:16:04.317Z%Sebastian Kaltenbach%!Calc5+5
-2020-11-28T20:16:04.861Z%ScalaChatBot%Result: 5 + 5 = 10
-2020-11-28T20:16:16.934Z%Sebastian Kaltenbach%!Calc10+10
-2020-11-28T20:16:17.131Z%ScalaChatBot%Result: 5 + 5 = 10
-2020-11-28T20:16:36.926Z%Sebastian Kaltenbach%!Calc10+20
-2020-11-28T20:16:37.131Z%ScalaChatBot%Result: 10 + 20 = 30
-2020-11-28T20:17:00.657Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-28T20:17:00.874Z%ScalaChatBot%Result: 10 + 20 = 30
-2020-11-28T20:17:07.737Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-28T20:17:08.055Z%ScalaChatBot%Result: 1 + 1 = 2
-2020-11-28T20:17:13.336Z%Sebastian Kaltenbach%!Calc1+4
-2020-11-28T20:17:13.551Z%ScalaChatBot%Result: 1 + 1 = 2
-2020-11-28T20:17:18.260Z%Sebastian Kaltenbach%!Calc1+4
-2020-11-28T20:17:18.366Z%ScalaChatBot%Result: 1 + 4 = 5
-2020-11-28T20:17:20.181Z%Felicitas Maurer%Oh das sieht gut aus :)
-2020-11-28T20:17:36.943Z%Sebastian Kaltenbach%Ein wenig ja. Er will aber noch nicht so wie ich 😄
-2020-11-28T20:18:28.887Z%Felicitas Maurer%!Hallo
-2020-11-28T20:18:39.273Z%Sebastian Kaltenbach%Macht noch nichts 😄
-2020-11-28T20:18:42.362Z%Sebastian Kaltenbach%erst +
-2020-11-28T20:18:50.618Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-28T20:18:50.966Z%ScalaChatBot%Result: 1 + 1 = 2
-2020-11-28T20:18:59.496Z%Sebastian Kaltenbach%!Calc1+5
-2020-11-28T20:19:11.385Z%Sebastian Kaltenbach%!Calc1+5
-2020-11-28T20:19:11.679Z%ScalaChatBot%Result: 1 + 5 = 6
-2020-11-28T20:19:19.573Z%Sebastian Kaltenbach%!Calc1+9
-2020-11-28T20:19:19.796Z%ScalaChatBot%Result: 1 + 5 = 6
-2020-11-28T20:19:36.198Z%Felicitas Maurer%!Calc15673-327
-2020-11-28T20:19:36.518Z%ScalaChatBot%Result: 1 + 9 = 10
-2020-11-28T20:19:57.275Z%Sebastian Kaltenbach%bei- macht er auch noch nicht :-d
-2020-11-28T20:20:06.276Z%Felicitas Maurer%Achso :D
-2020-11-28T20:20:39.488Z%Felicitas Maurer%Sorry :)
-2020-11-28T20:20:45.963Z%Sebastian Kaltenbach%Alles gut 😄
-2020-11-28T20:23:53.255Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-28T20:23:53.665Z%ScalaChatBot%Result: 1 + 1 = 2
-2020-11-28T20:24:03.367Z%Sebastian Kaltenbach%!Calc2+2
-2020-11-28T20:24:03.588Z%ScalaChatBot%Result: 1 + 1 = 2
-2020-11-28T20:24:10.603Z%Sebastian Kaltenbach%!Calc2+6
-2020-11-28T20:24:10.877Z%ScalaChatBot%Result: 2 + 2 = 4
-2020-11-28T20:24:16.275Z%Sebastian Kaltenbach%!Hallo
-2020-11-28T20:24:16.563Z%ScalaChatBot%Result: 2 + 6 = 8
-2020-11-28T20:24:19.408Z%Sebastian Kaltenbach%!Hallo
-2020-11-28T20:25:39.564Z%Sebastian Kaltenbach%!Calc1+9
-2020-11-28T20:25:39.921Z%ScalaChatBot%Result: 1 + 9 = 10
-2020-11-28T20:25:55.052Z%Sebastian Kaltenbach%!Calc1+5
-2020-11-28T20:26:04.053Z%Sebastian Kaltenbach%!Calc1+7
-2020-11-28T20:26:04.269Z%ScalaChatBot%Result: 1 + 7 = 8
-2020-11-28T20:26:09.969Z%Sebastian Kaltenbach%!Calc1+5
-2020-11-28T20:26:10.243Z%ScalaChatBot%Result: 1 + 5 = 6
-2020-11-28T20:26:20.914Z%Sebastian Kaltenbach%!Calc1000+2345
-2020-11-28T20:26:21.144Z%ScalaChatBot%Result: 1 + 5 = 6
-2020-11-28T20:26:37.869Z%Sebastian Kaltenbach%!Hallo
-2020-11-28T20:26:38.136Z%ScalaChatBot%Result: 1000 + 2345 = 3345
-2020-11-28T20:27:03.319Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-28T20:27:13.480Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-28T20:28:02.727Z%Sebastian Kaltenbach%!Calc6+6
-2020-11-28T20:28:03.096Z%ScalaChatBot%Result: 6 + 6 = 12
-2020-11-28T20:28:11.363Z%Sebastian Kaltenbach%!Calc7+7
-2020-11-28T20:28:17.842Z%Sebastian Kaltenbach%!Hallo
-2020-11-28T20:28:18.072Z%ScalaChatBot%Result: 7 + 7 = 14
-2020-11-29T08:47:30.846Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-29T08:47:31.227Z%ScalaChatBot%Result: 1 + 1 = 2
-2020-11-29T08:47:40.228Z%Sebastian Kaltenbach%!Calc1-1
-2020-11-29T08:47:43.936Z%Sebastian Kaltenbach%!
-2020-11-29T08:47:44.138Z%ScalaChatBot%Result: 1 - 1 = 0
-2020-11-29T08:48:02.228Z%Sebastian Kaltenbach%!Calc1*2
-2020-11-29T09:13:40.189Z%Sebastian Kaltenbach%!Hallo
-2020-11-29T09:13:40.471Z%ScalaChatBot%Sorry - I can't understand your message
-2020-11-29T09:13:46.563Z%Sebastian Kaltenbach%!Hello
-2020-11-29T09:13:56.525Z%Sebastian Kaltenbach%!Goodbye
-2020-11-29T09:13:56.729Z%ScalaChatBot%Hello! How are you doing?
-2020-11-29T09:14:07.788Z%Sebastian Kaltenbach%!Hello
-2020-11-29T09:14:07.944Z%ScalaChatBot%Is it already time for leaving? Goodbye!
-2020-11-29T09:15:26.154Z%Sebastian Kaltenbach%!Hello
-2020-11-29T09:15:26.530Z%ScalaChatBot%Hello! How are you doing?
-2020-11-29T09:15:43.764Z%Sebastian Kaltenbach%!Goodbye
-2020-11-29T09:15:50.094Z%Sebastian Kaltenbach%!Hello
-2020-11-29T09:16:39.304Z%Sebastian Kaltenbach%!Hello
-2020-11-29T09:16:39.618Z%ScalaChatBot%Hello! How are you doing?
-2020-11-29T09:16:44.491Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-29T09:16:51.423Z%Sebastian Kaltenbach%!Calc1-1
-2020-11-29T09:16:51.682Z%ScalaChatBot%Result: 1 + 1 = 2
-2020-11-29T09:17:01.912Z%Sebastian Kaltenbach%!Calc1*5
-2020-11-29T09:17:02.177Z%ScalaChatBot%Result: 1 - 1 = 0
-2020-11-29T09:17:15.899Z%Sebastian Kaltenbach%!Calc5/5
-2020-11-29T09:17:16.015Z%ScalaChatBot%Result: 1 * 5 = 5
-2020-11-29T09:18:24.134Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-29T09:18:24.531Z%ScalaChatBot%Result: 5 / 5 = 1
-2020-11-29T09:18:33.883Z%Sebastian Kaltenbach%!Goodbye
-2020-11-29T09:18:34.490Z%ScalaChatBot%Result: 1 + 1 = 2
-2020-11-29T09:29:47.535Z%Sebastian Kaltenbach%!Ping
-2020-11-29T09:29:47.904Z%ScalaChatBot%Pong
-2020-11-29T09:29:54.630Z%Sebastian Kaltenbach%!Hello
-2020-11-29T09:30:06.902Z%Sebastian Kaltenbach%!Test
-2020-11-29T09:30:07.163Z%ScalaChatBot%Hello! How are you doing?
-2020-11-29T09:30:19.035Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-29T09:30:19.217Z%ScalaChatBot%Sorry - I can't understand your message
-2020-11-29T09:30:23.244Z%Sebastian Kaltenbach%!Hello
-2020-11-29T09:30:23.530Z%ScalaChatBot%Result: 1 + 1 = 2
-2020-11-29T09:30:56.079Z%Sebastian Kaltenbach%!Goodbye
-2020-11-29T09:31:57.186Z%Sebastian Kaltenbach%!Ping
-2020-11-29T09:31:57.553Z%ScalaChatBot%Pong
-2020-11-29T09:32:02.995Z%Sebastian Kaltenbach%!Hello
-2020-11-29T09:32:18.219Z%Sebastian Kaltenbach%!Test
-2020-11-29T09:32:18.339Z%ScalaChatBot%Hello! How are you doing?
-2020-11-29T09:32:33.552Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-29T09:32:33.678Z%ScalaChatBot%Sorry - I can't understand your message
-2020-11-29T09:32:38.414Z%Sebastian Kaltenbach%!Ping
-2020-11-29T09:32:38.682Z%ScalaChatBot%Result: 1 + 1 = 2
-2020-11-29T09:32:43.778Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-29T09:32:44.040Z%ScalaChatBot%Pong
-2020-11-29T09:32:47.276Z%Sebastian Kaltenbach%!Goodbye
-2020-11-29T09:32:47.506Z%ScalaChatBot%Result: 1 + 1 = 2
-2020-11-29T09:43:06.449Z%Sebastian Kaltenbach%!Ping
-2020-11-29T09:43:06.866Z%ScalaChatBot%Pong
-2020-11-29T09:43:15.451Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-29T09:43:37.036Z%Sebastian Kaltenbach%!Hello
-2020-11-29T09:43:37.262Z%ScalaChatBot%Result: 1 + 1 = 2
-2020-11-29T09:43:52.518Z%Sebastian Kaltenbach%!Calc1-1
-2020-11-29T09:43:52.679Z%ScalaChatBot%Hello! How are you doing?
-2020-11-29T09:45:02.073Z%Sebastian Kaltenbach%!Goodbye
-2020-11-29T09:47:56.758Z%Sebastian Kaltenbach%!Ping
-2020-11-29T09:47:57.162Z%ScalaChatBot%Pong
-2020-11-29T09:48:01.781Z%Sebastian Kaltenbach%!Hello
-2020-11-29T09:48:01.993Z%ScalaChatBot%Pong
-2020-11-29T09:48:13.405Z%Sebastian Kaltenbach%!Test
-2020-11-29T09:48:13.617Z%ScalaChatBot%Hello! How are you doing?
-2020-11-29T09:49:18.766Z%Sebastian Kaltenbach%!Goodbye
-2020-11-29T09:55:10.908Z%Sebastian Kaltenbach%!Ping
-2020-11-29T10:00:02.824Z%Sebastian Kaltenbach%!Goodbye
-2020-11-29T10:00:40.004Z%Sebastian Kaltenbach%!Goodbye
-2020-11-29T10:07:32.335Z%Sebastian Kaltenbach%!Ping
-2020-11-29T10:07:52.097Z%Sebastian Kaltenbach%!Hello
-2020-11-29T10:07:52.566Z%ScalaChatBot%Hello! How are you doing?
-2020-11-29T10:08:23.716Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-29T10:08:31.290Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-29T10:08:31.575Z%ScalaChatBot%Result: 1 + 1 = 2
-2020-11-29T10:08:58.032Z%Sebastian Kaltenbach%!Hello
-2020-11-29T10:09:03.521Z%Sebastian Kaltenbach%!Ping
-2020-11-29T10:09:03.913Z%ScalaChatBot%Pong
-2020-11-29T10:09:08.137Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-29T10:09:08.390Z%ScalaChatBot%Pong
-2020-11-29T10:09:14.135Z%Sebastian Kaltenbach%!Test
-2020-11-29T10:09:14.396Z%ScalaChatBot%Result: 1 + 1 = 2
-2020-11-29T10:09:22.539Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-29T10:09:22.758Z%ScalaChatBot%Sorry - I can't understand your message
-2020-11-29T10:09:28.135Z%Sebastian Kaltenbach%!Goodbye
-2020-11-29T10:09:28.354Z%ScalaChatBot%Result: 1 + 1 = 2
-2020-11-29T10:09:33.857Z%Sebastian Kaltenbach%!Test
-2020-11-29T10:11:44.910Z%Sebastian Kaltenbach%!Ping
-2020-11-29T10:12:20.168Z%Sebastian Kaltenbach%!Ping
-2020-11-29T10:12:20.641Z%ScalaChatBot%Pong
-2020-11-29T10:12:26.976Z%Sebastian Kaltenbach%!Hello
-2020-11-29T10:12:27.267Z%ScalaChatBot%Pong
-2020-11-29T10:12:37.047Z%Sebastian Kaltenbach%!Test
-2020-11-29T10:12:37.274Z%ScalaChatBot%Hello! How are you doing?
-2020-11-29T10:12:40.478Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-29T10:12:40.750Z%ScalaChatBot%Sorry - I can't understand your message
-2020-11-29T10:12:43.846Z%Sebastian Kaltenbach%!Ping
-2020-11-29T10:12:44.062Z%ScalaChatBot%Result: 1 + 1 = 2
-2020-11-29T10:14:13.786Z%Sebastian Kaltenbach%!Ping
-2020-11-29T10:14:15.313Z%ScalaChatBot%Pong
-2020-11-29T10:14:20.800Z%Sebastian Kaltenbach%!Hello
-2020-11-29T10:14:22.027Z%ScalaChatBot%Hello! How are you doing?
-2020-11-29T10:14:27.658Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-29T10:14:28.801Z%ScalaChatBot%Result: 1 + 1 = 2
-2020-11-29T10:14:51.240Z%Sebastian Kaltenbach%!Ping
-2020-11-29T10:14:52.570Z%ScalaChatBot%Pong
-2020-11-29T10:15:19.873Z%Sebastian Kaltenbach%!Hello
-2020-11-29T10:15:20.860Z%ScalaChatBot%Hello! How are you doing?
-2020-11-29T10:15:25.903Z%Sebastian Kaltenbach%!Ping
-2020-11-29T10:15:26.682Z%ScalaChatBot%Pong
-2020-11-29T10:15:33.480Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-29T10:15:34.201Z%ScalaChatBot%Result: 1 + 1 = 2
-2020-11-29T10:15:49.304Z%Sebastian Kaltenbach%!Calc1234+4321
-2020-11-29T10:15:50.277Z%ScalaChatBot%Result: 1234 + 4321 = 5555
-2020-11-29T10:16:09.508Z%Sebastian Kaltenbach%!Goodbye
-2020-11-29T10:17:29.886Z%Sebastian Kaltenbach%!Hello
-2020-11-29T10:17:31.138Z%ScalaChatBot%Hello! How are you doing?
-2020-11-29T10:17:34.744Z%Sebastian Kaltenbach%!Ping
-2020-11-29T10:17:35.468Z%ScalaChatBot%Pong
-2020-11-29T10:17:55.671Z%Sebastian Kaltenbach%!Goodbye
-2020-11-29T10:17:56.305Z%ScalaChatBot%Is it already time for leaving? Goodbye!
-2020-11-29T10:27:01.269Z%Sebastian Kaltenbach%!Hello
-2020-11-29T10:27:02.090Z%ScalaChatBot%Hello! How are you doing?
-2020-11-29T10:27:05.506Z%Sebastian Kaltenbach%!Ping
-2020-11-29T10:27:06.233Z%ScalaChatBot%Pong
-2020-11-29T10:27:13.959Z%Sebastian Kaltenbach%!Calc345-543
-2020-11-29T10:27:14.703Z%ScalaChatBot%Result: 345 - 543 = -198
-2020-11-29T10:27:19.096Z%Sebastian Kaltenbach%!Goodbye
-2020-11-29T10:27:19.747Z%ScalaChatBot%Is it already time for leaving? Goodbye!
-2020-11-29T11:02:13.886Z%Sebastian Kaltenbach%!Hello
-2020-11-29T11:02:14.680Z%ScalaChatBot%Hello! How are you doing?
-2020-11-29T11:02:19.674Z%Sebastian Kaltenbach%!Ping
-2020-11-29T11:02:20.410Z%ScalaChatBot%Pong
-2020-11-29T11:02:25.399Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-29T11:02:26.179Z%ScalaChatBot%Result: 1 + 1 = 2
-2020-11-29T11:02:32.936Z%Sebastian Kaltenbach%!DSL
-2020-11-29T11:02:33.649Z%ScalaChatBot%Sorry - I can't understand your message
-2020-11-29T11:05:18.586Z%Sebastian Kaltenbach%!ScalaDSL
-2020-11-29T11:05:19.588Z%ScalaChatBot%Hello{NL}Here are the slides to internal DSLs in Scala:{NL}https://docs.google.com/presentation/d/17qvdKHoIsxzfbcmF7Ay8VU_NGNayXsZjVsRmu6tcqug/edit#slide=id.g2fb348ba68_0_466{NL}Here is the video to internal DSLs in Scala:{NL}https://drive.google.com/file/d/1j_3oH5cj8aMKA0OZm6dDFVWVJfDwohyF/view{NL}Here are the slides to external DSLs in Scala:{NL}https://docs.google.com/presentation/d/1hZ73RtewIFgercCpan2EwT6fAv0ZmmQLMEUb4rUrSp8/edit#slide=id.g2fb348ba68_0_466{NL}Here is the video to external DSLs in Scala:{NL}https://drive.google.com/file/d/1GqdxtvDhzzNSubH42fQKRaPf987VScM1/view
-2020-11-29T11:05:57.688Z%Sebastian Kaltenbach%!ScalaBasics
-2020-11-29T11:05:58.534Z%ScalaChatBot%Hello{NL}Here are the slides to Scala Basics:{NL}https://docs.google.com/presentation/d/1IgKbtYGHAELm4kC-d-7niIy_yS95L0vJJYD5yJ-YmPs/edit{NL}Here is the video to Scala Basics:{NL}https://drive.google.com/file/d/1FNExE2C95TTIsSNxkSIxPq76ykkWMMxB/view
-2020-11-29T11:06:09.868Z%Sebastian Kaltenbach%!ScalaActors
-2020-11-29T11:06:10.631Z%ScalaChatBot%Hello{NL}Here are the slides to Actors in Scala:{NL}https://docs.google.com/presentation/d/1xVV8AAPANPfufil4KLIp9uX3g6_tO7se9wGuCU7HT-M/edit#slide=id.g2fb348ba68_0_466{NL}Here is the video to Actors in Scala:{NL}https://drive.google.com/file/d/1TKm7F44ttuB1wJNbDvE9YzEXeiywjpom/view
-2020-11-29T11:07:26.133Z%Sebastian Kaltenbach%!Goodbye
-2020-11-29T11:09:15.615Z%Sebastian Kaltenbach%!Hello
-2020-11-29T11:09:16.635Z%ScalaChatBot%Hello! How are you doing?
-2020-11-29T11:09:31.877Z%Sebastian Kaltenbach%!Goodbye
-2020-11-29T11:09:32.575Z%ScalaChatBot%Is it already time for leaving? Goodbye!
-2020-11-29T11:13:37.622Z%Sebastian Kaltenbach%!Hello
-2020-11-29T11:13:38.484Z%ScalaChatBot%Hello ! How are you doing?
-2020-11-29T11:14:15.988Z%Sebastian Kaltenbach%!Scalamore Basics
-2020-11-29T11:14:16.780Z%ScalaChatBot%Hello{NL}Here are the slides to more Scala Basics:{NL}https://docs.google.com/presentation/d/15mmHoV-jZPMwNGVFhC3Qtfo5FGDFv6icBmRwjc5gyGk/edit{NL}Here is the video to more Scala Basics:{NL}https://drive.google.com/file/d/1wM7K7AexBntjsIEAuqjWnvFwwp0s5Vtf/view
-2020-11-29T11:14:26.896Z%Sebastian Kaltenbach%!Goodbye
-2020-11-29T11:14:27.542Z%ScalaChatBot%Is it already time for leaving? Goodbye!
-2020-11-29T11:15:21.084Z%Sebastian Kaltenbach%!Hello
-2020-11-29T11:15:21.942Z%ScalaChatBot%Hello ! How are you doing?
-2020-11-29T11:16:30.628Z%Sebastian Kaltenbach%!Hello
-2020-11-29T11:16:31.474Z%ScalaChatBot%Hello Sebastian Kaltenbach! How are you doing?
-2020-11-29T11:16:43.002Z%Felicitas Maurer%!Hello
-2020-11-29T11:16:43.817Z%ScalaChatBot%Hello Felicitas Maurer! How are you doing?
-2020-11-29T11:16:59.355Z%Sebastian Kaltenbach%!Goodbye
-2020-11-29T11:17:00.068Z%ScalaChatBot%Is it already time for leaving? Goodbye!
-2020-11-29T11:17:29.055Z%Sebastian Kaltenbach%!Hello
-2020-11-29T12:25:24.088Z%Sebastian Kaltenbach%!Goodbye
-2020-11-29T12:28:50.470Z%Sebastian Kaltenbach%!Goodbye
-2020-11-29T12:32:32.778Z%Sebastian Kaltenbach%!Goodbye
-2020-11-29T12:38:53.483Z%Sebastian Kaltenbach%!Hello
-2020-11-29T12:38:54.402Z%ScalaChatBot%Hello Sebastian Kaltenbach! How are you doing?
-2020-11-29T12:38:59.751Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-29T12:39:00.816Z%ScalaChatBot%Result: 1 + 1 = 2
-2020-11-29T12:39:05.106Z%Sebastian Kaltenbach%!ScalaActors
-2020-11-29T12:39:05.835Z%ScalaChatBot%Hello{NL}Here are the slides to Actors in Scala:{NL}https://docs.google.com/presentation/d/1xVV8AAPANPfufil4KLIp9uX3g6_tO7se9wGuCU7HT-M/edit#slide=id.g2fb348ba68_0_466{NL}Here is the video to Actors in Scala:{NL}https://drive.google.com/file/d/1TKm7F44ttuB1wJNbDvE9YzEXeiywjpom/view
-2020-11-29T12:39:17.984Z%Sebastian Kaltenbach%!Goodbye
-2020-11-29T12:39:18.744Z%ScalaChatBot%Is it already time for leaving? Goodbye!
-2020-11-29T12:40:19.471Z%Sebastian Kaltenbach%!Hello
-2020-11-29T12:40:20.297Z%ScalaChatBot%Hello Sebastian Kaltenbach! How are you doing?
-2020-11-29T12:40:25.387Z%Sebastian Kaltenbach%!Ping
-2020-11-29T12:40:26.109Z%ScalaChatBot%Pong
-2020-11-29T12:40:29.719Z%Sebastian Kaltenbach%!Goodbye
-2020-11-29T12:40:30.445Z%ScalaChatBot%Is it already time for leaving? Goodbye!
-2020-11-29T15:19:59.132Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-29T15:20:00.482Z%ScalaChatBot%Result: 1 + 1 = 2.0
-2020-11-29T15:21:54.464Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-29T15:21:55.726Z%ScalaChatBot%Result: 1 + 1 = 2.0
-2020-11-29T15:22:04.189Z%Sebastian Kaltenbach%!Calc1+2.5
-2020-11-29T15:22:04.951Z%ScalaChatBot%Result: 1 + 2.5 = 3.5
-2020-11-29T15:22:19.995Z%Sebastian Kaltenbach%Calc1.0+1
-2020-11-29T15:22:25.896Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-29T15:22:26.711Z%ScalaChatBot%Result: 1 + 1 = 2.0
-2020-11-29T15:22:41.992Z%Sebastian Kaltenbach%!Goodbye
-2020-11-29T15:22:42.893Z%ScalaChatBot%Is it already time for leaving? Goodbye!
-2020-11-29T15:23:55.587Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-29T15:23:56.814Z%ScalaChatBot%Result: 1 + 1 = 2.0
-2020-11-29T15:25:16.159Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-29T15:25:17.539Z%ScalaChatBot%Result: 1 + 1 = 2.0
-2020-11-29T15:39:04.298Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-29T15:39:05.358Z%ScalaChatBot%Result: 1 + 1 = 2
-2020-11-29T15:39:14.947Z%Sebastian Kaltenbach%!Calc1+1.5
-2020-11-29T15:39:15.708Z%ScalaChatBot%Result: 1 + 1.5 = 2.5
-2020-11-29T15:39:27.418Z%Sebastian Kaltenbach%!Goodbye
-2020-11-29T15:39:28.120Z%ScalaChatBot%Is it already time for leaving? Goodbye!
-2020-11-29T15:41:27.123Z%Sebastian Kaltenbach%!Calc1-1
-2020-11-29T15:41:28.339Z%ScalaChatBot%Result: 1 - 1 = 0
-2020-11-29T15:41:37.656Z%Sebastian Kaltenbach%!Calc2-0.5
-2020-11-29T15:41:38.368Z%ScalaChatBot%Result: 2 - 0.5 = 1.5
-2020-11-29T15:42:44.494Z%Sebastian Kaltenbach%!Goodbye
-2020-11-29T15:45:18.224Z%Sebastian Kaltenbach%!Calc1*1
-2020-11-29T15:45:19.369Z%ScalaChatBot%Result: 1 * 1 = 1
-2020-11-29T15:45:28.987Z%Sebastian Kaltenbach%!Calc1*1.5
-2020-11-29T15:45:29.785Z%ScalaChatBot%Result: 1 * 1.5 = 1.5
-2020-11-29T15:45:34.315Z%Sebastian Kaltenbach%!Goodbye
-2020-11-29T15:45:35.098Z%ScalaChatBot%Is it already time for leaving? Goodbye!
-2020-11-29T15:48:59.651Z%Sebastian Kaltenbach%!Calc1/1
-2020-11-29T15:49:00.784Z%ScalaChatBot%Result: 1 / 1 = 1
-2020-11-29T15:49:10.019Z%Sebastian Kaltenbach%!Calc1/2
-2020-11-29T15:49:10.952Z%ScalaChatBot%Result: 1 / 2 = 0.5
-2020-11-29T15:49:19.939Z%Sebastian Kaltenbach%!Calc5/0
-2020-11-29T15:49:20.719Z%ScalaChatBot%This is not fair ;-)
-2020-11-29T15:49:36.411Z%Sebastian Kaltenbach%!Goodbye
-2020-11-29T15:49:37.223Z%ScalaChatBot%Is it already time for leaving? Goodbye!
-2020-11-30T10:11:45.616Z%Sebastian Kaltenbach%!Hello
-2020-11-30T10:11:46.473Z%ScalaChatBot%Hello Sebastian Kaltenbach! How are you doing?
-2020-11-30T10:11:53.344Z%Sebastian Kaltenbach%!CalcTest+1
-2020-11-30T10:11:54.020Z%ScalaChatBot%Hello Sebastian Kaltenbach! How are you doing?
-2020-11-30T10:13:31.843Z%Felicitas Maurer%!ScalaDSL
-2020-11-30T10:13:32.650Z%ScalaChatBot%Hello Sebastian Kaltenbach! How are you doing?
-2020-11-30T10:13:32.759Z%ScalaChatBot%Hello{NL}Here are the slides to internal DSLs in Scala:{NL}https://docs.google.com/presentation/d/17qvdKHoIsxzfbcmF7Ay8VU_NGNayXsZjVsRmu6tcqug/edit#slide=id.g2fb348ba68_0_466{NL}Here is the video to internal DSLs in Scala:{NL}https://drive.google.com/file/d/1j_3oH5cj8aMKA0OZm6dDFVWVJfDwohyF/view{NL}Here are the slides to external DSLs in Scala:{NL}https://docs.google.com/presentation/d/1hZ73RtewIFgercCpan2EwT6fAv0ZmmQLMEUb4rUrSp8/edit#slide=id.g2fb348ba68_0_466{NL}Here is the video to external DSLs in Scala:{NL}https://drive.google.com/file/d/1GqdxtvDhzzNSubH42fQKRaPf987VScM1/view
-2020-11-30T10:13:47.585Z%Felicitas Maurer%!Hello
-2020-11-30T10:13:48.210Z%ScalaChatBot%Hello Felicitas Maurer! How are you doing?
-2020-11-30T10:13:48.287Z%ScalaChatBot%Hello Sebastian Kaltenbach! How are you doing?
-2020-11-30T10:14:03.075Z%Felicitas Maurer%!Calc1+3
-2020-11-30T10:14:03.766Z%ScalaChatBot%Result: 1 + 3 = 4
-2020-11-30T10:14:03.852Z%ScalaChatBot%Hello Sebastian Kaltenbach! How are you doing?
-2020-11-30T10:14:10.395Z%Felicitas Maurer%!Ping
-2020-11-30T10:14:11.016Z%ScalaChatBot%Hello Sebastian Kaltenbach! How are you doing?
-2020-11-30T10:14:11.037Z%ScalaChatBot%Pong
-2020-11-30T10:14:21.776Z%Sebastian Kaltenbach%Haha okay. Habe in gecrashed 😄
-2020-11-30T10:14:25.957Z%Sebastian Kaltenbach%ihn*
-2020-11-30T10:14:37.908Z%Felicitas Maurer%jap 😄
-2020-11-30T10:14:44.793Z%Felicitas Maurer%!Goodbye
-2020-11-30T10:14:55.944Z%Sebastian Kaltenbach%Sorry habe geraede neugestartet 😄
-2020-11-30T10:15:05.901Z%Felicitas Maurer%ah, sehr gut 🙂
-2020-11-30T10:15:10.422Z%Sebastian Kaltenbach%!Hello
-2020-11-30T10:15:11.200Z%ScalaChatBot%Hello Sebastian Kaltenbach! How are you doing?
-2020-11-30T10:15:15.456Z%Felicitas Maurer%!Hello
-2020-11-30T10:15:16.187Z%ScalaChatBot%Hello Felicitas Maurer! How are you doing?
-2020-11-30T10:15:23.936Z%Felicitas Maurer%!ScalaInternal DSL
-2020-11-30T10:15:24.687Z%ScalaChatBot%Hello{NL}Here are the slides to internal DSLs in Scala:{NL}https://docs.google.com/presentation/d/17qvdKHoIsxzfbcmF7Ay8VU_NGNayXsZjVsRmu6tcqug/edit#slide=id.g2fb348ba68_0_466{NL}Here is the video to internal DSLs in Scala:{NL}https://drive.google.com/file/d/1j_3oH5cj8aMKA0OZm6dDFVWVJfDwohyF/view
-2020-11-30T10:23:18.308Z%Philipo289%!Hello
-2020-11-30T10:23:19.136Z%ScalaChatBot%Hello Philipo289! How are you doing?
-2020-11-30T10:23:50.830Z%Sebastian Kaltenbach%!Ping
-2020-11-30T10:23:51.739Z%ScalaChatBot%Pong
-2020-11-30T10:28:24.630Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-30T10:28:25.568Z%ScalaChatBot%Result: 1 + 1 = 2
-2020-11-30T10:28:33.449Z%Sebastian Kaltenbach%!CalcHallo+1
-2020-11-30T10:28:34.174Z%ScalaChatBot%There are no valid numbers to calculate. Sorry :-(
-2020-11-30T10:28:46.530Z%Sebastian Kaltenbach%!Calc1+3
-2020-11-30T10:28:47.238Z%ScalaChatBot%Result: 1 + 3 = 4
-2020-11-30T10:28:57.931Z%Philipo289%!Basics
-2020-11-30T10:28:58.635Z%ScalaChatBot%Sorry - I can't understand your message
-2020-11-30T10:28:58.841Z%Sebastian Kaltenbach%!Calc3/0
-2020-11-30T10:28:59.569Z%ScalaChatBot%This is not fair ;-)
-2020-11-30T10:29:30.575Z%Felicitas Maurer%!Scalamore Basics
-2020-11-30T10:29:31.570Z%ScalaChatBot%Hello{NL}Here are the slides to more Scala Basics:{NL}https://docs.google.com/presentation/d/15mmHoV-jZPMwNGVFhC3Qtfo5FGDFv6icBmRwjc5gyGk/edit{NL}Here is the video to more Scala Basics:{NL}https://drive.google.com/file/d/1wM7K7AexBntjsIEAuqjWnvFwwp0s5Vtf/view
-2020-11-30T10:29:34.776Z%Philipo289%!Scala Basics
-2020-11-30T10:29:35.588Z%ScalaChatBot%Sorry - I can't understand your message
-2020-11-30T10:29:40.942Z%Philipo289%!Scalabasics
-2020-11-30T10:29:41.776Z%ScalaChatBot%Sorry - I can't understand your message
-2020-11-30T10:29:50.690Z%Philipo289%!ScalaBasics
-2020-11-30T10:29:51.393Z%ScalaChatBot%Hello{NL}Here are the slides to Scala Basics:{NL}https://docs.google.com/presentation/d/1IgKbtYGHAELm4kC-d-7niIy_yS95L0vJJYD5yJ-YmPs/edit{NL}Here is the video to Scala Basics:{NL}https://drive.google.com/file/d/1FNExE2C95TTIsSNxkSIxPq76ykkWMMxB/view
-2020-11-30T10:30:44.127Z%Felicitas Maurer%!hey
-2020-11-30T10:30:45.165Z%ScalaChatBot%Sorry - I can't understand your message
-2020-11-30T10:33:01.236Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-30T10:33:02.096Z%ScalaChatBot%Result: 1 + 1 = 2
-2020-11-30T10:33:09.438Z%Sebastian Kaltenbach%!CalcHallo+1
-2020-11-30T10:33:10.159Z%ScalaChatBot%There are no valid numbers to calculate. Sorry :-(
-2020-11-30T10:33:17.452Z%Sebastian Kaltenbach%!CalcHallo-3
-2020-11-30T10:33:18.235Z%ScalaChatBot%There are no valid numbers to calculate. Sorry :-(
-2020-11-30T10:33:27.585Z%Sebastian Kaltenbach%!Calc3*Hallo
-2020-11-30T10:33:28.313Z%ScalaChatBot%There are no valid numbers to calculate. Sorry :-(
-2020-11-30T10:33:34.225Z%Sebastian Kaltenbach%!Calc3*3
-2020-11-30T10:33:35.002Z%ScalaChatBot%Result: 3 * 3 = 9
-2020-11-30T10:33:41.076Z%Sebastian Kaltenbach%!Calc3/Hallo
-2020-11-30T10:33:41.774Z%ScalaChatBot%There are no valid numbers to calculate. Sorry :-(
-2020-11-30T10:33:46.375Z%Sebastian Kaltenbach%!Calc3/3
-2020-11-30T10:33:47.111Z%ScalaChatBot%Result: 3 / 3 = 1
-2020-11-30T10:33:54.134Z%Sebastian Kaltenbach%!Calc3/2
-2020-11-30T10:33:54.730Z%ScalaChatBot%Result: 3 / 2 = 1.5
-2020-11-30T10:34:01.615Z%Sebastian Kaltenbach%!Calc3/0
-2020-11-30T10:34:02.356Z%ScalaChatBot%Result: 3 / 0 = 2147483647
-2020-11-30T10:35:17.830Z%Sebastian Kaltenbach%!Calc1/0
-2020-11-30T10:35:18.781Z%ScalaChatBot%Result: 1 / 0 = 2147483647
-2020-11-30T10:36:04.244Z%Sebastian Kaltenbach%!Calc1/0
-2020-11-30T10:36:05.028Z%ScalaChatBot%This is not fair ;-)
-2020-11-30T10:36:11.769Z%Sebastian Kaltenbach%!Goodbye
-2020-11-30T10:36:12.498Z%ScalaChatBot%Is it already time for leaving? Goodbye!
-2020-11-30T11:24:57.904Z%Sebastian Kaltenbach%!Hello
-2020-11-30T11:24:58.703Z%ScalaChatBot%Hello Sebastian Kaltenbach! How are you doing?
-2020-11-30T11:25:07.137Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-30T11:25:07.963Z%ScalaChatBot%Result: 1 + 1 = 2
-2020-11-30T11:25:12.658Z%Sebastian Kaltenbach%!Goodbye
-2020-11-30T11:25:13.335Z%ScalaChatBot%Is it already time for leaving? Goodbye!
-2020-11-30T11:44:45.749Z%Marko Boger%
-2020-11-30T11:45:07.866Z%Felicitas Maurer%!Hello
-2020-11-30T11:45:08.791Z%ScalaChatBot%Hello Felicitas Maurer! How are you doing?
-2020-11-30T11:45:14.593Z%Felicitas Maurer%!ScalaDSL
-2020-11-30T11:45:15.310Z%ScalaChatBot%Hello{NL}Here are the slides to internal DSLs in Scala:{NL}https://docs.google.com/presentation/d/17qvdKHoIsxzfbcmF7Ay8VU_NGNayXsZjVsRmu6tcqug/edit#slide=id.g2fb348ba68_0_466{NL}Here is the video to internal DSLs in Scala:{NL}https://drive.google.com/file/d/1j_3oH5cj8aMKA0OZm6dDFVWVJfDwohyF/view{NL}Here are the slides to external DSLs in Scala:{NL}https://docs.google.com/presentation/d/1hZ73RtewIFgercCpan2EwT6fAv0ZmmQLMEUb4rUrSp8/edit#slide=id.g2fb348ba68_0_466{NL}Here is the video to external DSLs in Scala:{NL}https://drive.google.com/file/d/1GqdxtvDhzzNSubH42fQKRaPf987VScM1/view
-2020-11-30T11:45:44.442Z%Felicitas Maurer%!ScalaInternal DSL
-2020-11-30T11:45:45.156Z%ScalaChatBot%Hello{NL}Here are the slides to internal DSLs in Scala:{NL}https://docs.google.com/presentation/d/17qvdKHoIsxzfbcmF7Ay8VU_NGNayXsZjVsRmu6tcqug/edit#slide=id.g2fb348ba68_0_466{NL}Here is the video to internal DSLs in Scala:{NL}https://drive.google.com/file/d/1j_3oH5cj8aMKA0OZm6dDFVWVJfDwohyF/view
-2020-11-30T11:46:02.157Z%Sebastian Kaltenbach%hallo
-2020-11-30T11:46:14.122Z%Sebastian Kaltenbach%!Calc1+1
-2020-11-30T11:46:14.778Z%ScalaChatBot%Result: 1 + 1 = 2
-2020-12-01T16:12:32.415Z%Sebastian Kaltenbach%!Hello
-2020-12-01T16:12:33.583Z%ScalaChatBot%Hello Sebastian Kaltenbach! How are you doing?
-2020-12-01T16:13:46.734Z%Sebastian Kaltenbach%!Scalabasic
-2020-12-01T16:13:47.637Z%ScalaChatBot%Sorry - I can't understand your message
-2020-12-01T16:13:52.067Z%Sebastian Kaltenbach%!ScalaBasics
-2020-12-01T16:13:52.702Z%ScalaChatBot%Hello{NL}Here are the slides to Scala Basics:{NL}https://docs.google.com/presentation/d/1IgKbtYGHAELm4kC-d-7niIy_yS95L0vJJYD5yJ-YmPs/edit{NL}Here is the video to Scala Basics:{NL}https://drive.google.com/file/d/1FNExE2C95TTIsSNxkSIxPq76ykkWMMxB/view
-2020-12-01T16:14:16.476Z%Sebastian Kaltenbach%!ScalaTests
-2020-12-01T16:14:17.226Z%ScalaChatBot%Hello{NL}Here are the slides to Tests:{NL}https://docs.google.com/presentation/d/1RGVkHwgwYRBU4iHI8A6t7O6iMFgJpLafYln2kJAFGjc/edit{NL}Here is the video to Tests:{NL}https://drive.google.com/file/d/1oAo37XBqSewUicqhBsTQ2tEJ9j094Hoh/view
-2020-12-01T16:14:34.228Z%Sebastian Kaltenbach%!Ping
-2020-12-01T16:14:34.873Z%ScalaChatBot%Pong
-2020-12-01T16:14:45.075Z%Sebastian Kaltenbach%!Hello
-2020-12-01T16:14:45.797Z%ScalaChatBot%Hello Sebastian Kaltenbach! How are you doing?
-2020-12-01T16:14:59.613Z%Sebastian Kaltenbach%!Fine
-2020-12-01T16:15:00.448Z%ScalaChatBot%Sorry - I can't understand your message
-2020-12-01T16:15:07.645Z%Sebastian Kaltenbach%!Calc1+1
-2020-12-01T16:15:08.388Z%ScalaChatBot%Result: 1 + 1 = 2
-2020-12-01T16:15:15.452Z%Sebastian Kaltenbach%!Goodbye
-2020-12-01T16:15:16.196Z%ScalaChatBot%Is it already time for leaving? Goodbye!
-2020-12-04T10:01:15.171Z%Sebastian Kaltenbach%!Hallo
-2020-12-04T10:01:15.997Z%ScalaChatBot%Sorry - I can't understand your message
-2020-12-04T10:01:18.545Z%Sebastian Kaltenbach%!Hello
-2020-12-04T10:01:19.365Z%ScalaChatBot%Hello Sebastian Kaltenbach! How are you doing?
-2020-12-04T10:01:24.717Z%Sebastian Kaltenbach%!Start
-2020-12-04T10:02:03.088Z%Sebastian Kaltenbach%!Ping
-2020-12-04T10:02:04.152Z%ScalaChatBot%Pong
-2020-12-04T10:02:09.442Z%Sebastian Kaltenbach%!Start
-2020-12-04T10:02:10.136Z%ScalaChatBot%Pong
-2020-12-04T10:04:33.619Z%Sebastian Kaltenbach%!Start
-2020-12-04T10:06:23.021Z%Sebastian Kaltenbach%!Start
-2020-12-04T10:08:07.823Z%Sebastian Kaltenbach%!Start
-2020-12-04T10:09:52.237Z%Sebastian Kaltenbach%!Hello
-2020-12-04T10:09:53.123Z%ScalaChatBot%Hello Sebastian Kaltenbach! How are you doing?
-2020-12-04T10:09:59.096Z%Sebastian Kaltenbach%!Start
-2020-12-04T10:09:59.831Z%ScalaChatBot%Hello Sebastian Kaltenbach! How are you doing?
-2020-12-04T10:10:07.626Z%Sebastian Kaltenbach%!Test
-2020-12-04T10:10:08.295Z%ScalaChatBot%Sorry - I can't understand your message
-2020-12-04T10:10:12.389Z%Sebastian Kaltenbach%!Start
-2020-12-04T10:10:13.126Z%ScalaChatBot%Sorry - I can't understand your message
-2020-12-04T10:13:29.410Z%Sebastian Kaltenbach%!Hello
-2020-12-04T10:13:30.167Z%ScalaChatBot%Hello Sebastian Kaltenbach! How are you doing?
-2020-12-04T10:13:32.985Z%Sebastian Kaltenbach%!Start
-2020-12-04T10:13:33.796Z%ScalaChatBot%Hello Sebastian Kaltenbach! How are you doing?
-2020-12-04T10:13:43.956Z%Sebastian Kaltenbach%!Hello
-2020-12-04T10:13:44.591Z%ScalaChatBot%Hello Sebastian Kaltenbach! How are you doing?
-2020-12-04T10:13:45.557Z%Sebastian Kaltenbach%!Ping
-2020-12-04T10:13:46.299Z%ScalaChatBot%Pong
-2020-12-04T10:13:49.041Z%Sebastian Kaltenbach%!Start
-2020-12-04T10:13:49.746Z%ScalaChatBot%Pong
-2020-12-04T10:17:43.445Z%Sebastian Kaltenbach%!Start
-2020-12-04T10:20:21.827Z%Sebastian Kaltenbach%!Start
-2020-12-04T10:23:50.516Z%Sebastian Kaltenbach%!Start
-2020-12-04T10:26:26.694Z%Sebastian Kaltenbach%!Start
-2020-12-04T10:32:57.826Z%Sebastian Kaltenbach%!Hello
-2020-12-04T10:32:58.666Z%ScalaChatBot%Hello Sebastian Kaltenbach! How are you doing?
-2020-12-04T10:33:03.322Z%Sebastian Kaltenbach%!Start
-2020-12-04T10:33:04.086Z%ScalaChatBot%Hello Sebastian Kaltenbach! How are you doing?
-2020-12-04T10:33:12.667Z%Sebastian Kaltenbach%!Start
-2020-12-04T10:33:13.370Z%ScalaChatBot%Hello Sebastian Kaltenbach! How are you doing?
-2020-12-04T10:33:29.750Z%Sebastian Kaltenbach%!Ping
-2020-12-04T10:33:30.478Z%ScalaChatBot%Pong
-2020-12-04T10:33:32.180Z%Sebastian Kaltenbach%!Hello
-2020-12-04T10:33:32.937Z%ScalaChatBot%Hello Sebastian Kaltenbach! How are you doing?
-2020-12-04T10:33:35.767Z%Sebastian Kaltenbach%!Start
-2020-12-04T10:33:36.523Z%ScalaChatBot%Hello Sebastian Kaltenbach! How are you doing?
-2020-12-04T10:33:40.450Z%Sebastian Kaltenbach%!Ping
-2020-12-04T10:33:41.182Z%ScalaChatBot%Pong
-2020-12-04T10:33:42.734Z%Sebastian Kaltenbach%!Start
-2020-12-04T10:33:43.527Z%ScalaChatBot%Pong
-2020-12-04T10:34:54.302Z%Sebastian Kaltenbach%!Start
-2020-12-04T10:35:38.886Z%Sebastian Kaltenbach%!Start
-2020-12-04T10:37:26Z%Sebastian Kaltenbach%!Start
-2020-12-04T10:38:51.050Z%Sebastian Kaltenbach%!Start
-2020-12-04T10:39:50.381Z%Sebastian Kaltenbach%!Start
-2020-12-04T10:40:38.124Z%Sebastian Kaltenbach%!Start
-2020-12-04T10:56:05.578Z%Sebastian Kaltenbach%!Start
-2020-12-04T10:57:26.457Z%Sebastian Kaltenbach%!Start
-2020-12-04T10:57:52.546Z%Sebastian Kaltenbach%!Hello
-2020-12-04T10:57:53.302Z%ScalaChatBot%Hello Sebastian Kaltenbach! How are you doing?
-2020-12-04T10:57:53.525Z%Sebastian Kaltenbach%Hallo
-2020-12-04T10:57:55.748Z%Sebastian Kaltenbach%Test
-2020-12-04T10:57:57.714Z%Sebastian Kaltenbach%Test
-2020-12-04T10:57:59.118Z%Sebastian Kaltenbach%Hallo
-2020-12-04T10:58:01.667Z%Sebastian Kaltenbach%!Hallo
-2020-12-04T10:58:02.361Z%ScalaChatBot%Sorry - I can't understand your message
-2020-12-04T10:58:04.885Z%Sebastian Kaltenbach%!Start
-2020-12-04T10:58:05.622Z%ScalaChatBot%Sorry - I can't understand your message
-2020-12-04T11:02:19.133Z%Sebastian Kaltenbach%!Start
-2020-12-04T11:03:17.583Z%Sebastian Kaltenbach%!Start
-2020-12-04T11:03:31.734Z%Sebastian Kaltenbach%Hallo
-2020-12-04T11:03:32.902Z%Sebastian Kaltenbach%Hallo
-2020-12-04T11:03:35.435Z%Sebastian Kaltenbach%Test
-2020-12-04T11:03:36.977Z%Sebastian Kaltenbach%Test
-2020-12-04T11:03:38.183Z%Sebastian Kaltenbach%!Ping
-2020-12-04T11:03:38.905Z%ScalaChatBot%Pong
-2020-12-04T11:03:41.252Z%Sebastian Kaltenbach%!Start
-2020-12-04T11:03:41.993Z%ScalaChatBot%Pong
-2020-12-04T11:04:57.829Z%Sebastian Kaltenbach%!Start
-2020-12-04T11:16:19.687Z%Sebastian Kaltenbach%!Start
-2020-12-04T11:16:47.549Z%Sebastian Kaltenbach%Hallo
-2020-12-04T11:16:51.086Z%Sebastian Kaltenbach%!Start
-2020-12-04T11:18:05.215Z%Sebastian Kaltenbach%q
-2020-12-04T11:18:05.510Z%Sebastian Kaltenbach%w
-2020-12-04T11:18:05.774Z%Sebastian Kaltenbach%e
-2020-12-04T11:18:06.042Z%Sebastian Kaltenbach%r
-2020-12-04T11:18:06.307Z%Sebastian Kaltenbach%t
-2020-12-04T11:18:06.561Z%Sebastian Kaltenbach%z
-2020-12-04T11:18:06.852Z%Sebastian Kaltenbach%u
-2020-12-04T11:18:07.153Z%Sebastian Kaltenbach%i
-2020-12-04T11:18:07.511Z%Sebastian Kaltenbach%o
-2020-12-04T11:18:07.810Z%Sebastian Kaltenbach%p
-2020-12-04T11:18:15.399Z%Sebastian Kaltenbach%ü
-2020-12-04T11:18:15.697Z%Sebastian Kaltenbach%ä
-2020-12-04T11:18:15.941Z%Sebastian Kaltenbach%ö
-2020-12-04T11:18:16.220Z%Sebastian Kaltenbach%l
-2020-12-04T11:18:16.355Z%Sebastian Kaltenbach%k
-2020-12-04T11:18:16.676Z%Sebastian Kaltenbach%j
-2020-12-04T11:18:20.175Z%Sebastian Kaltenbach%!Start
-2020-12-05T17:56:59.475Z%Sebastian Kaltenbach%</general
-2020-12-05T18:03:32.001Z%Sebastian Kaltenbach%!Hello
-2020-12-05T18:03:33.016Z%ScalaChatBot%Hello Sebastian Kaltenbach! How are you doing?
-2020-12-05T18:03:35.724Z%Sebastian Kaltenbach%!Spam
-2020-12-05T18:03:35.926Z%ScalaChatBot%Hello 1
-2020-12-05T18:03:36.912Z%ScalaChatBot%Hello 2
-2020-12-05T18:03:37.921Z%ScalaChatBot%Hello 3
-2020-12-05T18:03:38.929Z%ScalaChatBot%Hello 4
-2020-12-05T18:03:39.936Z%ScalaChatBot%Hello 5
-2020-12-05T18:03:40.962Z%ScalaChatBot%Hello 6
-2020-12-05T18:03:41.946Z%ScalaChatBot%Hello 7
-2020-12-05T18:03:42.898Z%ScalaChatBot%Hello 8
-2020-12-05T18:03:44.724Z%ScalaChatBot%Hello 9
-2020-12-05T18:03:45.050Z%ScalaChatBot%Hello 10
-2020-12-05T18:03:46.419Z%ScalaChatBot%Hello Sebastian Kaltenbach! How are you doing?
-2020-12-05T18:04:00.444Z%Sebastian Kaltenbach%!Start
-2020-12-05T18:04:01.254Z%ScalaChatBot%Hello Sebastian Kaltenbach! How are you doing?
-2020-12-05T18:07:08.778Z%Sebastian Kaltenbach%!Spam
-2020-12-05T18:07:09.459Z%ScalaChatBot%Hello 1
-2020-12-05T18:07:10.334Z%ScalaChatBot%Hello 2
-2020-12-05T18:07:11.433Z%ScalaChatBot%Hello 3
-2020-12-05T18:07:12.417Z%ScalaChatBot%Hello 4
-2020-12-05T18:07:13.409Z%ScalaChatBot%Hello 5
-2020-12-05T18:07:15.265Z%ScalaChatBot%Hello 6
-2020-12-05T18:07:15.626Z%ScalaChatBot%Hello 7
-2020-12-05T18:07:16.392Z%ScalaChatBot%Hello 8
-2020-12-05T18:07:17.448Z%ScalaChatBot%Hello 9
-2020-12-05T18:07:18.441Z%ScalaChatBot%Hello 10
-2020-12-05T18:07:43.510Z%Sebastian Kaltenbach%!Start
-2020-12-07T10:49:22.909Z%Sebastian Kaltenbach%!Spam
-2020-12-07T10:49:23.834Z%ScalaChatBot%Sorry - I can't understand your message
-2020-12-07T10:50:24.747Z%Sebastian Kaltenbach%!Hello
-2020-12-07T10:50:25.708Z%ScalaChatBot%Hello Sebastian Kaltenbach! How are you doing?
-2020-12-07T10:50:26.632Z%Sebastian Kaltenbach%!Ping
-2020-12-07T10:50:27.367Z%ScalaChatBot%Pong
-2020-12-07T10:50:31.701Z%Sebastian Kaltenbach%!Hello
-2020-12-07T10:50:32.367Z%ScalaChatBot%Hello Sebastian Kaltenbach! How are you doing?
-2020-12-07T10:50:35.074Z%Sebastian Kaltenbach%!Hello
-2020-12-07T10:50:35.677Z%ScalaChatBot%Hello Sebastian Kaltenbach! How are you doing?
-2020-12-07T11:01:32.598Z%Sebastian Kaltenbach%!Ping
-2020-12-07T11:01:33.165Z%Sebastian Kaltenbach%!Ping
-2020-12-07T11:01:33.638Z%ScalaChatBot%Pong
-2020-12-07T11:01:33.735Z%Sebastian Kaltenbach%!Ping
-2020-12-07T11:01:34.137Z%ScalaChatBot%Pong
-2020-12-07T11:01:34.596Z%ScalaChatBot%Pong
-2020-12-07T11:01:43.663Z%Sebastian Kaltenbach%!Ping
-2020-12-07T11:01:44.373Z%ScalaChatBot%Pong
-2020-12-07T11:01:46.651Z%Sebastian Kaltenbach%!Ping
-2020-12-07T11:01:47.195Z%Sebastian Kaltenbach%!Ping
-2020-12-07T11:01:47.562Z%ScalaChatBot%Pong
-2020-12-07T11:01:47.981Z%ScalaChatBot%Pong
-2020-12-07T11:01:56.588Z%Sebastian Kaltenbach%!Ping
-2020-12-07T11:01:57.187Z%ScalaChatBot%Pong
-2020-12-07T11:03:39.342Z%Sebastian Kaltenbach%//val messageBot = sourceSystem.actorOf(Props[MessageBot], name = "messageBot")
-2020-12-07T11:03:39.743Z%Sebastian Kaltenbach%//val messageBot = sourceSystem.actorOf(Props[MessageBot], name = "messageBot")
-2020-12-07T11:03:40.054Z%Sebastian Kaltenbach%//val messageBot = sourceSystem.actorOf(Props[MessageBot], name = "messageBot")
-2020-12-07T11:03:49.225Z%Sebastian Kaltenbach%!Ping
-2020-12-07T11:03:49.992Z%ScalaChatBot%Pong
-2020-12-07T11:03:50.218Z%Sebastian Kaltenbach%!Ping
-2020-12-07T11:03:50.453Z%Sebastian Kaltenbach%!Ping
-2020-12-07T11:03:50.882Z%ScalaChatBot%Pong
-2020-12-07T11:03:51.334Z%ScalaChatBot%Pong
-2020-12-07T11:03:54.474Z%Sebastian Kaltenbach%!Ping
-2020-12-07T11:03:55.099Z%ScalaChatBot%Pong
-2020-12-07T11:05:10.374Z%Sebastian Kaltenbach%!Ping
-2020-12-07T11:05:10.741Z%Sebastian Kaltenbach%!Ping
-2020-12-07T11:05:10.977Z%Sebastian Kaltenbach%!Ping
-2020-12-07T11:05:11.239Z%ScalaChatBot%Pong
-2020-12-07T11:05:11.768Z%ScalaChatBot%Pong
-2020-12-07T11:05:12.178Z%ScalaChatBot%Pong
-2020-12-07T11:05:59.396Z%Sebastian Kaltenbach%!Ping
-2020-12-07T11:05:59.726Z%Sebastian Kaltenbach%!Ping
-2020-12-07T11:06:00.052Z%Sebastian Kaltenbach%!Ping
-2020-12-07T11:06:00.264Z%ScalaChatBot%Pong
-2020-12-07T11:06:00.761Z%ScalaChatBot%Pong
-2020-12-07T11:06:01.172Z%ScalaChatBot%Pong
-2020-12-07T11:08:25.051Z%Sebastian Kaltenbach%!Ping
-2020-12-07T11:08:25.393Z%Sebastian Kaltenbach%!Ping
-2020-12-07T11:08:25.666Z%Sebastian Kaltenbach%!Ping
-2020-12-07T11:08:25.842Z%ScalaChatBot%Pong
-2020-12-07T11:08:26.372Z%ScalaChatBot%Pong
-2020-12-07T11:08:26.875Z%ScalaChatBot%Pong
-2020-12-07T11:10:17.474Z%Sebastian Kaltenbach%!Ping
-2020-12-07T11:10:17.930Z%Sebastian Kaltenbach%!Ping
-2020-12-07T11:10:18.215Z%Sebastian Kaltenbach%!Ping
-2020-12-07T11:10:18.448Z%ScalaChatBot%Pong
-2020-12-07T11:10:18.802Z%ScalaChatBot%Pong
-2020-12-07T11:10:19.409Z%ScalaChatBot%Pong
-2020-12-07T11:36:30.769Z%Sebastian Kaltenbach%!Ping
-2020-12-07T11:36:31.641Z%ScalaChatBot%Pong
-2020-12-07T11:36:34.488Z%Sebastian Kaltenbach%!Hello
-2020-12-07T11:36:35.197Z%ScalaChatBot%Hello Sebastian Kaltenbach! How are you doing?
-2020-12-07T11:36:47.906Z%Sebastian Kaltenbach%!Calc1+1
-2020-12-07T11:36:48.660Z%ScalaChatBot%Result: 1 + 1 = 2
-2020-12-07T11:36:53.946Z%Sebastian Kaltenbach%!Goodbye
-2020-12-07T11:36:54.672Z%ScalaChatBot%Is it already time for leaving? Goodbye!
-2020-12-07T11:41:42.043Z%Sebastian Kaltenbach%!Hello
-2020-12-07T11:41:42.844Z%ScalaChatBot%Hello Sebastian Kaltenbach! How are you doing?
-2020-12-07T12:09:42.914Z%Sebastian Kaltenbach%!Start
-2020-12-07T12:26:34.143Z%Sebastian Kaltenbach%!Start
-2020-12-07T12:27:06.516Z%Sebastian Kaltenbach%Test
-2020-12-07T12:28:02.565Z%Sebastian Kaltenbach%!Start
-2020-12-07T16:53:55.502Z%Sebastian Kaltenbach%!Start
-2020-12-07T16:55:28.834Z%Sebastian Kaltenbach%!Start
-2020-12-07T16:56:38.741Z%Sebastian Kaltenbach%!Start
-2020-12-07T16:56:52.253Z%Sebastian Kaltenbach%!Goodbye
-2020-12-07T16:56:52.962Z%ScalaChatBot%Is it already time for leaving? Goodbye!
-2020-12-07T16:57:20.081Z%Sebastian Kaltenbach%!Start
-2020-12-07T16:57:56.152Z%Sebastian Kaltenbach%!Start
-2020-12-07T16:58:49.682Z%Sebastian Kaltenbach%!Start
-2020-12-07T17:00:26.058Z%Sebastian Kaltenbach%!Goodbye
-2020-12-07T17:13:21.398Z%Sebastian Kaltenbach%!Start
-2020-12-07T17:15:07.135Z%Sebastian Kaltenbach%!Start
-2020-12-07T17:16:20.245Z%Sebastian Kaltenbach%!Start
-2020-12-07T17:17:20.101Z%Sebastian Kaltenbach%!Start
-2020-12-07T17:18:57.656Z%Sebastian Kaltenbach%!Start
-2020-12-07T17:20:05.380Z%Sebastian Kaltenbach%!Start
-2020-12-07T17:21:34.528Z%Sebastian Kaltenbach%!Start
-2020-12-07T17:21:44.248Z%Sebastian Kaltenbach%!Start
-2020-12-07T17:22:41.484Z%Sebastian Kaltenbach%!Start
-2020-12-07T17:23:36.463Z%Sebastian Kaltenbach%!Start
-2020-12-07T17:24:18.838Z%Sebastian Kaltenbach%!Start
-2020-12-07T17:27:14.269Z%Sebastian Kaltenbach%!Start
-2020-12-07T17:27:57.417Z%Sebastian Kaltenbach%!Start
-2020-12-07T17:29:11.623Z%Sebastian Kaltenbach%!Start
-2020-12-07T17:29:47.247Z%Sebastian Kaltenbach%!Start
-2020-12-07T17:30:49.400Z%Sebastian Kaltenbach%!Start
-2020-12-07T17:32:52.928Z%Sebastian Kaltenbach%!Start
-2020-12-07T17:34:50.617Z%Sebastian Kaltenbach%!Start
-2020-12-07T17:40:43.407Z%Sebastian Kaltenbach%!Start
-2020-12-07T17:48:29.940Z%Sebastian Kaltenbach%!Start
-2020-12-07T17:49:35.506Z%Sebastian Kaltenbach%!Start
-2020-12-07T17:49:41.215Z%Sebastian Kaltenbach%!Start
-2020-12-07T17:56:10.206Z%Sebastian Kaltenbach%!Start
-2020-12-07T18:08:25.131Z%Sebastian Kaltenbach%!Start
-2020-12-07T18:09:50.490Z%Sebastian Kaltenbach%!Start
-2020-12-07T18:16:52.988Z%Sebastian Kaltenbach%!Start
-2020-12-07T18:18:09.698Z%Sebastian Kaltenbach%!Start
-2020-12-07T18:47:04.375Z%Sebastian Kaltenbach%!Start
-2020-12-07T18:48:35.470Z%Sebastian Kaltenbach%!Start
-2020-12-07T18:48:57.055Z%Sebastian Kaltenbach%!Start
-2020-12-08T12:20:36.996Z%Sebastian Kaltenbach%!Start
-2020-12-08T12:37:31.832Z%Sebastian Kaltenbach%!Start
-2020-12-08T12:46:21.408Z%Sebastian Kaltenbach%!Start
-2020-12-08T12:48:20.153Z%Sebastian Kaltenbach%!Start
-2020-12-08T12:49:39.654Z%Sebastian Kaltenbach%!Start
-2020-12-09T08:00:47.059Z%Sebastian Kaltenbach%Hallo Source.txt
-2020-12-09T08:01:11.392Z%Sebastian Kaltenbach%Hello again
-2020-12-09T08:01:29.823Z%Sebastian Kaltenbach%!Hello
-2020-12-09T08:01:30.813Z%ScalaChatBot%Hello Sebastian Kaltenbach! How are you doing?
+2020-11-27T17:11:26.594Z%/%ScalaChatBot%/%
+2020-11-27T17:14:03.057Z%/%Sebastian Kaltenbach%/%Hallo
+2020-11-27T18:20:14.079Z%/%Sebastian Kaltenbach%/%hello
+2020-11-27T18:39:42.144Z%/%Sebastian Kaltenbach%/%Hello
+2020-11-27T18:39:48.618Z%/%Sebastian Kaltenbach%/%Test
+2020-11-27T18:45:16.523Z%/%Sebastian Kaltenbach%/%Hallo
+2020-11-27T18:52:04.059Z%/%Sebastian Kaltenbach%/%\<#781929620001390634>
+2020-11-27T19:02:15.140Z%/%Sebastian Kaltenbach%/%Hallo
+2020-11-27T19:18:01.922Z%/%Sebastian Kaltenbach%/%Hallo
+2020-11-27T19:19:10.847Z%/%Sebastian Kaltenbach%/%Hallo
+2020-11-27T19:21:04.799Z%/%Sebastian Kaltenbach%/%Test
+2020-11-27T19:26:24.883Z%/%Sebastian Kaltenbach%/%Hallo
+2020-11-27T19:26:56.739Z%/%Sebastian Kaltenbach%/%🙂
+2020-11-27T19:27:00.439Z%/%Sebastian Kaltenbach%/%Test
+2020-11-27T19:27:05.934Z%/%Sebastian Kaltenbach%/%!Bot
+2020-11-27T19:27:11.855Z%/%Sebastian Kaltenbach%/%!Huhu
+2020-11-27T19:31:18.471Z%/%Sebastian Kaltenbach%/%Hallo Bot
+2020-11-27T19:32:43.410Z%/%Sebastian Kaltenbach%/%Hello
+2020-11-27T19:42:08.163Z%/%Sebastian Kaltenbach%/%Hello
+2020-11-27T19:44:21.742Z%/%Sebastian Kaltenbach%/%Hello
+2020-11-28T09:27:28.198Z%/%Sebastian Kaltenbach%/%Hello
+2020-11-28T09:27:28.481Z%/%ScalaChatBot%/%Hello
+2020-11-28T09:27:28.830Z%/%ScalaChatBot%/%Hello
+2020-11-28T09:27:29.032Z%/%ScalaChatBot%/%Hello
+2020-11-28T09:27:29.293Z%/%ScalaChatBot%/%Hello
+2020-11-28T09:27:29.544Z%/%ScalaChatBot%/%Hello
+2020-11-28T09:27:34.399Z%/%ScalaChatBot%/%Hello
+2020-11-28T09:27:34.611Z%/%ScalaChatBot%/%Hello
+2020-11-28T09:27:34.875Z%/%ScalaChatBot%/%Hello
+2020-11-28T09:27:35.085Z%/%ScalaChatBot%/%Hello
+2020-11-28T09:27:35.272Z%/%ScalaChatBot%/%Hello
+2020-11-28T09:27:40.304Z%/%ScalaChatBot%/%Hello
+2020-11-28T09:27:40.617Z%/%ScalaChatBot%/%Hello
+2020-11-28T09:27:40.835Z%/%ScalaChatBot%/%Hello
+2020-11-28T09:27:41.070Z%/%ScalaChatBot%/%Hello
+2020-11-28T09:27:41.297Z%/%ScalaChatBot%/%Hello
+2020-11-28T09:27:46.179Z%/%ScalaChatBot%/%Hello
+2020-11-28T09:27:46.419Z%/%ScalaChatBot%/%Hello
+2020-11-28T09:27:46.572Z%/%ScalaChatBot%/%Hello
+2020-11-28T09:27:46.888Z%/%ScalaChatBot%/%Hello
+2020-11-28T09:27:47.098Z%/%ScalaChatBot%/%Hello
+2020-11-28T09:29:15.138Z%/%Sebastian Kaltenbach%/%Hallo
+2020-11-28T09:29:15.443Z%/%ScalaChatBot%/%Hallo
+2020-11-28T09:29:15.859Z%/%ScalaChatBot%/%Hallo
+2020-11-28T09:29:16.050Z%/%ScalaChatBot%/%Hallo
+2020-11-28T09:29:16.266Z%/%ScalaChatBot%/%Hallo
+2020-11-28T09:29:16.363Z%/%ScalaChatBot%/%Hallo
+2020-11-28T09:32:28.430Z%/%Sebastian Kaltenbach%/%T
+2020-11-28T09:32:28.796Z%/%ScalaChatBot%/%T
+2020-11-28T09:32:29.063Z%/%ScalaChatBot%/%T
+2020-11-28T09:32:29.266Z%/%ScalaChatBot%/%T
+2020-11-28T09:32:29.588Z%/%ScalaChatBot%/%T
+2020-11-28T09:32:29.715Z%/%ScalaChatBot%/%T
+2020-11-28T09:32:34.733Z%/%ScalaChatBot%/%T
+2020-11-28T09:32:34.939Z%/%ScalaChatBot%/%T
+2020-11-28T09:32:35.085Z%/%ScalaChatBot%/%T
+2020-11-28T09:32:35.310Z%/%ScalaChatBot%/%T
+2020-11-28T09:32:35.499Z%/%ScalaChatBot%/%T
+2020-11-28T09:32:40.614Z%/%ScalaChatBot%/%T
+2020-11-28T09:32:40.775Z%/%ScalaChatBot%/%T
+2020-11-28T09:32:41.019Z%/%ScalaChatBot%/%T
+2020-11-28T09:32:41.214Z%/%ScalaChatBot%/%T
+2020-11-28T09:32:41.537Z%/%ScalaChatBot%/%T
+2020-11-28T09:35:05.665Z%/%Sebastian Kaltenbach%/%hallo
+2020-11-28T09:35:09.958Z%/%Sebastian Kaltenbach%/%!Hallo
+2020-11-28T09:35:10.200Z%/%ScalaChatBot%/%!Hallo
+2020-11-28T09:35:10.602Z%/%ScalaChatBot%/%!Hallo
+2020-11-28T09:35:10.838Z%/%ScalaChatBot%/%!Hallo
+2020-11-28T09:35:11.046Z%/%ScalaChatBot%/%!Hallo
+2020-11-28T09:35:11.239Z%/%ScalaChatBot%/%!Hallo
+2020-11-28T09:35:16.104Z%/%ScalaChatBot%/%!Hallo
+2020-11-28T09:35:16.376Z%/%ScalaChatBot%/%!Hallo
+2020-11-28T09:35:16.596Z%/%ScalaChatBot%/%!Hallo
+2020-11-28T09:35:16.810Z%/%ScalaChatBot%/%!Hallo
+2020-11-28T09:35:17.041Z%/%ScalaChatBot%/%!Hallo
+2020-11-28T09:37:10.372Z%/%Sebastian Kaltenbach%/%Hallo
+2020-11-28T09:37:13.394Z%/%Sebastian Kaltenbach%/%!Hallo
+2020-11-28T09:37:13.586Z%/%ScalaChatBot%/%!Hallo
+2020-11-28T09:37:14.077Z%/%ScalaChatBot%/%!Hallo
+2020-11-28T09:37:14.255Z%/%ScalaChatBot%/%!Hallo
+2020-11-28T09:37:14.551Z%/%ScalaChatBot%/%!Hallo
+2020-11-28T09:37:14.749Z%/%ScalaChatBot%/%!Hallo
+2020-11-28T09:37:19.547Z%/%ScalaChatBot%/%!Hallo
+2020-11-28T09:37:19.765Z%/%ScalaChatBot%/%!Hallo
+2020-11-28T09:37:19.995Z%/%ScalaChatBot%/%!Hallo
+2020-11-28T09:37:20.263Z%/%ScalaChatBot%/%!Hallo
+2020-11-28T09:37:20.454Z%/%ScalaChatBot%/%!Hallo
+2020-11-28T09:38:11.186Z%/%Sebastian Kaltenbach%/%Hallo
+2020-11-28T09:38:14.477Z%/%Sebastian Kaltenbach%/%!Hello
+2020-11-28T09:38:14.799Z%/%ScalaChatBot%/%Hello World
+2020-11-28T09:38:26.567Z%/%Sebastian Kaltenbach%/%!Ping
+2020-11-28T09:38:26.836Z%/%ScalaChatBot%/%Hello World
+2020-11-28T09:43:57.566Z%/%Sebastian Kaltenbach%/%!Hi
+2020-11-28T09:43:57.953Z%/%ScalaChatBot%/%Hello World
+2020-11-28T09:44:02.991Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-28T09:44:03.194Z%/%ScalaChatBot%/%Hello World
+2020-11-28T10:08:35.838Z%/%Sebastian Kaltenbach%/%Hallo
+2020-11-28T10:08:41.455Z%/%Sebastian Kaltenbach%/%!Hallo
+2020-11-28T10:08:51.380Z%/%Sebastian Kaltenbach%/%Hallo
+2020-11-28T10:08:59.249Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-28T10:09:06.113Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-28T10:09:15.670Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-28T10:16:32.158Z%/%Sebastian Kaltenbach%/%\<#781929620001390634>
+2020-11-28T10:26:15.172Z%/%Sebastian Kaltenbach%/%Hallo
+2020-11-28T10:26:15.596Z%/%ScalaChatBot%/%Hello From Actors!
+2020-11-28T10:26:15.974Z%/%ScalaChatBot%/%Hello From Actors!
+2020-11-28T10:26:16.239Z%/%ScalaChatBot%/%Hello From Actors!
+2020-11-28T10:26:16.444Z%/%ScalaChatBot%/%Hello From Actors!
+2020-11-28T10:26:16.692Z%/%ScalaChatBot%/%Hello From Actors!
+2020-11-28T10:26:21.387Z%/%ScalaChatBot%/%Hello From Actors!
+2020-11-28T10:26:21.665Z%/%ScalaChatBot%/%Hello From Actors!
+2020-11-28T10:26:21.873Z%/%ScalaChatBot%/%Hello From Actors!
+2020-11-28T10:26:22.111Z%/%ScalaChatBot%/%Hello From Actors!
+2020-11-28T10:26:22.313Z%/%ScalaChatBot%/%Hello From Actors!
+2020-11-28T10:26:27.415Z%/%ScalaChatBot%/%Hello From Actors!
+2020-11-28T10:26:27.613Z%/%ScalaChatBot%/%Hello From Actors!
+2020-11-28T10:26:27.839Z%/%ScalaChatBot%/%Hello From Actors!
+2020-11-28T10:26:28.030Z%/%ScalaChatBot%/%Hello From Actors!
+2020-11-28T10:26:28.250Z%/%ScalaChatBot%/%Hello From Actors!
+2020-11-28T10:28:09.566Z%/%Sebastian Kaltenbach%/%!Hallo
+2020-11-28T10:28:09.968Z%/%ScalaChatBot%/%Hello From Actors!
+2020-11-28T10:28:16.162Z%/%Sebastian Kaltenbach%/%Hallo
+2020-11-28T10:28:20.245Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-28T10:28:20.517Z%/%ScalaChatBot%/%Hello From Actors!
+2020-11-28T10:32:26.234Z%/%Philipo289%/%
+2020-11-28T10:32:27.234Z%/%Felicitas Maurer%/%
+2020-11-28T10:32:53.619Z%/%Sebastian Kaltenbach%/%!Hallo
+2020-11-28T10:32:54.042Z%/%ScalaChatBot%/%Hello From Actors!
+2020-11-28T10:33:00.090Z%/%Philipo289%/%!Hallo
+2020-11-28T10:33:00.391Z%/%ScalaChatBot%/%Hello From Actors!
+2020-11-28T10:33:03.632Z%/%Sebastian Kaltenbach%/%Hallo
+2020-11-28T10:33:12.105Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-28T10:33:12.414Z%/%ScalaChatBot%/%Hello From Actors!
+2020-11-28T11:06:35.613Z%/%Sebastian Kaltenbach%/%Hallo
+2020-11-28T11:06:38.023Z%/%Sebastian Kaltenbach%/%!Hallo
+2020-11-28T11:06:38.378Z%/%ScalaChatBot%/%()
+2020-11-28T11:06:46.477Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-28T11:06:46.715Z%/%ScalaChatBot%/%()
+2020-11-28T11:06:57.331Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-28T11:06:57.581Z%/%ScalaChatBot%/%()
+2020-11-28T11:07:54.031Z%/%Sebastian Kaltenbach%/%!Hallo
+2020-11-28T11:07:54.302Z%/%ScalaChatBot%/%()
+2020-11-28T11:07:57.067Z%/%Sebastian Kaltenbach%/%!Test
+2020-11-28T11:07:57.289Z%/%ScalaChatBot%/%()
+2020-11-28T11:08:01.627Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-28T11:08:01.796Z%/%ScalaChatBot%/%()
+2020-11-28T11:08:04.942Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-28T11:08:05.123Z%/%ScalaChatBot%/%()
+2020-11-28T11:09:29.315Z%/%Sebastian Kaltenbach%/%Hallo
+2020-11-28T11:09:32.182Z%/%Sebastian Kaltenbach%/%!Hallo
+2020-11-28T11:09:32.469Z%/%ScalaChatBot%/%()
+2020-11-28T11:09:43.891Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-28T11:09:44.083Z%/%ScalaChatBot%/%()
+2020-11-28T12:16:49.751Z%/%Sebastian Kaltenbach%/%!Hallo
+2020-11-28T12:16:50.181Z%/%ScalaChatBot%/%()
+2020-11-28T12:16:54.630Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-28T12:16:54.820Z%/%ScalaChatBot%/%()
+2020-11-28T12:17:05.107Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-28T12:17:05.281Z%/%ScalaChatBot%/%()
+2020-11-28T12:18:08.501Z%/%Sebastian Kaltenbach%/%!Hallo
+2020-11-28T12:18:08.880Z%/%ScalaChatBot%/%()
+2020-11-28T12:18:11.455Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-28T12:18:11.710Z%/%ScalaChatBot%/%()
+2020-11-28T12:20:14.658Z%/%Sebastian Kaltenbach%/%!Hallo
+2020-11-28T12:20:15.019Z%/%ScalaChatBot%/%()
+2020-11-28T12:20:43.010Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-28T12:20:43.295Z%/%ScalaChatBot%/%()
+2020-11-28T12:21:05.924Z%/%Sebastian Kaltenbach%/%!Hallo
+2020-11-28T12:21:06.283Z%/%ScalaChatBot%/%()
+2020-11-28T12:22:00.094Z%/%Sebastian Kaltenbach%/%!Hallo
+2020-11-28T12:22:00.370Z%/%ScalaChatBot%/%()
+2020-11-28T12:23:14.531Z%/%Sebastian Kaltenbach%/%!Hallo
+2020-11-28T12:23:14.874Z%/%ScalaChatBot%/%()
+2020-11-28T12:23:28.368Z%/%Sebastian Kaltenbach%/%!Hey
+2020-11-28T12:23:28.567Z%/%ScalaChatBot%/%()
+2020-11-28T12:24:07.219Z%/%Sebastian Kaltenbach%/%!Hallo
+2020-11-28T12:24:07.616Z%/%ScalaChatBot%/%()
+2020-11-28T12:24:14.796Z%/%Sebastian Kaltenbach%/%!Test
+2020-11-28T12:24:14.928Z%/%ScalaChatBot%/%()
+2020-11-28T12:24:59.480Z%/%Sebastian Kaltenbach%/%!Hallo
+2020-11-28T12:25:00.003Z%/%ScalaChatBot%/%()
+2020-11-28T12:25:09.146Z%/%Sebastian Kaltenbach%/%!Hey
+2020-11-28T12:25:09.314Z%/%ScalaChatBot%/%()
+2020-11-28T12:25:57.760Z%/%Sebastian Kaltenbach%/%!Test
+2020-11-28T12:25:58.162Z%/%ScalaChatBot%/%()
+2020-11-28T12:26:03.879Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-28T12:26:04.088Z%/%ScalaChatBot%/%()
+2020-11-28T12:28:10.332Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-28T12:28:10.690Z%/%ScalaChatBot%/%()
+2020-11-28T12:28:15.140Z%/%Sebastian Kaltenbach%/%!Calc
+2020-11-28T12:28:15.411Z%/%ScalaChatBot%/%()
+2020-11-28T12:28:25.953Z%/%Sebastian Kaltenbach%/%!Calc
+2020-11-28T12:28:26.153Z%/%ScalaChatBot%/%()
+2020-11-28T12:28:40.676Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-28T12:28:40.957Z%/%ScalaChatBot%/%()
+2020-11-28T12:30:00.013Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-28T12:30:00.355Z%/%ScalaChatBot%/%()
+2020-11-28T12:31:07.095Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-28T12:31:07.447Z%/%ScalaChatBot%/%()
+2020-11-28T12:31:49.971Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-28T12:31:50.422Z%/%ScalaChatBot%/%()
+2020-11-28T12:32:18.994Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-28T12:32:19.399Z%/%ScalaChatBot%/%()
+2020-11-28T12:34:44.561Z%/%Sebastian Kaltenbach%/%!Hallo
+2020-11-28T12:34:45.018Z%/%ScalaChatBot%/%()
+2020-11-28T12:34:56.758Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-28T12:34:56.984Z%/%ScalaChatBot%/%()
+2020-11-28T12:39:26.428Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-28T12:39:26.779Z%/%ScalaChatBot%/%()
+2020-11-28T12:40:05.439Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-28T12:40:05.797Z%/%ScalaChatBot%/%()
+2020-11-28T12:40:46.567Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-28T12:40:46.948Z%/%ScalaChatBot%/%()
+2020-11-28T12:42:51.212Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-28T12:42:51.490Z%/%ScalaChatBot%/%()
+2020-11-28T13:56:56.187Z%/%Sebastian Kaltenbach%/%!Hallo
+2020-11-28T13:57:34.150Z%/%Sebastian Kaltenbach%/%Hallo
+2020-11-28T13:57:37.493Z%/%Sebastian Kaltenbach%/%!Test
+2020-11-28T13:58:18.957Z%/%Sebastian Kaltenbach%/%!Hallo
+2020-11-28T13:58:19.317Z%/%ScalaChatBot%/%Hello From Actors!
+2020-11-28T13:59:10.501Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-28T14:06:14.647Z%/%Sebastian Kaltenbach%/%!Hallo
+2020-11-28T14:08:26.573Z%/%Sebastian Kaltenbach%/%!Hallo
+2020-11-28T14:08:26.845Z%/%ScalaChatBot%/%Hello From Actors!
+2020-11-28T14:08:31.595Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-28T14:08:31.806Z%/%ScalaChatBot%/%Hello From Actors!
+2020-11-28T14:12:13.955Z%/%Sebastian Kaltenbach%/%!Hallo
+2020-11-28T14:12:14.313Z%/%ScalaChatBot%/%Hello From Actors!
+2020-11-28T14:12:18.397Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-28T14:12:18.663Z%/%ScalaChatBot%/%Hello From Actors!
+2020-11-28T19:21:13.627Z%/%Sebastian Kaltenbach%/%!Hallo
+2020-11-28T19:21:14.392Z%/%ScalaChatBot%/%Hello From Actors!
+2020-11-28T19:22:29.836Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-28T19:41:11.276Z%/%Sebastian Kaltenbach%/%!Hallo
+2020-11-28T19:41:11.753Z%/%ScalaChatBot%/%Hallo
+2020-11-28T19:41:33.284Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-28T19:41:33.481Z%/%ScalaChatBot%/%Hallo
+2020-11-28T19:42:41.122Z%/%Sebastian Kaltenbach%/%!Hallo
+2020-11-28T19:42:41.564Z%/%ScalaChatBot%/%Hallo
+2020-11-28T19:42:44.726Z%/%Sebastian Kaltenbach%/%!Test
+2020-11-28T19:42:44.945Z%/%ScalaChatBot%/%Hallo
+2020-11-28T19:43:00.772Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-28T19:43:00.984Z%/%ScalaChatBot%/%Hallo
+2020-11-28T19:54:27.484Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-28T19:54:55.292Z%/%Sebastian Kaltenbach%/%!Hallo
+2020-11-28T19:56:33.258Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-28T19:57:16.232Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-28T19:59:47.279Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-28T19:59:47.658Z%/%ScalaChatBot%/%Test
+2020-11-28T20:02:21.264Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-28T20:03:05.326Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-28T20:05:42.055Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-28T20:07:12.932Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-28T20:08:48.071Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-28T20:10:28.702Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-28T20:10:29.016Z%/%ScalaChatBot%/%Result: 1 + 1 = 2
+2020-11-28T20:10:38.491Z%/%Sebastian Kaltenbach%/%!Calc5+5
+2020-11-28T20:10:38.774Z%/%ScalaChatBot%/%Test
+2020-11-28T20:10:47.973Z%/%Sebastian Kaltenbach%/%!Calc5+5
+2020-11-28T20:10:48.190Z%/%ScalaChatBot%/%Test
+2020-11-28T20:10:59.060Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-28T20:10:59.189Z%/%ScalaChatBot%/%Test
+2020-11-28T20:11:27.022Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-28T20:11:27.519Z%/%ScalaChatBot%/%Result: 1 + 1 = 2
+2020-11-28T20:11:34.261Z%/%Sebastian Kaltenbach%/%!Calc5+5
+2020-11-28T20:11:34.582Z%/%ScalaChatBot%/%Result: 1 + 1 = 2
+2020-11-28T20:13:19.357Z%/%Sebastian Kaltenbach%/%!Calc5+5
+2020-11-28T20:13:19.720Z%/%ScalaChatBot%/%Result: 5 + 5 = 10
+2020-11-28T20:13:29.616Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-28T20:13:29.889Z%/%ScalaChatBot%/%Result: 5 + 5 = 10
+2020-11-28T20:14:18.662Z%/%Sebastian Kaltenbach%/%!Calc10+10
+2020-11-28T20:14:18.943Z%/%ScalaChatBot%/%Result: 10 + 10 = 20
+2020-11-28T20:14:29.211Z%/%Sebastian Kaltenbach%/%!Calc5+5
+2020-11-28T20:14:29.424Z%/%ScalaChatBot%/%Result: 10 + 10 = 20
+2020-11-28T20:15:19.988Z%/%Sebastian Kaltenbach%/%!Calc5+5
+2020-11-28T20:15:20.280Z%/%ScalaChatBot%/%Result: 5 + 5 = 10
+2020-11-28T20:15:24.091Z%/%Sebastian Kaltenbach%/%Hallo
+2020-11-28T20:15:27.289Z%/%Sebastian Kaltenbach%/%!Hallo
+2020-11-28T20:15:34.250Z%/%Sebastian Kaltenbach%/%!Calc5+4
+2020-11-28T20:15:46.080Z%/%Sebastian Kaltenbach%/%!Calc5+4
+2020-11-28T20:15:46.209Z%/%ScalaChatBot%/%Result: 5 + 4 = 9
+2020-11-28T20:16:04.317Z%/%Sebastian Kaltenbach%/%!Calc5+5
+2020-11-28T20:16:04.861Z%/%ScalaChatBot%/%Result: 5 + 5 = 10
+2020-11-28T20:16:16.934Z%/%Sebastian Kaltenbach%/%!Calc10+10
+2020-11-28T20:16:17.131Z%/%ScalaChatBot%/%Result: 5 + 5 = 10
+2020-11-28T20:16:36.926Z%/%Sebastian Kaltenbach%/%!Calc10+20
+2020-11-28T20:16:37.131Z%/%ScalaChatBot%/%Result: 10 + 20 = 30
+2020-11-28T20:17:00.657Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-28T20:17:00.874Z%/%ScalaChatBot%/%Result: 10 + 20 = 30
+2020-11-28T20:17:07.737Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-28T20:17:08.055Z%/%ScalaChatBot%/%Result: 1 + 1 = 2
+2020-11-28T20:17:13.336Z%/%Sebastian Kaltenbach%/%!Calc1+4
+2020-11-28T20:17:13.551Z%/%ScalaChatBot%/%Result: 1 + 1 = 2
+2020-11-28T20:17:18.260Z%/%Sebastian Kaltenbach%/%!Calc1+4
+2020-11-28T20:17:18.366Z%/%ScalaChatBot%/%Result: 1 + 4 = 5
+2020-11-28T20:17:20.181Z%/%Felicitas Maurer%/%Oh das sieht gut aus :)
+2020-11-28T20:17:36.943Z%/%Sebastian Kaltenbach%/%Ein wenig ja. Er will aber noch nicht so wie ich 😄
+2020-11-28T20:18:28.887Z%/%Felicitas Maurer%/%!Hallo
+2020-11-28T20:18:39.273Z%/%Sebastian Kaltenbach%/%Macht noch nichts 😄
+2020-11-28T20:18:42.362Z%/%Sebastian Kaltenbach%/%erst +
+2020-11-28T20:18:50.618Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-28T20:18:50.966Z%/%ScalaChatBot%/%Result: 1 + 1 = 2
+2020-11-28T20:18:59.496Z%/%Sebastian Kaltenbach%/%!Calc1+5
+2020-11-28T20:19:11.385Z%/%Sebastian Kaltenbach%/%!Calc1+5
+2020-11-28T20:19:11.679Z%/%ScalaChatBot%/%Result: 1 + 5 = 6
+2020-11-28T20:19:19.573Z%/%Sebastian Kaltenbach%/%!Calc1+9
+2020-11-28T20:19:19.796Z%/%ScalaChatBot%/%Result: 1 + 5 = 6
+2020-11-28T20:19:36.198Z%/%Felicitas Maurer%/%!Calc15673-327
+2020-11-28T20:19:36.518Z%/%ScalaChatBot%/%Result: 1 + 9 = 10
+2020-11-28T20:19:57.275Z%/%Sebastian Kaltenbach%/%bei- macht er auch noch nicht :-d
+2020-11-28T20:20:06.276Z%/%Felicitas Maurer%/%Achso :D
+2020-11-28T20:20:39.488Z%/%Felicitas Maurer%/%Sorry :)
+2020-11-28T20:20:45.963Z%/%Sebastian Kaltenbach%/%Alles gut 😄
+2020-11-28T20:23:53.255Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-28T20:23:53.665Z%/%ScalaChatBot%/%Result: 1 + 1 = 2
+2020-11-28T20:24:03.367Z%/%Sebastian Kaltenbach%/%!Calc2+2
+2020-11-28T20:24:03.588Z%/%ScalaChatBot%/%Result: 1 + 1 = 2
+2020-11-28T20:24:10.603Z%/%Sebastian Kaltenbach%/%!Calc2+6
+2020-11-28T20:24:10.877Z%/%ScalaChatBot%/%Result: 2 + 2 = 4
+2020-11-28T20:24:16.275Z%/%Sebastian Kaltenbach%/%!Hallo
+2020-11-28T20:24:16.563Z%/%ScalaChatBot%/%Result: 2 + 6 = 8
+2020-11-28T20:24:19.408Z%/%Sebastian Kaltenbach%/%!Hallo
+2020-11-28T20:25:39.564Z%/%Sebastian Kaltenbach%/%!Calc1+9
+2020-11-28T20:25:39.921Z%/%ScalaChatBot%/%Result: 1 + 9 = 10
+2020-11-28T20:25:55.052Z%/%Sebastian Kaltenbach%/%!Calc1+5
+2020-11-28T20:26:04.053Z%/%Sebastian Kaltenbach%/%!Calc1+7
+2020-11-28T20:26:04.269Z%/%ScalaChatBot%/%Result: 1 + 7 = 8
+2020-11-28T20:26:09.969Z%/%Sebastian Kaltenbach%/%!Calc1+5
+2020-11-28T20:26:10.243Z%/%ScalaChatBot%/%Result: 1 + 5 = 6
+2020-11-28T20:26:20.914Z%/%Sebastian Kaltenbach%/%!Calc1000+2345
+2020-11-28T20:26:21.144Z%/%ScalaChatBot%/%Result: 1 + 5 = 6
+2020-11-28T20:26:37.869Z%/%Sebastian Kaltenbach%/%!Hallo
+2020-11-28T20:26:38.136Z%/%ScalaChatBot%/%Result: 1000 + 2345 = 3345
+2020-11-28T20:27:03.319Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-28T20:27:13.480Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-28T20:28:02.727Z%/%Sebastian Kaltenbach%/%!Calc6+6
+2020-11-28T20:28:03.096Z%/%ScalaChatBot%/%Result: 6 + 6 = 12
+2020-11-28T20:28:11.363Z%/%Sebastian Kaltenbach%/%!Calc7+7
+2020-11-28T20:28:17.842Z%/%Sebastian Kaltenbach%/%!Hallo
+2020-11-28T20:28:18.072Z%/%ScalaChatBot%/%Result: 7 + 7 = 14
+2020-11-29T08:47:30.846Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-29T08:47:31.227Z%/%ScalaChatBot%/%Result: 1 + 1 = 2
+2020-11-29T08:47:40.228Z%/%Sebastian Kaltenbach%/%!Calc1-1
+2020-11-29T08:47:43.936Z%/%Sebastian Kaltenbach%/%!
+2020-11-29T08:47:44.138Z%/%ScalaChatBot%/%Result: 1 - 1 = 0
+2020-11-29T08:48:02.228Z%/%Sebastian Kaltenbach%/%!Calc1*2
+2020-11-29T09:13:40.189Z%/%Sebastian Kaltenbach%/%!Hallo
+2020-11-29T09:13:40.471Z%/%ScalaChatBot%/%Sorry - I can't understand your message
+2020-11-29T09:13:46.563Z%/%Sebastian Kaltenbach%/%!Hello
+2020-11-29T09:13:56.525Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-29T09:13:56.729Z%/%ScalaChatBot%/%Hello! How are you doing?
+2020-11-29T09:14:07.788Z%/%Sebastian Kaltenbach%/%!Hello
+2020-11-29T09:14:07.944Z%/%ScalaChatBot%/%Is it already time for leaving? Goodbye!
+2020-11-29T09:15:26.154Z%/%Sebastian Kaltenbach%/%!Hello
+2020-11-29T09:15:26.530Z%/%ScalaChatBot%/%Hello! How are you doing?
+2020-11-29T09:15:43.764Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-29T09:15:50.094Z%/%Sebastian Kaltenbach%/%!Hello
+2020-11-29T09:16:39.304Z%/%Sebastian Kaltenbach%/%!Hello
+2020-11-29T09:16:39.618Z%/%ScalaChatBot%/%Hello! How are you doing?
+2020-11-29T09:16:44.491Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-29T09:16:51.423Z%/%Sebastian Kaltenbach%/%!Calc1-1
+2020-11-29T09:16:51.682Z%/%ScalaChatBot%/%Result: 1 + 1 = 2
+2020-11-29T09:17:01.912Z%/%Sebastian Kaltenbach%/%!Calc1*5
+2020-11-29T09:17:02.177Z%/%ScalaChatBot%/%Result: 1 - 1 = 0
+2020-11-29T09:17:15.899Z%/%Sebastian Kaltenbach%/%!Calc5/5
+2020-11-29T09:17:16.015Z%/%ScalaChatBot%/%Result: 1 * 5 = 5
+2020-11-29T09:18:24.134Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-29T09:18:24.531Z%/%ScalaChatBot%/%Result: 5 / 5 = 1
+2020-11-29T09:18:33.883Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-29T09:18:34.490Z%/%ScalaChatBot%/%Result: 1 + 1 = 2
+2020-11-29T09:29:47.535Z%/%Sebastian Kaltenbach%/%!Ping
+2020-11-29T09:29:47.904Z%/%ScalaChatBot%/%Pong
+2020-11-29T09:29:54.630Z%/%Sebastian Kaltenbach%/%!Hello
+2020-11-29T09:30:06.902Z%/%Sebastian Kaltenbach%/%!Test
+2020-11-29T09:30:07.163Z%/%ScalaChatBot%/%Hello! How are you doing?
+2020-11-29T09:30:19.035Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-29T09:30:19.217Z%/%ScalaChatBot%/%Sorry - I can't understand your message
+2020-11-29T09:30:23.244Z%/%Sebastian Kaltenbach%/%!Hello
+2020-11-29T09:30:23.530Z%/%ScalaChatBot%/%Result: 1 + 1 = 2
+2020-11-29T09:30:56.079Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-29T09:31:57.186Z%/%Sebastian Kaltenbach%/%!Ping
+2020-11-29T09:31:57.553Z%/%ScalaChatBot%/%Pong
+2020-11-29T09:32:02.995Z%/%Sebastian Kaltenbach%/%!Hello
+2020-11-29T09:32:18.219Z%/%Sebastian Kaltenbach%/%!Test
+2020-11-29T09:32:18.339Z%/%ScalaChatBot%/%Hello! How are you doing?
+2020-11-29T09:32:33.552Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-29T09:32:33.678Z%/%ScalaChatBot%/%Sorry - I can't understand your message
+2020-11-29T09:32:38.414Z%/%Sebastian Kaltenbach%/%!Ping
+2020-11-29T09:32:38.682Z%/%ScalaChatBot%/%Result: 1 + 1 = 2
+2020-11-29T09:32:43.778Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-29T09:32:44.040Z%/%ScalaChatBot%/%Pong
+2020-11-29T09:32:47.276Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-29T09:32:47.506Z%/%ScalaChatBot%/%Result: 1 + 1 = 2
+2020-11-29T09:43:06.449Z%/%Sebastian Kaltenbach%/%!Ping
+2020-11-29T09:43:06.866Z%/%ScalaChatBot%/%Pong
+2020-11-29T09:43:15.451Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-29T09:43:37.036Z%/%Sebastian Kaltenbach%/%!Hello
+2020-11-29T09:43:37.262Z%/%ScalaChatBot%/%Result: 1 + 1 = 2
+2020-11-29T09:43:52.518Z%/%Sebastian Kaltenbach%/%!Calc1-1
+2020-11-29T09:43:52.679Z%/%ScalaChatBot%/%Hello! How are you doing?
+2020-11-29T09:45:02.073Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-29T09:47:56.758Z%/%Sebastian Kaltenbach%/%!Ping
+2020-11-29T09:47:57.162Z%/%ScalaChatBot%/%Pong
+2020-11-29T09:48:01.781Z%/%Sebastian Kaltenbach%/%!Hello
+2020-11-29T09:48:01.993Z%/%ScalaChatBot%/%Pong
+2020-11-29T09:48:13.405Z%/%Sebastian Kaltenbach%/%!Test
+2020-11-29T09:48:13.617Z%/%ScalaChatBot%/%Hello! How are you doing?
+2020-11-29T09:49:18.766Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-29T09:55:10.908Z%/%Sebastian Kaltenbach%/%!Ping
+2020-11-29T10:00:02.824Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-29T10:00:40.004Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-29T10:07:32.335Z%/%Sebastian Kaltenbach%/%!Ping
+2020-11-29T10:07:52.097Z%/%Sebastian Kaltenbach%/%!Hello
+2020-11-29T10:07:52.566Z%/%ScalaChatBot%/%Hello! How are you doing?
+2020-11-29T10:08:23.716Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-29T10:08:31.290Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-29T10:08:31.575Z%/%ScalaChatBot%/%Result: 1 + 1 = 2
+2020-11-29T10:08:58.032Z%/%Sebastian Kaltenbach%/%!Hello
+2020-11-29T10:09:03.521Z%/%Sebastian Kaltenbach%/%!Ping
+2020-11-29T10:09:03.913Z%/%ScalaChatBot%/%Pong
+2020-11-29T10:09:08.137Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-29T10:09:08.390Z%/%ScalaChatBot%/%Pong
+2020-11-29T10:09:14.135Z%/%Sebastian Kaltenbach%/%!Test
+2020-11-29T10:09:14.396Z%/%ScalaChatBot%/%Result: 1 + 1 = 2
+2020-11-29T10:09:22.539Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-29T10:09:22.758Z%/%ScalaChatBot%/%Sorry - I can't understand your message
+2020-11-29T10:09:28.135Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-29T10:09:28.354Z%/%ScalaChatBot%/%Result: 1 + 1 = 2
+2020-11-29T10:09:33.857Z%/%Sebastian Kaltenbach%/%!Test
+2020-11-29T10:11:44.910Z%/%Sebastian Kaltenbach%/%!Ping
+2020-11-29T10:12:20.168Z%/%Sebastian Kaltenbach%/%!Ping
+2020-11-29T10:12:20.641Z%/%ScalaChatBot%/%Pong
+2020-11-29T10:12:26.976Z%/%Sebastian Kaltenbach%/%!Hello
+2020-11-29T10:12:27.267Z%/%ScalaChatBot%/%Pong
+2020-11-29T10:12:37.047Z%/%Sebastian Kaltenbach%/%!Test
+2020-11-29T10:12:37.274Z%/%ScalaChatBot%/%Hello! How are you doing?
+2020-11-29T10:12:40.478Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-29T10:12:40.750Z%/%ScalaChatBot%/%Sorry - I can't understand your message
+2020-11-29T10:12:43.846Z%/%Sebastian Kaltenbach%/%!Ping
+2020-11-29T10:12:44.062Z%/%ScalaChatBot%/%Result: 1 + 1 = 2
+2020-11-29T10:14:13.786Z%/%Sebastian Kaltenbach%/%!Ping
+2020-11-29T10:14:15.313Z%/%ScalaChatBot%/%Pong
+2020-11-29T10:14:20.800Z%/%Sebastian Kaltenbach%/%!Hello
+2020-11-29T10:14:22.027Z%/%ScalaChatBot%/%Hello! How are you doing?
+2020-11-29T10:14:27.658Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-29T10:14:28.801Z%/%ScalaChatBot%/%Result: 1 + 1 = 2
+2020-11-29T10:14:51.240Z%/%Sebastian Kaltenbach%/%!Ping
+2020-11-29T10:14:52.570Z%/%ScalaChatBot%/%Pong
+2020-11-29T10:15:19.873Z%/%Sebastian Kaltenbach%/%!Hello
+2020-11-29T10:15:20.860Z%/%ScalaChatBot%/%Hello! How are you doing?
+2020-11-29T10:15:25.903Z%/%Sebastian Kaltenbach%/%!Ping
+2020-11-29T10:15:26.682Z%/%ScalaChatBot%/%Pong
+2020-11-29T10:15:33.480Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-29T10:15:34.201Z%/%ScalaChatBot%/%Result: 1 + 1 = 2
+2020-11-29T10:15:49.304Z%/%Sebastian Kaltenbach%/%!Calc1234+4321
+2020-11-29T10:15:50.277Z%/%ScalaChatBot%/%Result: 1234 + 4321 = 5555
+2020-11-29T10:16:09.508Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-29T10:17:29.886Z%/%Sebastian Kaltenbach%/%!Hello
+2020-11-29T10:17:31.138Z%/%ScalaChatBot%/%Hello! How are you doing?
+2020-11-29T10:17:34.744Z%/%Sebastian Kaltenbach%/%!Ping
+2020-11-29T10:17:35.468Z%/%ScalaChatBot%/%Pong
+2020-11-29T10:17:55.671Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-29T10:17:56.305Z%/%ScalaChatBot%/%Is it already time for leaving? Goodbye!
+2020-11-29T10:27:01.269Z%/%Sebastian Kaltenbach%/%!Hello
+2020-11-29T10:27:02.090Z%/%ScalaChatBot%/%Hello! How are you doing?
+2020-11-29T10:27:05.506Z%/%Sebastian Kaltenbach%/%!Ping
+2020-11-29T10:27:06.233Z%/%ScalaChatBot%/%Pong
+2020-11-29T10:27:13.959Z%/%Sebastian Kaltenbach%/%!Calc345-543
+2020-11-29T10:27:14.703Z%/%ScalaChatBot%/%Result: 345 - 543 = -198
+2020-11-29T10:27:19.096Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-29T10:27:19.747Z%/%ScalaChatBot%/%Is it already time for leaving? Goodbye!
+2020-11-29T11:02:13.886Z%/%Sebastian Kaltenbach%/%!Hello
+2020-11-29T11:02:14.680Z%/%ScalaChatBot%/%Hello! How are you doing?
+2020-11-29T11:02:19.674Z%/%Sebastian Kaltenbach%/%!Ping
+2020-11-29T11:02:20.410Z%/%ScalaChatBot%/%Pong
+2020-11-29T11:02:25.399Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-29T11:02:26.179Z%/%ScalaChatBot%/%Result: 1 + 1 = 2
+2020-11-29T11:02:32.936Z%/%Sebastian Kaltenbach%/%!DSL
+2020-11-29T11:02:33.649Z%/%ScalaChatBot%/%Sorry - I can't understand your message
+2020-11-29T11:05:18.586Z%/%Sebastian Kaltenbach%/%!ScalaDSL
+2020-11-29T11:05:19.588Z%/%ScalaChatBot%/%Hello{NL}Here are the slides to internal DSLs in Scala:{NL}https://docs.google.com/presentation/d/17qvdKHoIsxzfbcmF7Ay8VU_NGNayXsZjVsRmu6tcqug/edit#slide=id.g2fb348ba68_0_466{NL}Here is the video to internal DSLs in Scala:{NL}https://drive.google.com/file/d/1j_3oH5cj8aMKA0OZm6dDFVWVJfDwohyF/view{NL}Here are the slides to external DSLs in Scala:{NL}https://docs.google.com/presentation/d/1hZ73RtewIFgercCpan2EwT6fAv0ZmmQLMEUb4rUrSp8/edit#slide=id.g2fb348ba68_0_466{NL}Here is the video to external DSLs in Scala:{NL}https://drive.google.com/file/d/1GqdxtvDhzzNSubH42fQKRaPf987VScM1/view
+2020-11-29T11:05:57.688Z%/%Sebastian Kaltenbach%/%!ScalaBasics
+2020-11-29T11:05:58.534Z%/%ScalaChatBot%/%Hello{NL}Here are the slides to Scala Basics:{NL}https://docs.google.com/presentation/d/1IgKbtYGHAELm4kC-d-7niIy_yS95L0vJJYD5yJ-YmPs/edit{NL}Here is the video to Scala Basics:{NL}https://drive.google.com/file/d/1FNExE2C95TTIsSNxkSIxPq76ykkWMMxB/view
+2020-11-29T11:06:09.868Z%/%Sebastian Kaltenbach%/%!ScalaActors
+2020-11-29T11:06:10.631Z%/%ScalaChatBot%/%Hello{NL}Here are the slides to Actors in Scala:{NL}https://docs.google.com/presentation/d/1xVV8AAPANPfufil4KLIp9uX3g6_tO7se9wGuCU7HT-M/edit#slide=id.g2fb348ba68_0_466{NL}Here is the video to Actors in Scala:{NL}https://drive.google.com/file/d/1TKm7F44ttuB1wJNbDvE9YzEXeiywjpom/view
+2020-11-29T11:07:26.133Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-29T11:09:15.615Z%/%Sebastian Kaltenbach%/%!Hello
+2020-11-29T11:09:16.635Z%/%ScalaChatBot%/%Hello! How are you doing?
+2020-11-29T11:09:31.877Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-29T11:09:32.575Z%/%ScalaChatBot%/%Is it already time for leaving? Goodbye!
+2020-11-29T11:13:37.622Z%/%Sebastian Kaltenbach%/%!Hello
+2020-11-29T11:13:38.484Z%/%ScalaChatBot%/%Hello ! How are you doing?
+2020-11-29T11:14:15.988Z%/%Sebastian Kaltenbach%/%!Scalamore Basics
+2020-11-29T11:14:16.780Z%/%ScalaChatBot%/%Hello{NL}Here are the slides to more Scala Basics:{NL}https://docs.google.com/presentation/d/15mmHoV-jZPMwNGVFhC3Qtfo5FGDFv6icBmRwjc5gyGk/edit{NL}Here is the video to more Scala Basics:{NL}https://drive.google.com/file/d/1wM7K7AexBntjsIEAuqjWnvFwwp0s5Vtf/view
+2020-11-29T11:14:26.896Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-29T11:14:27.542Z%/%ScalaChatBot%/%Is it already time for leaving? Goodbye!
+2020-11-29T11:15:21.084Z%/%Sebastian Kaltenbach%/%!Hello
+2020-11-29T11:15:21.942Z%/%ScalaChatBot%/%Hello ! How are you doing?
+2020-11-29T11:16:30.628Z%/%Sebastian Kaltenbach%/%!Hello
+2020-11-29T11:16:31.474Z%/%ScalaChatBot%/%Hello Sebastian Kaltenbach! How are you doing?
+2020-11-29T11:16:43.002Z%/%Felicitas Maurer%/%!Hello
+2020-11-29T11:16:43.817Z%/%ScalaChatBot%/%Hello Felicitas Maurer! How are you doing?
+2020-11-29T11:16:59.355Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-29T11:17:00.068Z%/%ScalaChatBot%/%Is it already time for leaving? Goodbye!
+2020-11-29T11:17:29.055Z%/%Sebastian Kaltenbach%/%!Hello
+2020-11-29T12:25:24.088Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-29T12:28:50.470Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-29T12:32:32.778Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-29T12:38:53.483Z%/%Sebastian Kaltenbach%/%!Hello
+2020-11-29T12:38:54.402Z%/%ScalaChatBot%/%Hello Sebastian Kaltenbach! How are you doing?
+2020-11-29T12:38:59.751Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-29T12:39:00.816Z%/%ScalaChatBot%/%Result: 1 + 1 = 2
+2020-11-29T12:39:05.106Z%/%Sebastian Kaltenbach%/%!ScalaActors
+2020-11-29T12:39:05.835Z%/%ScalaChatBot%/%Hello{NL}Here are the slides to Actors in Scala:{NL}https://docs.google.com/presentation/d/1xVV8AAPANPfufil4KLIp9uX3g6_tO7se9wGuCU7HT-M/edit#slide=id.g2fb348ba68_0_466{NL}Here is the video to Actors in Scala:{NL}https://drive.google.com/file/d/1TKm7F44ttuB1wJNbDvE9YzEXeiywjpom/view
+2020-11-29T12:39:17.984Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-29T12:39:18.744Z%/%ScalaChatBot%/%Is it already time for leaving? Goodbye!
+2020-11-29T12:40:19.471Z%/%Sebastian Kaltenbach%/%!Hello
+2020-11-29T12:40:20.297Z%/%ScalaChatBot%/%Hello Sebastian Kaltenbach! How are you doing?
+2020-11-29T12:40:25.387Z%/%Sebastian Kaltenbach%/%!Ping
+2020-11-29T12:40:26.109Z%/%ScalaChatBot%/%Pong
+2020-11-29T12:40:29.719Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-29T12:40:30.445Z%/%ScalaChatBot%/%Is it already time for leaving? Goodbye!
+2020-11-29T15:19:59.132Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-29T15:20:00.482Z%/%ScalaChatBot%/%Result: 1 + 1 = 2.0
+2020-11-29T15:21:54.464Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-29T15:21:55.726Z%/%ScalaChatBot%/%Result: 1 + 1 = 2.0
+2020-11-29T15:22:04.189Z%/%Sebastian Kaltenbach%/%!Calc1+2.5
+2020-11-29T15:22:04.951Z%/%ScalaChatBot%/%Result: 1 + 2.5 = 3.5
+2020-11-29T15:22:19.995Z%/%Sebastian Kaltenbach%/%Calc1.0+1
+2020-11-29T15:22:25.896Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-29T15:22:26.711Z%/%ScalaChatBot%/%Result: 1 + 1 = 2.0
+2020-11-29T15:22:41.992Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-29T15:22:42.893Z%/%ScalaChatBot%/%Is it already time for leaving? Goodbye!
+2020-11-29T15:23:55.587Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-29T15:23:56.814Z%/%ScalaChatBot%/%Result: 1 + 1 = 2.0
+2020-11-29T15:25:16.159Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-29T15:25:17.539Z%/%ScalaChatBot%/%Result: 1 + 1 = 2.0
+2020-11-29T15:39:04.298Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-29T15:39:05.358Z%/%ScalaChatBot%/%Result: 1 + 1 = 2
+2020-11-29T15:39:14.947Z%/%Sebastian Kaltenbach%/%!Calc1+1.5
+2020-11-29T15:39:15.708Z%/%ScalaChatBot%/%Result: 1 + 1.5 = 2.5
+2020-11-29T15:39:27.418Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-29T15:39:28.120Z%/%ScalaChatBot%/%Is it already time for leaving? Goodbye!
+2020-11-29T15:41:27.123Z%/%Sebastian Kaltenbach%/%!Calc1-1
+2020-11-29T15:41:28.339Z%/%ScalaChatBot%/%Result: 1 - 1 = 0
+2020-11-29T15:41:37.656Z%/%Sebastian Kaltenbach%/%!Calc2-0.5
+2020-11-29T15:41:38.368Z%/%ScalaChatBot%/%Result: 2 - 0.5 = 1.5
+2020-11-29T15:42:44.494Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-29T15:45:18.224Z%/%Sebastian Kaltenbach%/%!Calc1*1
+2020-11-29T15:45:19.369Z%/%ScalaChatBot%/%Result: 1 * 1 = 1
+2020-11-29T15:45:28.987Z%/%Sebastian Kaltenbach%/%!Calc1*1.5
+2020-11-29T15:45:29.785Z%/%ScalaChatBot%/%Result: 1 * 1.5 = 1.5
+2020-11-29T15:45:34.315Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-29T15:45:35.098Z%/%ScalaChatBot%/%Is it already time for leaving? Goodbye!
+2020-11-29T15:48:59.651Z%/%Sebastian Kaltenbach%/%!Calc1/1
+2020-11-29T15:49:00.784Z%/%ScalaChatBot%/%Result: 1 / 1 = 1
+2020-11-29T15:49:10.019Z%/%Sebastian Kaltenbach%/%!Calc1/2
+2020-11-29T15:49:10.952Z%/%ScalaChatBot%/%Result: 1 / 2 = 0.5
+2020-11-29T15:49:19.939Z%/%Sebastian Kaltenbach%/%!Calc5/0
+2020-11-29T15:49:20.719Z%/%ScalaChatBot%/%This is not fair ;-)
+2020-11-29T15:49:36.411Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-29T15:49:37.223Z%/%ScalaChatBot%/%Is it already time for leaving? Goodbye!
+2020-11-30T10:11:45.616Z%/%Sebastian Kaltenbach%/%!Hello
+2020-11-30T10:11:46.473Z%/%ScalaChatBot%/%Hello Sebastian Kaltenbach! How are you doing?
+2020-11-30T10:11:53.344Z%/%Sebastian Kaltenbach%/%!CalcTest+1
+2020-11-30T10:11:54.020Z%/%ScalaChatBot%/%Hello Sebastian Kaltenbach! How are you doing?
+2020-11-30T10:13:31.843Z%/%Felicitas Maurer%/%!ScalaDSL
+2020-11-30T10:13:32.650Z%/%ScalaChatBot%/%Hello Sebastian Kaltenbach! How are you doing?
+2020-11-30T10:13:32.759Z%/%ScalaChatBot%/%Hello{NL}Here are the slides to internal DSLs in Scala:{NL}https://docs.google.com/presentation/d/17qvdKHoIsxzfbcmF7Ay8VU_NGNayXsZjVsRmu6tcqug/edit#slide=id.g2fb348ba68_0_466{NL}Here is the video to internal DSLs in Scala:{NL}https://drive.google.com/file/d/1j_3oH5cj8aMKA0OZm6dDFVWVJfDwohyF/view{NL}Here are the slides to external DSLs in Scala:{NL}https://docs.google.com/presentation/d/1hZ73RtewIFgercCpan2EwT6fAv0ZmmQLMEUb4rUrSp8/edit#slide=id.g2fb348ba68_0_466{NL}Here is the video to external DSLs in Scala:{NL}https://drive.google.com/file/d/1GqdxtvDhzzNSubH42fQKRaPf987VScM1/view
+2020-11-30T10:13:47.585Z%/%Felicitas Maurer%/%!Hello
+2020-11-30T10:13:48.210Z%/%ScalaChatBot%/%Hello Felicitas Maurer! How are you doing?
+2020-11-30T10:13:48.287Z%/%ScalaChatBot%/%Hello Sebastian Kaltenbach! How are you doing?
+2020-11-30T10:14:03.075Z%/%Felicitas Maurer%/%!Calc1+3
+2020-11-30T10:14:03.766Z%/%ScalaChatBot%/%Result: 1 + 3 = 4
+2020-11-30T10:14:03.852Z%/%ScalaChatBot%/%Hello Sebastian Kaltenbach! How are you doing?
+2020-11-30T10:14:10.395Z%/%Felicitas Maurer%/%!Ping
+2020-11-30T10:14:11.016Z%/%ScalaChatBot%/%Hello Sebastian Kaltenbach! How are you doing?
+2020-11-30T10:14:11.037Z%/%ScalaChatBot%/%Pong
+2020-11-30T10:14:21.776Z%/%Sebastian Kaltenbach%/%Haha okay. Habe in gecrashed 😄
+2020-11-30T10:14:25.957Z%/%Sebastian Kaltenbach%/%ihn*
+2020-11-30T10:14:37.908Z%/%Felicitas Maurer%/%jap 😄
+2020-11-30T10:14:44.793Z%/%Felicitas Maurer%/%!Goodbye
+2020-11-30T10:14:55.944Z%/%Sebastian Kaltenbach%/%Sorry habe geraede neugestartet 😄
+2020-11-30T10:15:05.901Z%/%Felicitas Maurer%/%ah, sehr gut 🙂
+2020-11-30T10:15:10.422Z%/%Sebastian Kaltenbach%/%!Hello
+2020-11-30T10:15:11.200Z%/%ScalaChatBot%/%Hello Sebastian Kaltenbach! How are you doing?
+2020-11-30T10:15:15.456Z%/%Felicitas Maurer%/%!Hello
+2020-11-30T10:15:16.187Z%/%ScalaChatBot%/%Hello Felicitas Maurer! How are you doing?
+2020-11-30T10:15:23.936Z%/%Felicitas Maurer%/%!ScalaInternal DSL
+2020-11-30T10:15:24.687Z%/%ScalaChatBot%/%Hello{NL}Here are the slides to internal DSLs in Scala:{NL}https://docs.google.com/presentation/d/17qvdKHoIsxzfbcmF7Ay8VU_NGNayXsZjVsRmu6tcqug/edit#slide=id.g2fb348ba68_0_466{NL}Here is the video to internal DSLs in Scala:{NL}https://drive.google.com/file/d/1j_3oH5cj8aMKA0OZm6dDFVWVJfDwohyF/view
+2020-11-30T10:23:18.308Z%/%Philipo289%/%!Hello
+2020-11-30T10:23:19.136Z%/%ScalaChatBot%/%Hello Philipo289! How are you doing?
+2020-11-30T10:23:50.830Z%/%Sebastian Kaltenbach%/%!Ping
+2020-11-30T10:23:51.739Z%/%ScalaChatBot%/%Pong
+2020-11-30T10:28:24.630Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-30T10:28:25.568Z%/%ScalaChatBot%/%Result: 1 + 1 = 2
+2020-11-30T10:28:33.449Z%/%Sebastian Kaltenbach%/%!CalcHallo+1
+2020-11-30T10:28:34.174Z%/%ScalaChatBot%/%There are no valid numbers to calculate. Sorry :-(
+2020-11-30T10:28:46.530Z%/%Sebastian Kaltenbach%/%!Calc1+3
+2020-11-30T10:28:47.238Z%/%ScalaChatBot%/%Result: 1 + 3 = 4
+2020-11-30T10:28:57.931Z%/%Philipo289%/%!Basics
+2020-11-30T10:28:58.635Z%/%ScalaChatBot%/%Sorry - I can't understand your message
+2020-11-30T10:28:58.841Z%/%Sebastian Kaltenbach%/%!Calc3/0
+2020-11-30T10:28:59.569Z%/%ScalaChatBot%/%This is not fair ;-)
+2020-11-30T10:29:30.575Z%/%Felicitas Maurer%/%!Scalamore Basics
+2020-11-30T10:29:31.570Z%/%ScalaChatBot%/%Hello{NL}Here are the slides to more Scala Basics:{NL}https://docs.google.com/presentation/d/15mmHoV-jZPMwNGVFhC3Qtfo5FGDFv6icBmRwjc5gyGk/edit{NL}Here is the video to more Scala Basics:{NL}https://drive.google.com/file/d/1wM7K7AexBntjsIEAuqjWnvFwwp0s5Vtf/view
+2020-11-30T10:29:34.776Z%/%Philipo289%/%!Scala Basics
+2020-11-30T10:29:35.588Z%/%ScalaChatBot%/%Sorry - I can't understand your message
+2020-11-30T10:29:40.942Z%/%Philipo289%/%!Scalabasics
+2020-11-30T10:29:41.776Z%/%ScalaChatBot%/%Sorry - I can't understand your message
+2020-11-30T10:29:50.690Z%/%Philipo289%/%!ScalaBasics
+2020-11-30T10:29:51.393Z%/%ScalaChatBot%/%Hello{NL}Here are the slides to Scala Basics:{NL}https://docs.google.com/presentation/d/1IgKbtYGHAELm4kC-d-7niIy_yS95L0vJJYD5yJ-YmPs/edit{NL}Here is the video to Scala Basics:{NL}https://drive.google.com/file/d/1FNExE2C95TTIsSNxkSIxPq76ykkWMMxB/view
+2020-11-30T10:30:44.127Z%/%Felicitas Maurer%/%!hey
+2020-11-30T10:30:45.165Z%/%ScalaChatBot%/%Sorry - I can't understand your message
+2020-11-30T10:33:01.236Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-30T10:33:02.096Z%/%ScalaChatBot%/%Result: 1 + 1 = 2
+2020-11-30T10:33:09.438Z%/%Sebastian Kaltenbach%/%!CalcHallo+1
+2020-11-30T10:33:10.159Z%/%ScalaChatBot%/%There are no valid numbers to calculate. Sorry :-(
+2020-11-30T10:33:17.452Z%/%Sebastian Kaltenbach%/%!CalcHallo-3
+2020-11-30T10:33:18.235Z%/%ScalaChatBot%/%There are no valid numbers to calculate. Sorry :-(
+2020-11-30T10:33:27.585Z%/%Sebastian Kaltenbach%/%!Calc3*Hallo
+2020-11-30T10:33:28.313Z%/%ScalaChatBot%/%There are no valid numbers to calculate. Sorry :-(
+2020-11-30T10:33:34.225Z%/%Sebastian Kaltenbach%/%!Calc3*3
+2020-11-30T10:33:35.002Z%/%ScalaChatBot%/%Result: 3 * 3 = 9
+2020-11-30T10:33:41.076Z%/%Sebastian Kaltenbach%/%!Calc3/Hallo
+2020-11-30T10:33:41.774Z%/%ScalaChatBot%/%There are no valid numbers to calculate. Sorry :-(
+2020-11-30T10:33:46.375Z%/%Sebastian Kaltenbach%/%!Calc3/3
+2020-11-30T10:33:47.111Z%/%ScalaChatBot%/%Result: 3 / 3 = 1
+2020-11-30T10:33:54.134Z%/%Sebastian Kaltenbach%/%!Calc3/2
+2020-11-30T10:33:54.730Z%/%ScalaChatBot%/%Result: 3 / 2 = 1.5
+2020-11-30T10:34:01.615Z%/%Sebastian Kaltenbach%/%!Calc3/0
+2020-11-30T10:34:02.356Z%/%ScalaChatBot%/%Result: 3 / 0 = 2147483647
+2020-11-30T10:35:17.830Z%/%Sebastian Kaltenbach%/%!Calc1/0
+2020-11-30T10:35:18.781Z%/%ScalaChatBot%/%Result: 1 / 0 = 2147483647
+2020-11-30T10:36:04.244Z%/%Sebastian Kaltenbach%/%!Calc1/0
+2020-11-30T10:36:05.028Z%/%ScalaChatBot%/%This is not fair ;-)
+2020-11-30T10:36:11.769Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-30T10:36:12.498Z%/%ScalaChatBot%/%Is it already time for leaving? Goodbye!
+2020-11-30T11:24:57.904Z%/%Sebastian Kaltenbach%/%!Hello
+2020-11-30T11:24:58.703Z%/%ScalaChatBot%/%Hello Sebastian Kaltenbach! How are you doing?
+2020-11-30T11:25:07.137Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-30T11:25:07.963Z%/%ScalaChatBot%/%Result: 1 + 1 = 2
+2020-11-30T11:25:12.658Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-11-30T11:25:13.335Z%/%ScalaChatBot%/%Is it already time for leaving? Goodbye!
+2020-11-30T11:44:45.749Z%/%Marko Boger%/%
+2020-11-30T11:45:07.866Z%/%Felicitas Maurer%/%!Hello
+2020-11-30T11:45:08.791Z%/%ScalaChatBot%/%Hello Felicitas Maurer! How are you doing?
+2020-11-30T11:45:14.593Z%/%Felicitas Maurer%/%!ScalaDSL
+2020-11-30T11:45:15.310Z%/%ScalaChatBot%/%Hello{NL}Here are the slides to internal DSLs in Scala:{NL}https://docs.google.com/presentation/d/17qvdKHoIsxzfbcmF7Ay8VU_NGNayXsZjVsRmu6tcqug/edit#slide=id.g2fb348ba68_0_466{NL}Here is the video to internal DSLs in Scala:{NL}https://drive.google.com/file/d/1j_3oH5cj8aMKA0OZm6dDFVWVJfDwohyF/view{NL}Here are the slides to external DSLs in Scala:{NL}https://docs.google.com/presentation/d/1hZ73RtewIFgercCpan2EwT6fAv0ZmmQLMEUb4rUrSp8/edit#slide=id.g2fb348ba68_0_466{NL}Here is the video to external DSLs in Scala:{NL}https://drive.google.com/file/d/1GqdxtvDhzzNSubH42fQKRaPf987VScM1/view
+2020-11-30T11:45:44.442Z%/%Felicitas Maurer%/%!ScalaInternal DSL
+2020-11-30T11:45:45.156Z%/%ScalaChatBot%/%Hello{NL}Here are the slides to internal DSLs in Scala:{NL}https://docs.google.com/presentation/d/17qvdKHoIsxzfbcmF7Ay8VU_NGNayXsZjVsRmu6tcqug/edit#slide=id.g2fb348ba68_0_466{NL}Here is the video to internal DSLs in Scala:{NL}https://drive.google.com/file/d/1j_3oH5cj8aMKA0OZm6dDFVWVJfDwohyF/view
+2020-11-30T11:46:02.157Z%/%Sebastian Kaltenbach%/%hallo
+2020-11-30T11:46:14.122Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-11-30T11:46:14.778Z%/%ScalaChatBot%/%Result: 1 + 1 = 2
+2020-12-01T16:12:32.415Z%/%Sebastian Kaltenbach%/%!Hello
+2020-12-01T16:12:33.583Z%/%ScalaChatBot%/%Hello Sebastian Kaltenbach! How are you doing?
+2020-12-01T16:13:46.734Z%/%Sebastian Kaltenbach%/%!Scalabasic
+2020-12-01T16:13:47.637Z%/%ScalaChatBot%/%Sorry - I can't understand your message
+2020-12-01T16:13:52.067Z%/%Sebastian Kaltenbach%/%!ScalaBasics
+2020-12-01T16:13:52.702Z%/%ScalaChatBot%/%Hello{NL}Here are the slides to Scala Basics:{NL}https://docs.google.com/presentation/d/1IgKbtYGHAELm4kC-d-7niIy_yS95L0vJJYD5yJ-YmPs/edit{NL}Here is the video to Scala Basics:{NL}https://drive.google.com/file/d/1FNExE2C95TTIsSNxkSIxPq76ykkWMMxB/view
+2020-12-01T16:14:16.476Z%/%Sebastian Kaltenbach%/%!ScalaTests
+2020-12-01T16:14:17.226Z%/%ScalaChatBot%/%Hello{NL}Here are the slides to Tests:{NL}https://docs.google.com/presentation/d/1RGVkHwgwYRBU4iHI8A6t7O6iMFgJpLafYln2kJAFGjc/edit{NL}Here is the video to Tests:{NL}https://drive.google.com/file/d/1oAo37XBqSewUicqhBsTQ2tEJ9j094Hoh/view
+2020-12-01T16:14:34.228Z%/%Sebastian Kaltenbach%/%!Ping
+2020-12-01T16:14:34.873Z%/%ScalaChatBot%/%Pong
+2020-12-01T16:14:45.075Z%/%Sebastian Kaltenbach%/%!Hello
+2020-12-01T16:14:45.797Z%/%ScalaChatBot%/%Hello Sebastian Kaltenbach! How are you doing?
+2020-12-01T16:14:59.613Z%/%Sebastian Kaltenbach%/%!Fine
+2020-12-01T16:15:00.448Z%/%ScalaChatBot%/%Sorry - I can't understand your message
+2020-12-01T16:15:07.645Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-12-01T16:15:08.388Z%/%ScalaChatBot%/%Result: 1 + 1 = 2
+2020-12-01T16:15:15.452Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-12-01T16:15:16.196Z%/%ScalaChatBot%/%Is it already time for leaving? Goodbye!
+2020-12-04T10:01:15.171Z%/%Sebastian Kaltenbach%/%!Hallo
+2020-12-04T10:01:15.997Z%/%ScalaChatBot%/%Sorry - I can't understand your message
+2020-12-04T10:01:18.545Z%/%Sebastian Kaltenbach%/%!Hello
+2020-12-04T10:01:19.365Z%/%ScalaChatBot%/%Hello Sebastian Kaltenbach! How are you doing?
+2020-12-04T10:01:24.717Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-04T10:02:03.088Z%/%Sebastian Kaltenbach%/%!Ping
+2020-12-04T10:02:04.152Z%/%ScalaChatBot%/%Pong
+2020-12-04T10:02:09.442Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-04T10:02:10.136Z%/%ScalaChatBot%/%Pong
+2020-12-04T10:04:33.619Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-04T10:06:23.021Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-04T10:08:07.823Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-04T10:09:52.237Z%/%Sebastian Kaltenbach%/%!Hello
+2020-12-04T10:09:53.123Z%/%ScalaChatBot%/%Hello Sebastian Kaltenbach! How are you doing?
+2020-12-04T10:09:59.096Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-04T10:09:59.831Z%/%ScalaChatBot%/%Hello Sebastian Kaltenbach! How are you doing?
+2020-12-04T10:10:07.626Z%/%Sebastian Kaltenbach%/%!Test
+2020-12-04T10:10:08.295Z%/%ScalaChatBot%/%Sorry - I can't understand your message
+2020-12-04T10:10:12.389Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-04T10:10:13.126Z%/%ScalaChatBot%/%Sorry - I can't understand your message
+2020-12-04T10:13:29.410Z%/%Sebastian Kaltenbach%/%!Hello
+2020-12-04T10:13:30.167Z%/%ScalaChatBot%/%Hello Sebastian Kaltenbach! How are you doing?
+2020-12-04T10:13:32.985Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-04T10:13:33.796Z%/%ScalaChatBot%/%Hello Sebastian Kaltenbach! How are you doing?
+2020-12-04T10:13:43.956Z%/%Sebastian Kaltenbach%/%!Hello
+2020-12-04T10:13:44.591Z%/%ScalaChatBot%/%Hello Sebastian Kaltenbach! How are you doing?
+2020-12-04T10:13:45.557Z%/%Sebastian Kaltenbach%/%!Ping
+2020-12-04T10:13:46.299Z%/%ScalaChatBot%/%Pong
+2020-12-04T10:13:49.041Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-04T10:13:49.746Z%/%ScalaChatBot%/%Pong
+2020-12-04T10:17:43.445Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-04T10:20:21.827Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-04T10:23:50.516Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-04T10:26:26.694Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-04T10:32:57.826Z%/%Sebastian Kaltenbach%/%!Hello
+2020-12-04T10:32:58.666Z%/%ScalaChatBot%/%Hello Sebastian Kaltenbach! How are you doing?
+2020-12-04T10:33:03.322Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-04T10:33:04.086Z%/%ScalaChatBot%/%Hello Sebastian Kaltenbach! How are you doing?
+2020-12-04T10:33:12.667Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-04T10:33:13.370Z%/%ScalaChatBot%/%Hello Sebastian Kaltenbach! How are you doing?
+2020-12-04T10:33:29.750Z%/%Sebastian Kaltenbach%/%!Ping
+2020-12-04T10:33:30.478Z%/%ScalaChatBot%/%Pong
+2020-12-04T10:33:32.180Z%/%Sebastian Kaltenbach%/%!Hello
+2020-12-04T10:33:32.937Z%/%ScalaChatBot%/%Hello Sebastian Kaltenbach! How are you doing?
+2020-12-04T10:33:35.767Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-04T10:33:36.523Z%/%ScalaChatBot%/%Hello Sebastian Kaltenbach! How are you doing?
+2020-12-04T10:33:40.450Z%/%Sebastian Kaltenbach%/%!Ping
+2020-12-04T10:33:41.182Z%/%ScalaChatBot%/%Pong
+2020-12-04T10:33:42.734Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-04T10:33:43.527Z%/%ScalaChatBot%/%Pong
+2020-12-04T10:34:54.302Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-04T10:35:38.886Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-04T10:37:26Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-04T10:38:51.050Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-04T10:39:50.381Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-04T10:40:38.124Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-04T10:56:05.578Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-04T10:57:26.457Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-04T10:57:52.546Z%/%Sebastian Kaltenbach%/%!Hello
+2020-12-04T10:57:53.302Z%/%ScalaChatBot%/%Hello Sebastian Kaltenbach! How are you doing?
+2020-12-04T10:57:53.525Z%/%Sebastian Kaltenbach%/%Hallo
+2020-12-04T10:57:55.748Z%/%Sebastian Kaltenbach%/%Test
+2020-12-04T10:57:57.714Z%/%Sebastian Kaltenbach%/%Test
+2020-12-04T10:57:59.118Z%/%Sebastian Kaltenbach%/%Hallo
+2020-12-04T10:58:01.667Z%/%Sebastian Kaltenbach%/%!Hallo
+2020-12-04T10:58:02.361Z%/%ScalaChatBot%/%Sorry - I can't understand your message
+2020-12-04T10:58:04.885Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-04T10:58:05.622Z%/%ScalaChatBot%/%Sorry - I can't understand your message
+2020-12-04T11:02:19.133Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-04T11:03:17.583Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-04T11:03:31.734Z%/%Sebastian Kaltenbach%/%Hallo
+2020-12-04T11:03:32.902Z%/%Sebastian Kaltenbach%/%Hallo
+2020-12-04T11:03:35.435Z%/%Sebastian Kaltenbach%/%Test
+2020-12-04T11:03:36.977Z%/%Sebastian Kaltenbach%/%Test
+2020-12-04T11:03:38.183Z%/%Sebastian Kaltenbach%/%!Ping
+2020-12-04T11:03:38.905Z%/%ScalaChatBot%/%Pong
+2020-12-04T11:03:41.252Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-04T11:03:41.993Z%/%ScalaChatBot%/%Pong
+2020-12-04T11:04:57.829Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-04T11:16:19.687Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-04T11:16:47.549Z%/%Sebastian Kaltenbach%/%Hallo
+2020-12-04T11:16:51.086Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-04T11:18:05.215Z%/%Sebastian Kaltenbach%/%q
+2020-12-04T11:18:05.510Z%/%Sebastian Kaltenbach%/%w
+2020-12-04T11:18:05.774Z%/%Sebastian Kaltenbach%/%e
+2020-12-04T11:18:06.042Z%/%Sebastian Kaltenbach%/%r
+2020-12-04T11:18:06.307Z%/%Sebastian Kaltenbach%/%t
+2020-12-04T11:18:06.561Z%/%Sebastian Kaltenbach%/%z
+2020-12-04T11:18:06.852Z%/%Sebastian Kaltenbach%/%u
+2020-12-04T11:18:07.153Z%/%Sebastian Kaltenbach%/%i
+2020-12-04T11:18:07.511Z%/%Sebastian Kaltenbach%/%o
+2020-12-04T11:18:07.810Z%/%Sebastian Kaltenbach%/%p
+2020-12-04T11:18:15.399Z%/%Sebastian Kaltenbach%/%ü
+2020-12-04T11:18:15.697Z%/%Sebastian Kaltenbach%/%ä
+2020-12-04T11:18:15.941Z%/%Sebastian Kaltenbach%/%ö
+2020-12-04T11:18:16.220Z%/%Sebastian Kaltenbach%/%l
+2020-12-04T11:18:16.355Z%/%Sebastian Kaltenbach%/%k
+2020-12-04T11:18:16.676Z%/%Sebastian Kaltenbach%/%j
+2020-12-04T11:18:20.175Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-05T17:56:59.475Z%/%Sebastian Kaltenbach%/%</general
+2020-12-05T18:03:32.001Z%/%Sebastian Kaltenbach%/%!Hello
+2020-12-05T18:03:33.016Z%/%ScalaChatBot%/%Hello Sebastian Kaltenbach! How are you doing?
+2020-12-05T18:03:35.724Z%/%Sebastian Kaltenbach%/%!Spam
+2020-12-05T18:03:35.926Z%/%ScalaChatBot%/%Hello 1
+2020-12-05T18:03:36.912Z%/%ScalaChatBot%/%Hello 2
+2020-12-05T18:03:37.921Z%/%ScalaChatBot%/%Hello 3
+2020-12-05T18:03:38.929Z%/%ScalaChatBot%/%Hello 4
+2020-12-05T18:03:39.936Z%/%ScalaChatBot%/%Hello 5
+2020-12-05T18:03:40.962Z%/%ScalaChatBot%/%Hello 6
+2020-12-05T18:03:41.946Z%/%ScalaChatBot%/%Hello 7
+2020-12-05T18:03:42.898Z%/%ScalaChatBot%/%Hello 8
+2020-12-05T18:03:44.724Z%/%ScalaChatBot%/%Hello 9
+2020-12-05T18:03:45.050Z%/%ScalaChatBot%/%Hello 10
+2020-12-05T18:03:46.419Z%/%ScalaChatBot%/%Hello Sebastian Kaltenbach! How are you doing?
+2020-12-05T18:04:00.444Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-05T18:04:01.254Z%/%ScalaChatBot%/%Hello Sebastian Kaltenbach! How are you doing?
+2020-12-05T18:07:08.778Z%/%Sebastian Kaltenbach%/%!Spam
+2020-12-05T18:07:09.459Z%/%ScalaChatBot%/%Hello 1
+2020-12-05T18:07:10.334Z%/%ScalaChatBot%/%Hello 2
+2020-12-05T18:07:11.433Z%/%ScalaChatBot%/%Hello 3
+2020-12-05T18:07:12.417Z%/%ScalaChatBot%/%Hello 4
+2020-12-05T18:07:13.409Z%/%ScalaChatBot%/%Hello 5
+2020-12-05T18:07:15.265Z%/%ScalaChatBot%/%Hello 6
+2020-12-05T18:07:15.626Z%/%ScalaChatBot%/%Hello 7
+2020-12-05T18:07:16.392Z%/%ScalaChatBot%/%Hello 8
+2020-12-05T18:07:17.448Z%/%ScalaChatBot%/%Hello 9
+2020-12-05T18:07:18.441Z%/%ScalaChatBot%/%Hello 10
+2020-12-05T18:07:43.510Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-07T10:49:22.909Z%/%Sebastian Kaltenbach%/%!Spam
+2020-12-07T10:49:23.834Z%/%ScalaChatBot%/%Sorry - I can't understand your message
+2020-12-07T10:50:24.747Z%/%Sebastian Kaltenbach%/%!Hello
+2020-12-07T10:50:25.708Z%/%ScalaChatBot%/%Hello Sebastian Kaltenbach! How are you doing?
+2020-12-07T10:50:26.632Z%/%Sebastian Kaltenbach%/%!Ping
+2020-12-07T10:50:27.367Z%/%ScalaChatBot%/%Pong
+2020-12-07T10:50:31.701Z%/%Sebastian Kaltenbach%/%!Hello
+2020-12-07T10:50:32.367Z%/%ScalaChatBot%/%Hello Sebastian Kaltenbach! How are you doing?
+2020-12-07T10:50:35.074Z%/%Sebastian Kaltenbach%/%!Hello
+2020-12-07T10:50:35.677Z%/%ScalaChatBot%/%Hello Sebastian Kaltenbach! How are you doing?
+2020-12-07T11:01:32.598Z%/%Sebastian Kaltenbach%/%!Ping
+2020-12-07T11:01:33.165Z%/%Sebastian Kaltenbach%/%!Ping
+2020-12-07T11:01:33.638Z%/%ScalaChatBot%/%Pong
+2020-12-07T11:01:33.735Z%/%Sebastian Kaltenbach%/%!Ping
+2020-12-07T11:01:34.137Z%/%ScalaChatBot%/%Pong
+2020-12-07T11:01:34.596Z%/%ScalaChatBot%/%Pong
+2020-12-07T11:01:43.663Z%/%Sebastian Kaltenbach%/%!Ping
+2020-12-07T11:01:44.373Z%/%ScalaChatBot%/%Pong
+2020-12-07T11:01:46.651Z%/%Sebastian Kaltenbach%/%!Ping
+2020-12-07T11:01:47.195Z%/%Sebastian Kaltenbach%/%!Ping
+2020-12-07T11:01:47.562Z%/%ScalaChatBot%/%Pong
+2020-12-07T11:01:47.981Z%/%ScalaChatBot%/%Pong
+2020-12-07T11:01:56.588Z%/%Sebastian Kaltenbach%/%!Ping
+2020-12-07T11:01:57.187Z%/%ScalaChatBot%/%Pong
+2020-12-07T11:03:39.342Z%/%Sebastian Kaltenbach%/%//val messageBot = sourceSystem.actorOf(Props[MessageBot], name = "messageBot")
+2020-12-07T11:03:39.743Z%/%Sebastian Kaltenbach%/%//val messageBot = sourceSystem.actorOf(Props[MessageBot], name = "messageBot")
+2020-12-07T11:03:40.054Z%/%Sebastian Kaltenbach%/%//val messageBot = sourceSystem.actorOf(Props[MessageBot], name = "messageBot")
+2020-12-07T11:03:49.225Z%/%Sebastian Kaltenbach%/%!Ping
+2020-12-07T11:03:49.992Z%/%ScalaChatBot%/%Pong
+2020-12-07T11:03:50.218Z%/%Sebastian Kaltenbach%/%!Ping
+2020-12-07T11:03:50.453Z%/%Sebastian Kaltenbach%/%!Ping
+2020-12-07T11:03:50.882Z%/%ScalaChatBot%/%Pong
+2020-12-07T11:03:51.334Z%/%ScalaChatBot%/%Pong
+2020-12-07T11:03:54.474Z%/%Sebastian Kaltenbach%/%!Ping
+2020-12-07T11:03:55.099Z%/%ScalaChatBot%/%Pong
+2020-12-07T11:05:10.374Z%/%Sebastian Kaltenbach%/%!Ping
+2020-12-07T11:05:10.741Z%/%Sebastian Kaltenbach%/%!Ping
+2020-12-07T11:05:10.977Z%/%Sebastian Kaltenbach%/%!Ping
+2020-12-07T11:05:11.239Z%/%ScalaChatBot%/%Pong
+2020-12-07T11:05:11.768Z%/%ScalaChatBot%/%Pong
+2020-12-07T11:05:12.178Z%/%ScalaChatBot%/%Pong
+2020-12-07T11:05:59.396Z%/%Sebastian Kaltenbach%/%!Ping
+2020-12-07T11:05:59.726Z%/%Sebastian Kaltenbach%/%!Ping
+2020-12-07T11:06:00.052Z%/%Sebastian Kaltenbach%/%!Ping
+2020-12-07T11:06:00.264Z%/%ScalaChatBot%/%Pong
+2020-12-07T11:06:00.761Z%/%ScalaChatBot%/%Pong
+2020-12-07T11:06:01.172Z%/%ScalaChatBot%/%Pong
+2020-12-07T11:08:25.051Z%/%Sebastian Kaltenbach%/%!Ping
+2020-12-07T11:08:25.393Z%/%Sebastian Kaltenbach%/%!Ping
+2020-12-07T11:08:25.666Z%/%Sebastian Kaltenbach%/%!Ping
+2020-12-07T11:08:25.842Z%/%ScalaChatBot%/%Pong
+2020-12-07T11:08:26.372Z%/%ScalaChatBot%/%Pong
+2020-12-07T11:08:26.875Z%/%ScalaChatBot%/%Pong
+2020-12-07T11:10:17.474Z%/%Sebastian Kaltenbach%/%!Ping
+2020-12-07T11:10:17.930Z%/%Sebastian Kaltenbach%/%!Ping
+2020-12-07T11:10:18.215Z%/%Sebastian Kaltenbach%/%!Ping
+2020-12-07T11:10:18.448Z%/%ScalaChatBot%/%Pong
+2020-12-07T11:10:18.802Z%/%ScalaChatBot%/%Pong
+2020-12-07T11:10:19.409Z%/%ScalaChatBot%/%Pong
+2020-12-07T11:36:30.769Z%/%Sebastian Kaltenbach%/%!Ping
+2020-12-07T11:36:31.641Z%/%ScalaChatBot%/%Pong
+2020-12-07T11:36:34.488Z%/%Sebastian Kaltenbach%/%!Hello
+2020-12-07T11:36:35.197Z%/%ScalaChatBot%/%Hello Sebastian Kaltenbach! How are you doing?
+2020-12-07T11:36:47.906Z%/%Sebastian Kaltenbach%/%!Calc1+1
+2020-12-07T11:36:48.660Z%/%ScalaChatBot%/%Result: 1 + 1 = 2
+2020-12-07T11:36:53.946Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-12-07T11:36:54.672Z%/%ScalaChatBot%/%Is it already time for leaving? Goodbye!
+2020-12-07T11:41:42.043Z%/%Sebastian Kaltenbach%/%!Hello
+2020-12-07T11:41:42.844Z%/%ScalaChatBot%/%Hello Sebastian Kaltenbach! How are you doing?
+2020-12-07T12:09:42.914Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-07T12:26:34.143Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-07T12:27:06.516Z%/%Sebastian Kaltenbach%/%Test
+2020-12-07T12:28:02.565Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-07T16:53:55.502Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-07T16:55:28.834Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-07T16:56:38.741Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-07T16:56:52.253Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-12-07T16:56:52.962Z%/%ScalaChatBot%/%Is it already time for leaving? Goodbye!
+2020-12-07T16:57:20.081Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-07T16:57:56.152Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-07T16:58:49.682Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-07T17:00:26.058Z%/%Sebastian Kaltenbach%/%!Goodbye
+2020-12-07T17:13:21.398Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-07T17:15:07.135Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-07T17:16:20.245Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-07T17:17:20.101Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-07T17:18:57.656Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-07T17:20:05.380Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-07T17:21:34.528Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-07T17:21:44.248Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-07T17:22:41.484Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-07T17:23:36.463Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-07T17:24:18.838Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-07T17:27:14.269Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-07T17:27:57.417Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-07T17:29:11.623Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-07T17:29:47.247Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-07T17:30:49.400Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-07T17:32:52.928Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-07T17:34:50.617Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-07T17:40:43.407Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-07T17:48:29.940Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-07T17:49:35.506Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-07T17:49:41.215Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-07T17:56:10.206Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-07T18:08:25.131Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-07T18:09:50.490Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-07T18:16:52.988Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-07T18:18:09.698Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-07T18:47:04.375Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-07T18:48:35.470Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-07T18:48:57.055Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-08T12:20:36.996Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-08T12:37:31.832Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-08T12:46:21.408Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-08T12:48:20.153Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-08T12:49:39.654Z%/%Sebastian Kaltenbach%/%!Start
+2020-12-09T08:00:47.059Z%/%Sebastian Kaltenbach%/%Hallo Source.txt
+2020-12-09T08:01:11.392Z%/%Sebastian Kaltenbach%/%Hello again
+2020-12-09T08:01:29.823Z%/%Sebastian Kaltenbach%/%!Hello
+2020-12-09T08:01:30.813Z%/%ScalaChatBot%/%Hello Sebastian Kaltenbach! How are you doing?
+2020-12-12T10:09:25.734Z%/%Felicitas Maurer%/%!Start
+2020-12-12T15:11:06.240Z%/%Felicitas Maurer%/%!Start
+2020-12-12T15:11:30.787Z%/%Felicitas Maurer%/%!Goodbye
+2020-12-12T15:11:31.635Z%/%ScalaChatBot%/%Is it already time for leaving? Goodbye!
+2020-12-12T15:30:10.249Z%/%Felicitas Maurer%/%!Goodbye

@@ -1,6 +1,6 @@
 import akka.NotUsed
 import akka.actor.{ActorSystem, Props}
-import akka.stream.ClosedShape
+import akka.stream.{ClosedShape, FlowShape}
 import akka.stream.scaladsl.{Broadcast, Flow, GraphDSL, RunnableGraph, Sink, Source, Zip}
 
 import scala.collection.mutable.ListBuffer
@@ -19,7 +19,7 @@ object Main{
     // step 2 - add the necessary components of this graph
     val input = builder.add(Source(readSource()))
 
-    val pasteSpaceBetweenArguments = builder.add(Flow[String].map(string => string.replace('%', ' ')))
+    val pasteSpaceBetweenArguments= builder.add(Flow[String].map(string => string.replace('%', ' ')))
     val messageParserModel = new MessageParserModel()
     val convertsStringToMessage = builder.add(Flow[String].map(message => messageParserModel.generateMessageFromString(message)))
 

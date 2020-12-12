@@ -36,7 +36,7 @@ class DiscordBot extends Actor {
     case APIMessage.MessageCreate(_, message, _) => {
 
       val messageMetaString = message.timestamp + "%" + message.authorUsername + "%" + message.content.replaceAll("\r\n", "{NL}") + "\n"
-      //addMessageToSourceFile("Source.txt", messageMetaString)
+      addMessageToSourceFile("Source.txt", messageMetaString)
 
       if (message.content.startsWith("!")) {
         if (message.content.equals("!Hello")) {
@@ -68,7 +68,7 @@ class DiscordBot extends Actor {
 
           val messageList = listBuffer.toList
 
-          val stringList = messageList.map(content => content._1 + "%" + content._2 + "%" + content._3.replaceAll("\r\n", "{NL}") + "\n")
+          val stringList = messageList.map(content => content._1 + "%/%" + content._2 + "%/%" + content._3.replaceAll("\r\n", "{NL}") + "\n")
           val reversedStringList = stringList.reverse
           writeFile("Source.txt", reversedStringList)
           println("Done")
