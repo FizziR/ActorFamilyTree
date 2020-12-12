@@ -36,7 +36,7 @@ class DiscordBot extends Actor {
     case APIMessage.MessageCreate(_, message, _) => {
 
       val messageMetaString = message.timestamp + "%" + message.authorUsername + "%" + message.content.replaceAll("\r\n", "{NL}") + "\n"
-      addMessageToSourceFile("Source.txt", messageMetaString)
+      //addMessageToSourceFile("Source.txt", messageMetaString)
 
       if (message.content.startsWith("!")) {
         if (message.content.equals("!Hello")) {
