@@ -1,14 +1,11 @@
-package Model
-
-import akka.http.scaladsl.model.DateTime
 import akka.http.scaladsl.model.DateTime.fromIsoDateTimeString
 import scala.util.parsing.combinator.RegexParsers
 
 class MessageParser extends RegexParsers{
 
-  def dateTime = "[0-9\\-]+T[0-9:]+[0-9.]+(Z\\z)".r
-  def space = "%"
-  def userName = "([a-zA-zäÄöÖüÜß0-9]+\\s*)*".r
+  def dateTime = "[0-9]{4}\\-[0-9]{2}\\-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}.[0-9]{3}Z".r
+  def space = "/".r
+  def userName = "[a-zA-zäÄöÖüÜß0-9]+(\\s)*[a-zA-zäÄöÖüÜß0-9]*".r
   def message = ".*".r
 
   def messageParser: Parser[Message]=
@@ -24,3 +21,4 @@ class MessageParser extends RegexParsers{
 
 
 }
+
