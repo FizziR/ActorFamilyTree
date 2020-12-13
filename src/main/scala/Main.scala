@@ -13,6 +13,8 @@ object Main{
   implicit val sourceSystem = ActorSystem("sourceSystem")
   val discordBot = sourceSystem.actorOf(Props[DiscordBot], name = "discordBot")
 
+  val producer = new Producer
+
   // step 1 - setting up the fundamentals for the graph
   val graph = GraphDSL.create(){ implicit builder:
     GraphDSL.Builder[NotUsed] =>
@@ -31,13 +33,15 @@ object Main{
     val convertMessageToWord = builder.add(Flow[Message].map(message => message.message.split(" ").length))
     val convertMessageToChar = builder.add(Flow[Message].map(message => message.message.length))
 
+    val convertTuplesToProducerContent = builder.add(Flow[(String, (Int, Int))].map(message => ProducerContent(message._1, message._2._1, message._2._2)))
 
-    val output = builder.add(Sink.foreach[(String, (Int, Int))](println))
+
+    //val output = builder.add(Sink.foreach[ProducerContent](println))
+    val output = builder.add(Sink.foreach[ProducerContent](producer.produceInput))
 
 
-    val broadcast = builder.add(Broadcast[Message](2))
+    val broadcast = builder.add(Broadcast[Message](3))
 
-    val wordBroadcast = builder.add(Broadcast[Message](2))
     val wordZip = builder.add(Zip[Int, Int])
 
     val zip = builder.add(Zip[String, (Int, Int)])
@@ -47,13 +51,12 @@ object Main{
     input ~> pasteSpaceBetweenArguments ~> convertsStringToMessage ~> convertOptionToMessage ~> broadcast
 
     broadcast.out(0) ~> convertMessageToUser ~> zip.in0
-    broadcast.out(1) ~> wordBroadcast
-                        wordBroadcast.out(0) ~> convertMessageToWord ~> wordZip.in0
-                        wordBroadcast.out(1) ~> convertMessageToChar ~> wordZip.in1
+    broadcast.out(1) ~> convertMessageToWord ~> wordZip.in0
+    broadcast.out(2) ~> convertMessageToChar ~> wordZip.in1
 
                         wordZip.out ~> zip.in1
 
-    zip.out ~> output
+    zip.out ~> convertTuplesToProducerContent ~> output
 
     ClosedShape
   }

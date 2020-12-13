@@ -14,15 +14,18 @@ object Consumer extends App{
   props.put("group.id", "something")
 
   val consumer = new KafkaConsumer[String, String](props)
-  val TOPIC="test"
 
-  consumer.subscribe(util.Collections.singletonList(TOPIC))
+  val TOPIC_SUMOFWORDS = "sumofwords"
+  val TOPIC_SUMOFCHARACTERS = "sumofcharacters"
+
+  consumer.subscribe(util.Collections.singletonList(TOPIC_SUMOFWORDS))
+  consumer.subscribe(util.Collections.singletonList(TOPIC_SUMOFCHARACTERS))
 
   while(true){
     println("Polling..")
     val records=consumer.poll(100)
     for (record<-records.asScala){
-      println(record)
+      println(record.topic() + ": " + record.key() + " - " + record.value())
     }
   }
 }

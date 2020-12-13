@@ -1,12 +1,9 @@
-package Kafka
-
 import java.util.Properties
 
 import org.apache.kafka.clients.producer.{KafkaProducer, ProducerRecord}
 
-import scala.::
 
-object Producer extends App{
+class Producer {
 
   val props = new Properties()
   props.put("bootstrap.servers", "localhost:9092")
@@ -18,20 +15,18 @@ object Producer extends App{
   val TOPIC_SUMOFWORDS = "sumofwords"
   val TOPIC_SUMOFCHARACTERS = "sumofcharacters"
 
-  var VALUES: List[(String, List[Int])] = List()
+  var VALUES: List[ProducerContent] = List()
 
-
-  def produceInput(inputValuePair: ((String, String), String, Int, Int)): Unit= {
-    val mapValues = VALUES.toMap
-    if( !mapValues.contains(inputValuePair._2)){
-      VALUES = VALUES ++ List((inputValuePair._2, List(inputValuePair._3, inputValuePair._4)))
+  def produceInput(producerInput: ProducerContent): Unit= {
+    if(VALUES.filter(content => content.author.equals(producerInput.author)).isEmpty){
+      VALUES = VALUES ++ List(producerInput)
     }
     else{
-      VALUES = VALUES.map(valuePair => if(valuePair._1.equals(inputValuePair._1)) (inputValuePair._2, List(inputValuePair._3, inputValuePair._4)) else valuePair)
+      VALUES = VALUES.map(valuePair => if(valuePair.author.equals(producerInput.author)) ProducerContent(valuePair.author, valuePair.wordCount + producerInput.wordCount, valuePair.characterCount + producerInput.characterCount) else valuePair)
     }
-    VALUES.foreach(i => {
-      val sumOfWords = new ProducerRecord(TOPIC_SUMOFWORDS, i._1, s"Sum of words: ${i._2.head}")
-      val sumOfCharacters = new ProducerRecord(TOPIC_SUMOFCHARACTERS, i._1, s"Sum of words: ${i._2.tail}")
+    VALUES.foreach(content => {
+      val sumOfWords = new ProducerRecord(TOPIC_SUMOFWORDS, content.author, s"Sum of words: ${content.wordCount}")
+      val sumOfCharacters = new ProducerRecord(TOPIC_SUMOFCHARACTERS, content.author, s"Sum of words: ${content.characterCount}")
       Thread.sleep(500)
       producer.send(sumOfWords)
       Thread.sleep(500)
