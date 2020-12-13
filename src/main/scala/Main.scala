@@ -39,7 +39,6 @@ object Main{
     //val output = builder.add(Sink.foreach[ProducerContent](println))
     val output = builder.add(Sink.foreach[ProducerContent](sinkQueue.enqueue(_)))
 
-
     val broadcast = builder.add(Broadcast[Message](3))
 
     val wordZip = builder.add(Zip[Int, Int])
@@ -66,6 +65,10 @@ object Main{
     while(true){
       if( !sinkQueue.isEmpty){
         producer.produceInput(sinkQueue.dequeue())
+        println("Queue length: " + sinkQueue.length)
+      }
+      else{
+        println("Queue is empty")
       }
       Thread.sleep(500)
       println("ITERATION")

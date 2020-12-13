@@ -1,6 +1,5 @@
 import java.io.{BufferedWriter, File, FileWriter}
 
-import ackcord.data.raw.RawMessage
 import ackcord.{APIMessage, ClientSettings, data}
 import ackcord.requests.{CreateMessage, CreateMessageData, GetChannelMessage, GetChannelMessages, GetChannelMessagesData}
 import akka.actor.{Actor, Props}
@@ -12,7 +11,6 @@ import scala.concurrent.Await
 import scala.concurrent.duration.{Duration, DurationInt}
 import io.circe.parser._
 
-import scala.collection.mutable.ListBuffer
 
 class DiscordBot extends Actor {
   val log = Logging(context.system, this)
@@ -25,7 +23,6 @@ class DiscordBot extends Actor {
 
   val clientSettings = ClientSettings(token)
   val client = Await.result(clientSettings.createClient(), Duration.Inf)
-
 
 
   implicit val timeout: Timeout = Timeout(3 seconds)

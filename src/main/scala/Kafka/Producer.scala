@@ -2,7 +2,6 @@ import java.util.Properties
 
 import org.apache.kafka.clients.producer.{KafkaProducer, ProducerRecord}
 
-
 class Producer {
 
   val props = new Properties()
@@ -12,33 +11,39 @@ class Producer {
 
   val producer = new KafkaProducer[String, String](props)
 
-  val TOPIC_SUMOFWORDS = "sumofwords"
-  val TOPIC_SUMOFCHARACTERS = "sumofcharacters"
+  val TOPIC_METADATA = "metadata"
+  val KEY_METADATA = "data"
 
   var VALUES: List[ProducerContent] = List()
 
-  def testProduction(): Unit = {
-    val sumOfWords = new ProducerRecord(TOPIC_SUMOFWORDS, "Test Key", s"Sum of words: 5")
-    producer.send(sumOfWords)
-  }
-
   def produceInput(producerInput: ProducerContent): Unit = {
-    println("IN MESSAGE SEND!")
     if(VALUES.filter(content => content.author.equals(producerInput.author)).isEmpty){
       VALUES = VALUES ++ List(producerInput)
     }
     else{
       VALUES = VALUES.map(valuePair => if(valuePair.author.equals(producerInput.author)) ProducerContent(valuePair.author, valuePair.wordCount + producerInput.wordCount, valuePair.characterCount + producerInput.characterCount) else valuePair)
     }
-    println(VALUES)
-    VALUES.foreach(content => {
-      val sumOfWords = new ProducerRecord(TOPIC_SUMOFWORDS, content.author, s"Sum of words: ${content.wordCount}")
-      val sumOfCharacters = new ProducerRecord(TOPIC_SUMOFCHARACTERS, content.author, s"Sum of words: ${content.characterCount}")
-      Thread.sleep(500)
-      producer.send(sumOfWords)
-      Thread.sleep(500)
-      producer.send(sumOfCharacters)
-    })
+    val metadata = new ProducerRecord(TOPIC_METADATA, KEY_METADATA, createJSON(TOPIC_METADATA))
+    Thread.sleep(500)
+    producer.send(metadata)
+
     //producer.close()
+  }
+  def createJSON(key: String): String ={
+    var jsonString= ""
+    if(key.equals(TOPIC_METADATA)){
+      jsonString = "{\"" + key + "\":[" + createJSONMetaDataArray() + "]}"
+    }
+    jsonString
+  }
+  def createJSONMetaDataArray(): String ={
+    var arrayString = ""
+    VALUES.foreach(content => {
+      arrayString += "{\"author\":\"" + content.author + "\",\"words\":" + content.wordCount + "\",\"characters\":" + content.characterCount + "}"
+      if( !(content == VALUES.last)){
+        arrayString += ","
+      }
+    })
+    arrayString
   }
 }
