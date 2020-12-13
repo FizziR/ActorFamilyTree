@@ -71,7 +71,6 @@ object Main{
         println("Queue is empty")
       }
       Thread.sleep(500)
-      println("ITERATION")
     }
   }
 
