@@ -2,9 +2,8 @@ import akka.NotUsed
 import akka.actor.{ActorSystem, Props}
 import akka.stream.{ClosedShape, FlowShape}
 import akka.stream.scaladsl.{Broadcast, Flow, GraphDSL, RunnableGraph, Sink, Source, Zip}
-import shapeless.syntax.std.tuple.productTupleOps
 
-import scala.::
+import scala.collection.mutable.Queue
 import scala.collection.mutable.ListBuffer
 
 object Main{
@@ -14,6 +13,7 @@ object Main{
   val discordBot = sourceSystem.actorOf(Props[DiscordBot], name = "discordBot")
 
   val producer = new Producer
+  var sinkQueue = new Queue[ProducerContent]
 
   // step 1 - setting up the fundamentals for the graph
   val graph = GraphDSL.create(){ implicit builder:
@@ -37,7 +37,7 @@ object Main{
 
 
     //val output = builder.add(Sink.foreach[ProducerContent](println))
-    val output = builder.add(Sink.foreach[ProducerContent](producer.produceInput))
+    val output = builder.add(Sink.foreach[ProducerContent](sinkQueue.enqueue(_)))
 
 
     val broadcast = builder.add(Broadcast[Message](3))
@@ -63,6 +63,13 @@ object Main{
 
   def main(args: Array[String]): Unit = {
     RunnableGraph.fromGraph(graph).run()
+    while(true){
+      if( !sinkQueue.isEmpty){
+        producer.produceInput(sinkQueue.dequeue())
+      }
+      Thread.sleep(500)
+      println("ITERATION")
+    }
   }
 
   def readSource(): List[String] ={

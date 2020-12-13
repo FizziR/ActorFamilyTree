@@ -23,9 +23,9 @@ object Consumer extends App{
 
   while(true){
     println("Polling..")
-    val records=consumer.poll(100)
+    val records=consumer.poll(1000)
     for (record<-records.asScala){
-      println(record.topic() + ": " + record.key() + " - " + record.value())
+      println("MESSAGE: " + record.topic() + " - " + record.key() + " -> " + record.value())
     }
   }
 }
