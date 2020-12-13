@@ -1,5 +1,6 @@
 import java.util.Properties
 
+import io.circe.syntax.EncoderOps
 import org.apache.kafka.clients.producer.{KafkaProducer, ProducerRecord}
 
 class Producer {
@@ -23,27 +24,36 @@ class Producer {
     else{
       VALUES = VALUES.map(valuePair => if(valuePair.author.equals(producerInput.author)) ProducerContent(valuePair.author, valuePair.wordCount + producerInput.wordCount, valuePair.characterCount + producerInput.characterCount) else valuePair)
     }
-    val metadata = new ProducerRecord(TOPIC_METADATA, KEY_METADATA, createJSON(TOPIC_METADATA))
+    val valueList = VALUES.map(content => (content.author, content.wordCount, content.characterCount))
+    val metadata = new ProducerRecord(TOPIC_METADATA, KEY_METADATA, valueList.asJson.toString())
     Thread.sleep(500)
     producer.send(metadata)
 
     //producer.close()
   }
-  def createJSON(key: String): String ={
-    var jsonString= ""
-    if(key.equals(TOPIC_METADATA)){
-      jsonString = "{\"" + key + "\":[" + createJSONMetaDataArray() + "]}"
-    }
-    jsonString
-  }
+  def createJSON(key: String) = s"""
+      {
+        "$key": [
+          ${createJSONMetaDataArray()}
+        ]
+      }
+    """.strip()
+
   def createJSONMetaDataArray(): String ={
     var arrayString = ""
     VALUES.foreach(content => {
-      arrayString += "{\"author\":\"" + content.author + "\",\"words\":" + content.wordCount + "\",\"characters\":" + content.characterCount + "}"
+      arrayString += getJSONMetaData(content)
       if( !(content == VALUES.last)){
         arrayString += ","
       }
     })
     arrayString
   }
+  def getJSONMetaData(producerContent: ProducerContent) = s"""
+  {
+    "author": "${producerContent.author}",
+    "words": ${producerContent.wordCount},
+    "characters": ${producerContent.characterCount}
+  }
+  """.strip()
 }
