@@ -33,7 +33,7 @@ object Consumer extends App{
 
   def parseMessageToTUI(jsonString: String): Unit = {
     val jsonAsList = decode[List[(String, Int, Int)]](jsonString).right.getOrElse(List(("", 0, 0)))
-    var metaBoardString = "META BOARD\nUser:\tMessages:\tCharacters:\n______________________________\n"
+    var metaBoardString = "META BOARD\nUser:\tWords:\tCharacters:\n______________________________\n"
     jsonAsList.foreach(content => {
       metaBoardString += content._1 + "\t" + content._2 + "\t" + content._3 + "\n______________________________\n"
     })
