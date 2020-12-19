@@ -3,6 +3,7 @@ import Sparks.AnalyzingData
 import org.apache.kafka.clients.consumer.ConsumerRecord
 import org.apache.spark.streaming.kafka010.ConsumerStrategies.Subscribe
 import org.apache.kafka.common.serialization.StringDeserializer
+import org.apache.spark.sql.types.{IntegerType, StringType, StructField}
 import org.apache.spark.sql.{DataFrame, SparkSession}
 import org.apache.spark.streaming.dstream.{DStream, InputDStream}
 import org.apache.spark.streaming.kafka010.{KafkaUtils, _}
@@ -47,25 +48,33 @@ object SparkConsumer {
     val discordData1Second: DStream[(String, Int, Int)] =
       discordStream1Second.map(record =>(record.author, record.wordCount, record.characterCount))
 
+    val spark = SparkSession.builder.config("spark.master", "local").getOrCreate()
+
+    import spark.implicits._
+
+    var dataBase = Seq(("", 0, 0)).toDF("Author", "Words", "Character")
+    dataBase.createOrReplaceTempView("dataBase")
 
     val analyzingData = new AnalyzingData
     discordData1Second.foreachRDD(rdd =>
-      if(rdd.isEmpty()) println("Es gab keine neuen Daten...")
-      else {
+    if(rdd.isEmpty()) println("Es gab keine neuen Daten...")
+    else {
 
-        //println(rdd.toString())
+      dataBase.show()
 
-        val spark = SparkSession.builder.config(rdd.sparkContext.getConf).getOrCreate()
-        import spark.implicits._
+      //println(rdd.toString())
+      dataBase = dataBase.union(rdd.toDF("Author", "Words", "Character"))
 
-        val dataFrame: DataFrame = rdd.toDF()
-        dataFrame.createOrReplaceTempView("dataFrame")
+      val x = dataBase.collect().length
+      println("Length: " + x)
 
-        val countDataFrame: DataFrame = spark.sql("select count(*) as total from dataFrame")
+      /*val countDataFrame: DataFrame = spark.sql("select count(*) as total from dataFrame")
         //countDataFrame.show()
 
-        val completeDataFrame = spark.sql("select * from dataFrame")
-        completeDataFrame.show()
+      val completeDataFrame = spark.sql("select * from dataFrame")
+        completeDataFrame.show()*/
+
+      val dataList = dataBase.collect().map(row => (row.getString(0), row.getInt(1), row.getInt(2))).toList
 
         val authors = rdd.collect().map { case (author, wordCount, characterCount) => author}
         val authorsAndWordCounts = rdd.collect().map { case (author, wordCount, characterCount) => (author, wordCount)}

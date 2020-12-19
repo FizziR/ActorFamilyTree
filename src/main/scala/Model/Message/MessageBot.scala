@@ -48,6 +48,7 @@ class GoodbyeBot extends Actor {
     case "Goodbye" => sender() ! "Is it already time for leaving? Goodbye!"
   }
 }
+
 class PingBot extends Actor {
     override def receive: Receive = {
       case "Ping" => sender() ! "Pong"
