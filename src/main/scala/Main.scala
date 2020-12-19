@@ -1,3 +1,4 @@
+import Kafka.ProducerContent
 import akka.NotUsed
 import akka.actor.{ActorSystem, Props}
 import akka.stream.{ClosedShape, FlowShape}
@@ -33,10 +34,10 @@ object Main{
     val convertMessageToWord = builder.add(Flow[Message].map(message => message.message.split(" ").length))
     val convertMessageToChar = builder.add(Flow[Message].map(message => message.message.length))
 
-    val convertTuplesToProducerContent = builder.add(Flow[(String, (Int, Int))].map(message => ProducerContent(message._1, message._2._1, message._2._2)))
+  val convertTuplesToProducerContent = builder.add(Flow[(String, (Int, Int))].map(message => ProducerContent(message._1, message._2._1, message._2._2)))
 
 
-    //val output = builder.add(Sink.foreach[ProducerContent](println))
+    //val output = builder.add(Sink.foreach[Kafka.ProducerContent](println))
     val output = builder.add(Sink.foreach[ProducerContent](sinkQueue.enqueue(_)))
 
     val broadcast = builder.add(Broadcast[Message](3))
@@ -53,7 +54,7 @@ object Main{
     broadcast.out(1) ~> convertMessageToWord ~> wordZip.in0
     broadcast.out(2) ~> convertMessageToChar ~> wordZip.in1
 
-                        wordZip.out ~> zip.in1
+                                 wordZip.out ~> zip.in1
 
     zip.out ~> convertTuplesToProducerContent ~> output
 
@@ -64,8 +65,9 @@ object Main{
     RunnableGraph.fromGraph(graph).run()
     while(true){
       if( !sinkQueue.isEmpty){
-        producer.produceInput(sinkQueue.dequeue())
-        println("Queue length: " + sinkQueue.length)
+        val message = sinkQueue.dequeue()
+        producer.produceInput(message)
+        println("Queue length: " + sinkQueue.length + " Message: " + message)
       }
       else{
         println("Queue is empty")

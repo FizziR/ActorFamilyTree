@@ -1,3 +1,4 @@
+import Kafka.ProducerContent
 import org.scalatest.matchers.must.Matchers
 import org.scalatest.matchers.should.Matchers.convertToAnyShouldWrapper
 import org.scalatest.wordspec.{AnyWordSpec, AnyWordSpecLike}
@@ -10,7 +11,7 @@ class ProducerSpec extends AnyWordSpec  with Matchers {
   val values = List(feli, sebi, philip)
   val newValue = new ProducerContent("Philip", 3, 14)
 
-  val producer = new Producer
+  /*val producer = new Producer
   "In the producer the sumOfWords and sumOfCharacters is added to old values" when{
     "the name of the author is the same as in old list" in{
       producer.getJSONMetaData(newValue) should be (s"""
@@ -21,5 +22,5 @@ class ProducerSpec extends AnyWordSpec  with Matchers {
   }
   """.strip())
     }
-  }
+  }*/
 }
