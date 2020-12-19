@@ -1,3 +1,5 @@
+package Controller
+
 import ackcord.cachehandlers.CacheSnapshotBuilder
 import ackcord.data.ChannelId
 import ackcord.data.raw.RawMessage

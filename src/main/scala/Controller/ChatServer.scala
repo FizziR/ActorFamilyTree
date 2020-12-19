@@ -1,3 +1,9 @@
+package Controller
+
+import Model.Calculation.CalculationBot
+import Model.Lecture.LectureBot
+import Model.Message.MessageBot
+import Model.Stats.StatsBot
 import akka.actor.{Actor, Props}
 import akka.event.Logging
 import akka.pattern.ask
@@ -11,6 +17,7 @@ class ChatServer extends Actor {
   val messageBot = context.actorOf(Props[MessageBot], name = "messageBot")
   val calculationBot = context.actorOf(Props[CalculationBot], name = "calculationBot")
   val lectureBot = context.actorOf(Props[LectureBot], name = "lectureBot")
+  val statsBot = context.actorOf(Props[StatsBot], name = "statsBot")
   implicit val timeout: Timeout = Timeout(2 seconds)
 
   def receive = {
@@ -23,6 +30,11 @@ class ChatServer extends Actor {
            }
            case msg:String if msg.contains("Scala") => {
              val future = lectureBot ? msg.substring(5)
+             val result = Await.result(future, timeout.duration)
+             sender() ! result
+           }
+           case msg:String if msg.contains("Stats") => {
+             val future = statsBot ? msg.substring(0)
              val result = Await.result(future, timeout.duration)
              sender() ! result
            }

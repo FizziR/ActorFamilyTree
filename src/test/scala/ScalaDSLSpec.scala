@@ -1,4 +1,5 @@
 import Main.system
+import Model.Lecture.ScalaDSLs
 import org.scalatest.matchers.must.Matchers
 import org.scalatest.wordspec.{AnyWordSpec, AnyWordSpecLike}
 import akka.testkit.{ImplicitSender, TestActors, TestKit}
