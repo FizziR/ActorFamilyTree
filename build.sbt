@@ -17,3 +17,8 @@ libraryDependencies += "com.typesafe.akka" %% "akka-testkit" % AkkaVersion % Tes
 
 libraryDependencies += "org.apache.kafka" %% "kafka" % "2.6.0"
 
+libraryDependencies += "org.apache.spark" % "spark-core_2.12" % "3.0.1"
+libraryDependencies += "org.apache.spark" % "spark-streaming_2.12" % "3.0.1" % "provided"
+libraryDependencies += "org.apache.spark" % "spark-streaming-kafka-0-10_2.12" % "3.0.1"
+libraryDependencies += "org.apache.spark" % "spark-sql_2.12" % "3.0.1"
+
