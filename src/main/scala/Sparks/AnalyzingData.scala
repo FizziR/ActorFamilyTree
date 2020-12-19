@@ -4,23 +4,23 @@ import org.apache.spark.rdd.RDD
 
 class AnalyzingData {
 
-  def getUsersWhoWrote (context: SparkContext, authors: Array[String]) = {
-    val usersWhoWrote = context.parallelize(authors.map(author => (author, 1)))
+  def getUsersWhoWrote (context: SparkContext, dataList: List[(String, Int, Int)]) = {
+    val usersWhoWrote = context.parallelize(dataList.map(data => (data._1, 1)))
     val authorsWithCount = usersWhoWrote.groupBy(_._1).mapValues(list => {
       list.map(_._2).sum})
     authorsWithCount.collect()
   }
 
 
-  def getSumOfWords (context: SparkContext, authorAndWordCounts: Array[(String, Int)]) ={
-    val numOfWordsList = context. parallelize(authorAndWordCounts.map(authorAndWordCount => authorAndWordCount))
+  def getSumOfWords (context: SparkContext, dataList: List[(String, Int, Int)]) ={
+    val numOfWordsList = context. parallelize(dataList.map(data => (data._1, data._2)))
     val authorWithSumOfWords = numOfWordsList.groupBy(_._1).mapValues(list => {
       list.map(_._2).sum})
     authorWithSumOfWords.collect()
   }
 
-  def getSumOfChars (context: SparkContext, authorsAndCharCounts: Array[(String,Int)]) ={
-    val numOfCharsList = context.parallelize(authorsAndCharCounts.map(authorAndCharCount=> (authorAndCharCount)))
+  def getSumOfChars (context: SparkContext, dataList: List[(String,Int, Int)]) ={
+    val numOfCharsList = context.parallelize(dataList.map(data=> (data._1, data._3)))
     val authorWithSumOfChars = numOfCharsList.groupBy(_._1).mapValues(list => {
       list.map(_._2).sum})
     authorWithSumOfChars.collect()

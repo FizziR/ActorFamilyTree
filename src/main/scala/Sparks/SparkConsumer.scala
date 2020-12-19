@@ -52,7 +52,7 @@ object SparkConsumer {
 
     import spark.implicits._
 
-    var dataBase = Seq(("", 0, 0)).toDF("Author", "Words", "Character")
+    var dataBase = Seq(("Test", 0, 0)).toDF("Author", "Words", "Character")
     dataBase.createOrReplaceTempView("dataBase")
 
     val analyzingData = new AnalyzingData
@@ -80,13 +80,13 @@ object SparkConsumer {
         val authorsAndWordCounts = rdd.collect().map { case (author, wordCount, characterCount) => (author, wordCount)}
         val authorsAndCharCounts = rdd.collect().map { case (author, wordCount, characterCount) => (author, characterCount)}
 
-        val authorWithCounts = analyzingData.getUsersWhoWrote(sparkStreamingContext.sparkContext, authors)
+        val authorWithCounts = analyzingData.getUsersWhoWrote(sparkStreamingContext.sparkContext, dataList)
         println("Authors with count: "+authorWithCounts.mkString(""))
 
-        val authorWithSumOfWords = analyzingData.getSumOfWords(sparkStreamingContext.sparkContext, authorsAndWordCounts)
+        val authorWithSumOfWords = analyzingData.getSumOfWords(sparkStreamingContext.sparkContext, dataList)
         println("Authors with sum of words: " +authorWithSumOfWords.mkString(""))
 
-        val authorWithSumOfChars = analyzingData.getSumOfChars(sparkStreamingContext.sparkContext, authorsAndCharCounts)
+        val authorWithSumOfChars = analyzingData.getSumOfChars(sparkStreamingContext.sparkContext, dataList)
         println("Authors with sum of chars: " + authorWithSumOfChars.mkString(""))
       }
 
