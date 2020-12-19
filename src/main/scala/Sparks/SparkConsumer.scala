@@ -53,6 +53,8 @@ object SparkConsumer {
       if(rdd.isEmpty()) println("Es gab keine neuen Daten...")
       else {
 
+        //println(rdd.toString())
+
         val spark = SparkSession.builder.config(rdd.sparkContext.getConf).getOrCreate()
         import spark.implicits._
 
@@ -63,14 +65,20 @@ object SparkConsumer {
         //countDataFrame.show()
 
         val completeDataFrame = spark.sql("select * from dataFrame")
-        //completeDataFrame.show()
+        completeDataFrame.show()
 
-        val author = rdd.collect().map { case (author, wordCount, characterCount) => author}
-        val wordCount = rdd.collect().map { case (author, wordCount, characterCount) => wordCount}
-        val characterCount = rdd.collect().map { case (author, wordCount, characterCount) => characterCount}
+        val authors = rdd.collect().map { case (author, wordCount, characterCount) => author}
+        val authorsAndWordCounts = rdd.collect().map { case (author, wordCount, characterCount) => (author, wordCount)}
+        val authorsAndCharCounts = rdd.collect().map { case (author, wordCount, characterCount) => (author, characterCount)}
 
-        val authorWithCounts = analyzingData.getUsersWhoWrote(sparkStreamingContext.sparkContext, author)
-        println(authorWithCounts.mkString(""))
+        val authorWithCounts = analyzingData.getUsersWhoWrote(sparkStreamingContext.sparkContext, authors)
+        println("Authors with count: "+authorWithCounts.mkString(""))
+
+        val authorWithSumOfWords = analyzingData.getSumOfWords(sparkStreamingContext.sparkContext, authorsAndWordCounts)
+        println("Authors with sum of words: " +authorWithSumOfWords.mkString(""))
+
+        val authorWithSumOfChars = analyzingData.getSumOfChars(sparkStreamingContext.sparkContext, authorsAndCharCounts)
+        println("Authors with sum of chars: " + authorWithSumOfChars.mkString(""))
       }
 
     )
