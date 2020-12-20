@@ -17,8 +17,9 @@ import scala.compat.java8.FunctionConverters.enrichAsJavaFunction
 object SparkConsumer {
 
   var offset = 0
-  var oldValueSumOfWords  = collection.mutable.Map[String, Double]()
-  var oldValuesSumOfChars = collection.mutable.Map[String, Double]()
+  var oldValuesSumOfMessages = collection.mutable.Map[String, Long]()
+  var oldValueSumOfWords  = collection.mutable.Map[String, Long]()
+  var oldValuesSumOfChars = collection.mutable.Map[String, Long]()
   def main(args: Array[String]) {
 
     val sparkConfig = new SparkConf().setMaster("local[*]").setAppName("DiscordStream")
@@ -86,23 +87,34 @@ object SparkConsumer {
       val dataListWithOffset= rdd.collect().map { case (author, wordCount, characterCount) => (author, wordCount, characterCount)}.toList
       println("Length of dataList with offset: " +dataListWithOffset.length)
 
-      val authorWithCounts = analyzingData.getUsersWhoWrote(sparkStreamingContext.sparkContext, dataList)
+      val authorWithCounts = analyzingData.getUsersWhoWrote(sparkStreamingContext.sparkContext, dataListWithOffset)
         println("Authors with count: "+authorWithCounts.mkString(""))
 
-      val authorWithSumOfWords = analyzingData.getSumOfWords(sparkStreamingContext.sparkContext, dataList)
+      val authorWithSumOfWords = analyzingData.getSumOfWords(sparkStreamingContext.sparkContext, dataListWithOffset)
         println("Authors with sum of words: " +authorWithSumOfWords.mkString(""))
 
-      val authorWithSumOfChars = analyzingData.getSumOfChars(sparkStreamingContext.sparkContext, dataList)
+      val authorWithSumOfChars = analyzingData.getSumOfChars(sparkStreamingContext.sparkContext, dataListWithOffset)
         println("Authors with sum of chars: " + authorWithSumOfChars.mkString(""))
 
       offset = x
-      authorWithSumOfWords.map(author => {
-        if(oldValueSumOfWords.contains(author._1)) oldValueSumOfWords(author._1)+ author._2
-        else oldValueSumOfWords ++ author._1 -> author._2
+
+      authorWithCounts.map(authorWithMessages => {
+        if(oldValuesSumOfMessages.contains(authorWithMessages._1)) oldValuesSumOfMessages(authorWithMessages._1)+ authorWithMessages._2
+        else oldValuesSumOfMessages ++ authorWithMessages._1 -> authorWithMessages._2
+      })
+      authorWithSumOfWords.map(authorWithWords => {
+        if(oldValueSumOfWords.contains(authorWithWords._1)) oldValueSumOfWords(authorWithWords._1)+ authorWithWords._2
+        else oldValueSumOfWords ++ authorWithWords._1 -> authorWithWords._2
+      })
+      authorWithSumOfChars.map(authorWithChars => {
+        if(oldValuesSumOfChars.contains(authorWithChars._1)) oldValuesSumOfChars(authorWithChars._1)+ authorWithChars._2
+        else oldValuesSumOfChars ++ authorWithChars._1 -> authorWithChars._2
       })
 
+      println("Offset 2: " + offset)
 
-      println("Offset 2: " +offset)
+      println("Map Count: " + oldValuesSumOfMessages + "\nMap Words: " + oldValueSumOfWords +
+      "\nMap Chars: " + oldValuesSumOfChars)
 
       }
 
