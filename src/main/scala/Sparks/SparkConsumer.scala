@@ -1,4 +1,5 @@
 import Kafka.ProducerContent
+import SparkConsumer.oldValueSumOfWords
 import Sparks.AnalyzingData
 import org.apache.kafka.clients.consumer.ConsumerRecord
 import org.apache.spark.streaming.kafka010.ConsumerStrategies.Subscribe
@@ -16,7 +17,8 @@ import scala.compat.java8.FunctionConverters.enrichAsJavaFunction
 object SparkConsumer {
 
   var offset = 0
-
+  var oldValueSumOfWords  = collection.mutable.Map[String, Double]()
+  var oldValuesSumOfChars = collection.mutable.Map[String, Double]()
   def main(args: Array[String]) {
 
     val sparkConfig = new SparkConf().setMaster("local[*]").setAppName("DiscordStream")
@@ -80,7 +82,8 @@ object SparkConsumer {
         completeDataFrame.show()*/
       println("Offset 1: " +offset)
       val dataList = dataBase.collect().map(row => (row.getString(0), row.getInt(1), row.getInt(2))).toList
-      val dataListWithOffset= dataList.filter(data => dataList.indexOf(data) >= offset)
+
+      val dataListWithOffset= rdd.collect().map { case (author, wordCount, characterCount) => (author, wordCount, characterCount)}.toList
       println("Length of dataList with offset: " +dataListWithOffset.length)
 
       val authorWithCounts = analyzingData.getUsersWhoWrote(sparkStreamingContext.sparkContext, dataList)
@@ -93,6 +96,11 @@ object SparkConsumer {
         println("Authors with sum of chars: " + authorWithSumOfChars.mkString(""))
 
       offset = x
+      authorWithSumOfWords.map(author => {
+        if(oldValueSumOfWords.contains(author._1)) oldValueSumOfWords(author._1)+ author._2
+        else oldValueSumOfWords ++ author._1 -> author._2
+      })
+
 
       println("Offset 2: " +offset)
 
