@@ -15,6 +15,8 @@ import scala.compat.java8.FunctionConverters.enrichAsJavaFunction
 
 object SparkConsumer {
 
+  var offset = 0
+
   def main(args: Array[String]) {
 
     val sparkConfig = new SparkConf().setMaster("local[*]").setAppName("DiscordStream")
@@ -60,6 +62,7 @@ object SparkConsumer {
     if(rdd.isEmpty()) println("Es gab keine neuen Daten...")
     else {
 
+
       dataBase.show()
 
       //println(rdd.toString())
@@ -68,26 +71,31 @@ object SparkConsumer {
       val x = dataBase.collect().length
       println("Length: " + x)
 
+
+
       /*val countDataFrame: DataFrame = spark.sql("select count(*) as total from dataFrame")
         //countDataFrame.show()
 
       val completeDataFrame = spark.sql("select * from dataFrame")
         completeDataFrame.show()*/
-
+      println("Offset 1: " +offset)
       val dataList = dataBase.collect().map(row => (row.getString(0), row.getInt(1), row.getInt(2))).toList
+      val dataListWithOffset= dataList.filter(data => dataList.indexOf(data) >= offset)
+      println("Length of dataList with offset: " +dataListWithOffset.length)
 
-        val authors = rdd.collect().map { case (author, wordCount, characterCount) => author}
-        val authorsAndWordCounts = rdd.collect().map { case (author, wordCount, characterCount) => (author, wordCount)}
-        val authorsAndCharCounts = rdd.collect().map { case (author, wordCount, characterCount) => (author, characterCount)}
-
-        val authorWithCounts = analyzingData.getUsersWhoWrote(sparkStreamingContext.sparkContext, dataList)
+      val authorWithCounts = analyzingData.getUsersWhoWrote(sparkStreamingContext.sparkContext, dataList)
         println("Authors with count: "+authorWithCounts.mkString(""))
 
-        val authorWithSumOfWords = analyzingData.getSumOfWords(sparkStreamingContext.sparkContext, dataList)
+      val authorWithSumOfWords = analyzingData.getSumOfWords(sparkStreamingContext.sparkContext, dataList)
         println("Authors with sum of words: " +authorWithSumOfWords.mkString(""))
 
-        val authorWithSumOfChars = analyzingData.getSumOfChars(sparkStreamingContext.sparkContext, dataList)
+      val authorWithSumOfChars = analyzingData.getSumOfChars(sparkStreamingContext.sparkContext, dataList)
         println("Authors with sum of chars: " + authorWithSumOfChars.mkString(""))
+
+      offset = x
+
+      println("Offset 2: " +offset)
+
       }
 
     )
