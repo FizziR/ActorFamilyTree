@@ -1,3 +1,6 @@
+package Model.MessageParser
+import Model.Message
+
 import akka.http.scaladsl.model.DateTime.fromIsoDateTimeString
 import scala.util.parsing.combinator.RegexParsers
 

@@ -1,11 +1,9 @@
 package Kafka
 
 import java.util
-
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.module.scala.{DefaultScalaModule, ScalaObjectMapper}
 import org.apache.kafka.common.serialization.Deserializer
-
 import scala.util.{Failure, Success, Try}
 
 class MessageDeserializer extends Deserializer[ProducerContent]{
@@ -19,7 +17,7 @@ class MessageDeserializer extends Deserializer[ProducerContent]{
     var message = ProducerContent(null, 0, 0)
     tryMessage match {
       case Success(value: ProducerContent) => message = value
-      case Failure(exception) =>
+      case Failure(_) =>
     }
     message
   }

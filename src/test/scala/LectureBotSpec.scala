@@ -1,9 +1,9 @@
 import org.scalatest.matchers.must.Matchers
-import org.scalatest.wordspec.{AnyWordSpec, AnyWordSpecLike}
-import akka.testkit.{ImplicitSender, TestActors, TestKit}
-import akka.actor.{Actor, ActorRef, ActorSystem, Props}
+import org.scalatest.wordspec.AnyWordSpecLike
+import akka.testkit.{ImplicitSender, TestKit}
+import akka.actor.{ActorSystem, Props}
 import org.scalatest.BeforeAndAfterAll
-
+import Model.Lectures.LectureBot
 
 class LectureBotSpec ()
   extends TestKit(ActorSystem("chatBot"))
@@ -11,8 +11,6 @@ class LectureBotSpec ()
     with AnyWordSpecLike
     with Matchers
     with BeforeAndAfterAll{
-
-
 
   override def afterAll(): Unit = {
     TestKit.shutdownActorSystem(system)
@@ -116,6 +114,5 @@ class LectureBotSpec ()
                   |https://drive.google.com/file/d/1TKm7F44ttuB1wJNbDvE9YzEXeiywjpom/view
                   |""".stripMargin)
     }
-
   }
 }

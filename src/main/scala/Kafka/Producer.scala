@@ -1,10 +1,8 @@
+package Kafka
+
 import java.util.Properties
-
-import Kafka.ProducerContent
-import io.circe.syntax.EncoderOps
 import org.apache.kafka.clients.producer.{KafkaProducer, ProducerRecord, RecordMetadata}
-
-import scala.concurrent.Future
+import java.util.concurrent.Future
 
 class Producer {
 
@@ -27,10 +25,8 @@ class Producer {
     else{
       VALUES = VALUES.map(valuePair => if(valuePair.author.equals(producerInput.author)) new ProducerContent(valuePair.author, valuePair.wordCount + producerInput.wordCount, valuePair.characterCount + producerInput.characterCount) else valuePair)
     }
-    val valueList = VALUES.map(content => (content.author, content.wordCount, content.characterCount))
-    val message = new ProducerRecord(TOPIC_MESSAGEDATA, KEY_MESSAGEDATA, producerInput)
-    val result = producer.send(message)
-
-    //producer.close()
+    val valueList: List[(String, Int, Int)] = VALUES.map(content => (content.author, content.wordCount, content.characterCount))
+    val message: ProducerRecord[String, ProducerContent] = new ProducerRecord(TOPIC_MESSAGEDATA, KEY_MESSAGEDATA, producerInput)
+    val result: Future[RecordMetadata] = producer.send(message)
   }
 }

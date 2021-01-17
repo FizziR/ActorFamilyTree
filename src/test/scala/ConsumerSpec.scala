@@ -1,6 +1,6 @@
 import org.scalatest.matchers.must.Matchers
-import org.scalatest.matchers.should.Matchers.convertToAnyShouldWrapper
-import org.scalatest.wordspec.{AnyWordSpec, AnyWordSpecLike}
+import org.scalatest.wordspec.AnyWordSpec
+import Kafka.Consumer
 
 class ConsumerSpec extends AnyWordSpec with Matchers {
 
@@ -16,8 +16,6 @@ class ConsumerSpec extends AnyWordSpec with Matchers {
   "The Consumer converts the recieving JsonFile to String" when{
     "the following function is called" in{
       //consumer.parseMessageToTUI(jsonString)
-
     }
   }
-
 }

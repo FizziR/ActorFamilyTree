@@ -1,18 +1,13 @@
+package Sparks
+
 import Kafka.ProducerContent
-import SparkConsumer.oldValueSumOfWords
-import Sparks.AnalyzingData
 import org.apache.kafka.clients.consumer.ConsumerRecord
 import org.apache.spark.streaming.kafka010.ConsumerStrategies.Subscribe
-import org.apache.kafka.common.serialization.StringDeserializer
-import org.apache.spark.sql.types.{IntegerType, StringType, StructField}
-import org.apache.spark.sql.{DataFrame, SparkSession}
+import org.apache.spark.sql.SparkSession
 import org.apache.spark.streaming.dstream.{DStream, InputDStream}
 import org.apache.spark.streaming.kafka010.{KafkaUtils, _}
 import org.apache.spark.streaming.{Seconds, StreamingContext}
-import org.apache.spark.{SparkConf, SparkContext}
-
-import scala.compat.java8.FunctionConverters.enrichAsJavaFunction
-
+import org.apache.spark.SparkConf
 
 object SparkConsumer {
 

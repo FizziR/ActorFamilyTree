@@ -1,4 +1,4 @@
-
+package Model
 
 import akka.http.scaladsl.model.DateTime
 

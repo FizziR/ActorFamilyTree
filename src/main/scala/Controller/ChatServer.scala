@@ -1,10 +1,14 @@
+package Controller
+
 import akka.actor.{Actor, Props}
 import akka.event.Logging
 import akka.pattern.ask
 import akka.util.Timeout
-
 import scala.concurrent.Await
 import scala.concurrent.duration.DurationInt
+import Model.Messages.MessageBot
+import Model.Lectures.LectureBot
+import Model.Calculations.CalculationBot
 
 class ChatServer extends Actor {
   val log = Logging(context.system, this)
