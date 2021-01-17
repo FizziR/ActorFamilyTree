@@ -1,8 +1,8 @@
 package Model.MessageParser
 
 class MessageParserModel extends MessageParser{
-  val failure = "Failure"
-  val error = "Error"
+  val failure: String = "Failure"
+  val error: String = "Error"
 
   import Model.Message
   def generateMessageFromString(input_message_string: String) : Option[Message] ={

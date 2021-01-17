@@ -1,35 +1,36 @@
 package Controller
 
 import java.io.{BufferedWriter, File, FileWriter}
-import ackcord.{APIMessage, ClientSettings}
+import ackcord.{APIMessage, ClientSettings, DiscordClient}
 import ackcord.requests.{CreateMessage, CreateMessageData}
-import akka.actor.{Actor, Props}
+import akka.actor.{Actor, ActorRef, Props}
 import akka.pattern.ask
 import akka.util.Timeout
+import io.circe.{Json, ParsingFailure}
 
-import scala.concurrent.Await
+import scala.concurrent.{Await, Future}
 import scala.concurrent.duration.{Duration, DurationInt}
 import io.circe.parser._
 
 class DiscordBot extends Actor {
-  val chatServer = context.actorOf(Props[ChatServer], name = "chatServer")
+  val chatServer: ActorRef = context.actorOf(Props[ChatServer], name = "chatServer")
 
-  val fileContent = scala.io.Source.fromFile("Credentials/discordToken.json").getLines().mkString
-  val parseResult = parse(fileContent)
-  val removeCharacters = "\"".toSet
-  val token = parseResult.right.get.\\("token")(0).toString().filterNot(removeCharacters)
+  val fileContent: String = scala.io.Source.fromFile("Credentials/discordToken.json").getLines().mkString
+  val parseResult: Either[ParsingFailure, Json] = parse(fileContent)
+  val removeCharacters: Set[Char] = "\"".toSet
+  val token: String = parseResult.right.get.\\("token")(0).toString().filterNot(removeCharacters)
 
-  val clientSettings = ClientSettings(token)
-  val client = Await.result(clientSettings.createClient(), Duration.Inf)
+  val clientSettings: ClientSettings = ClientSettings(token)
+  val client: DiscordClient = Await.result(clientSettings.createClient(), Duration.Inf)
 
   implicit val timeout: Timeout = Timeout(3 seconds)
 
-  var actorOutput = ""
+  var actorOutput: String = ""
 
   client.onEventSideEffects { implicit c => {
     case APIMessage.MessageCreate(_, message, _) => {
 
-      val messageMetaString = message.timestamp + "%" + message.authorUsername + "%" + message.content.replaceAll("\r\n", "{NL}") + "\n"
+      val messageMetaString: String = message.timestamp + "%" + message.authorUsername + "%" + message.content.replaceAll("\r\n", "{NL}") + "\n"
       addMessageToSourceFile("Source.txt", messageMetaString)
 
       if (message.content.startsWith("!")) {
@@ -87,22 +88,22 @@ class DiscordBot extends Actor {
 
   override def receive: Receive = {
     case msg: String => {
-      val future = chatServer ? msg.substring(1)
-      val result = Await.result(future, timeout.duration)
+      val future: Future[Any] = chatServer ? msg.substring(1)
+      val result: Any = Await.result(future, timeout.duration)
       actorOutput = result.toString
     }
     case _ =>
   }
   def writeFile(filename: String, lines: List[String]): Unit = {
-    val file = new File(filename)
-    val bw = new BufferedWriter(new FileWriter(file))
+    val file: File = new File(filename)
+    val bw: BufferedWriter = new BufferedWriter(new FileWriter(file))
     for(line <- lines){
       bw.write(line)
     }
     bw.close()
   }
   def addMessageToSourceFile(filename: String, message: String): Unit ={
-    val fw = new FileWriter(filename, true)
+    val fw: FileWriter = new FileWriter(filename, true)
     fw.write(message)
     fw.close()
   }

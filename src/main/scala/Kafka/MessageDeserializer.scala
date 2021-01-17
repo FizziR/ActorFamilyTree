@@ -13,10 +13,10 @@ class MessageDeserializer extends Deserializer[ProducerContent]{
   }
 
   override def deserialize(topic: String, data: Array[Byte]): ProducerContent = {
-    lazy val mapper = new ObjectMapper() with ScalaObjectMapper
+    lazy val mapper: ObjectMapper with ScalaObjectMapper = new ObjectMapper() with ScalaObjectMapper
     mapper.registerModule(DefaultScalaModule)
-    val tryMessage = Try(mapper.readValue[ProducerContent](data))
-    var message = ProducerContent(null, 0, 0)
+    val tryMessage: Try[ProducerContent] = Try(mapper.readValue[ProducerContent](data))
+    var message: ProducerContent = ProducerContent(null, 0, 0)
     tryMessage match {
       case Success(value: ProducerContent) => message = value
       case Failure(_) =>

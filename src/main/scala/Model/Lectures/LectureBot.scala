@@ -4,7 +4,8 @@ import akka.actor.{Actor, ActorRef, Props}
 import akka.event.{Logging, LoggingAdapter}
 import akka.pattern.ask
 import akka.util.Timeout
-import scala.concurrent.Await
+
+import scala.concurrent.{Await, Future}
 import scala.concurrent.duration.DurationInt
 import scala.language.postfixOps
 
@@ -20,40 +21,40 @@ class LectureBot extends Actor{
 
   override def receive: Receive = {
     case msg:String if msg.equals("Basics") =>
-      val future = scalaBasic1 ? msg.substring(0)
-      val result = Await.result(future, timeout.duration)
+      val future: Future[Any] = scalaBasic1 ? msg.substring(0)
+      val result: Any = Await.result(future, timeout.duration)
       sender() ! result
     case msg:String if msg.equals("more Basics") =>
-      val future = scalaBasic2 ? msg
-      val result = Await.result(future, timeout.duration)
+      val future: Future[Any] = scalaBasic2 ? msg
+      val result: Any = Await.result(future, timeout.duration)
       sender() ! result
     case msg:String if msg.equals("Tests") =>
-      val future = scalaTests ? msg
-      val result = Await.result(future, timeout.duration)
+      val future: Future[Any] = scalaTests ? msg
+      val result: Any = Await.result(future, timeout.duration)
       sender() ! result
     case msg:String if msg.equals("Monads") =>
-      val future = functionalStyleAndMonads ? msg
-      val result = Await.result(future, timeout.duration)
+      val future: Future[Any] = functionalStyleAndMonads ? msg
+      val result: Any = Await.result(future, timeout.duration)
       sender() ! result
     case msg:String if msg.equals("Functional Style") =>
-      val future = functionalStyleAndMonads ? msg
-      val result = Await.result(future, timeout.duration)
+      val future: Future[Any] = functionalStyleAndMonads ? msg
+      val result: Any = Await.result(future, timeout.duration)
       sender() ! result
     case msg:String if msg.equals("Internal DSL") =>
-      val future = scalaDsls ? msg.substring(0)
-      val result = Await.result(future, timeout.duration)
+      val future: Future[Any] = scalaDsls ? msg.substring(0)
+      val result: Any = Await.result(future, timeout.duration)
       sender() ! result
     case msg:String if msg.equals("External DSL") =>
-      val future = scalaDsls ? msg.substring(0)
-      val result = Await.result(future, timeout.duration)
+      val future: Future[Any] = scalaDsls ? msg.substring(0)
+      val result: Any = Await.result(future, timeout.duration)
       sender() ! result
     case msg:String if msg.equals("DSL") =>
-      val future = scalaDsls ? msg.substring(0)
-      val result = Await.result(future, timeout.duration)
+      val future: Future[Any] = scalaDsls ? msg.substring(0)
+      val result: Any = Await.result(future, timeout.duration)
       sender() ! result
     case msg:String if msg.equals("Actors") =>
-      val future = scalaActors ? msg.substring(0)
-      val result = Await.result(future, timeout.duration)
+      val future: Future[Any] = scalaActors ? msg.substring(0)
+      val result: Any = Await.result(future, timeout.duration)
       sender() ! result
     case _ => sender() ! "Sorry - I can't understand your message"
   }
@@ -140,12 +141,12 @@ class ScalaDSLs extends Actor{
       |""".stripMargin
   override def receive: Receive = {
     case msg:String if msg.equals("Internal DSL") =>
-      val future = internalDSL ? msg.substring(0)
-      val result = Await.result(future, timeout.duration)
+      val future: Future[Any] = internalDSL ? msg.substring(0)
+      val result: Any = Await.result(future, timeout.duration)
       sender() ! result
     case msg:String if msg.equals("External DSL") =>
-      val future = externalDSL ? msg.substring(0)
-      val result = Await.result(future, timeout.duration)
+      val future: Future[Any] = externalDSL ? msg.substring(0)
+      val result: Any = Await.result(future, timeout.duration)
       sender() ! result
     case msg:String if msg.equals("DSL") => sender ! dsl
   }

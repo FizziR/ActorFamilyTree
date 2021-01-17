@@ -1,15 +1,16 @@
 package Model.Messages
 
-import akka.actor.{Actor, Props}
+import akka.actor.{Actor, ActorRef, Props}
 import akka.pattern.ask
 import akka.util.Timeout
+
 import scala.concurrent.Await
 import scala.concurrent.duration.DurationInt
 
 class MessageBot extends Actor {
-  val helloBot = context.actorOf(Props[HelloBot], name = "helloBot")
-  val goodbyeBot = context.actorOf(Props[GoodbyeBot], name = "goodbyeBot")
-  val pingBot = context.actorOf(Props[PingBot], name = "pingBot")
+  val helloBot: ActorRef = context.actorOf(Props[HelloBot], name = "helloBot")
+  val goodbyeBot: ActorRef = context.actorOf(Props[GoodbyeBot], name = "goodbyeBot")
+  val pingBot: ActorRef = context.actorOf(Props[PingBot], name = "pingBot")
 
   implicit val timeout: Timeout = Timeout(2 seconds)
 
