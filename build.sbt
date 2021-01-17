@@ -17,3 +17,4 @@ libraryDependencies += "com.typesafe.akka" %% "akka-testkit" % AkkaVersion % Tes
 
 libraryDependencies += "org.apache.kafka" %% "kafka" % "2.6.0"
 
+coverageExcludedPackages := ".*Main.*"
