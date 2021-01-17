@@ -1,7 +1,6 @@
 import Kafka.ProducerContent
 import org.scalatest.matchers.must.Matchers
-import org.scalatest.matchers.should.Matchers.convertToAnyShouldWrapper
-import org.scalatest.wordspec.{AnyWordSpec, AnyWordSpecLike}
+import org.scalatest.wordspec.AnyWordSpec
 
 class ProducerSpec extends AnyWordSpec  with Matchers {
 
