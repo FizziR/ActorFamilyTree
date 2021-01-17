@@ -1,39 +1,40 @@
 package Model.Calculations
 
-import akka.actor.{Actor, Props}
+import akka.actor.{Actor, ActorRef, Props}
 import akka.pattern.ask
 import akka.util.Timeout
-import scala.concurrent.Await
+
+import scala.concurrent.{Await, Future}
 import scala.concurrent.duration.DurationInt
 import scala.util.Try
 
 class CalculationBot extends Actor{
-    val additionBot = context.actorOf(Props[AdditionBot], name = "additionBot")
-    val subtractionBot = context.actorOf(Props[SubtractionBot], name = "subtractionBot")
-    val multiplicationBot = context.actorOf(Props[MultiplicationBot], name = "multiplicationBot")
-    val divisionBot = context.actorOf(Props[DivisionBot], name = "divisionBot")
+    val additionBot: ActorRef = context.actorOf(Props[AdditionBot], name = "additionBot")
+    val subtractionBot: ActorRef = context.actorOf(Props[SubtractionBot], name = "subtractionBot")
+    val multiplicationBot: ActorRef = context.actorOf(Props[MultiplicationBot], name = "multiplicationBot")
+    val divisionBot: ActorRef = context.actorOf(Props[DivisionBot], name = "divisionBot")
 
     implicit val timeout: Timeout = Timeout(1 seconds)
 
     override def receive: Receive = {
       case msg:String if msg.contains('+') => {
-        val future = additionBot ? msg
-        val result = Await.result(future, timeout.duration)
+        val future: Future[Any] = additionBot ? msg
+        val result: Any = Await.result(future, timeout.duration)
         sender() ! result
       }
       case msg:String if msg.contains('-') => {
-        val future = subtractionBot ? msg
-        val result = Await.result(future, timeout.duration)
+        val future: Future[Any] = subtractionBot ? msg
+        val result: Any = Await.result(future, timeout.duration)
         sender() ! result
       }
       case msg:String if msg.contains('*') => {
-        val future = multiplicationBot ? msg
-        val result = Await.result(future, timeout.duration)
+        val future: Future[Any] = multiplicationBot ? msg
+        val result: Any = Await.result(future, timeout.duration)
         sender() ! result
       }
       case msg:String if msg.contains('/') => {
-        val future = divisionBot ? msg
-        val result = Await.result(future, timeout.duration)
+        val future: Future[Any] = divisionBot ? msg
+        val result: Any = Await.result(future, timeout.duration)
         sender() ! result
       }
       case _ => sender() ! "There is no valid operator found :-("
@@ -43,12 +44,12 @@ class CalculationBot extends Actor{
   class AdditionBot extends Actor {
     override def receive: Receive = {
       case msg:String => {
-        val result = "\\+".r.split(msg)
+        val result: Array[String] = "\\+".r.split(msg)
 
-        val numberOne = Try { result(0).toDouble }.toOption
-        val numberTwo = Try { result(1).toDouble }.toOption
-        var resultOne = 0.0
-        var resultTwo = 0.0
+        val numberOne: Option[Double] = Try { result(0).toDouble }.toOption
+        val numberTwo: Option[Double] = Try { result(1).toDouble }.toOption
+        var resultOne: Double = 0.0
+        var resultTwo: Double = 0.0
 
         if(numberOne != None && numberTwo != None){
           numberOne match {
@@ -57,13 +58,13 @@ class CalculationBot extends Actor{
           numberTwo match {
             case Some(number:Double) => resultTwo = number
           }
-          val tmpSum = resultOne + resultTwo
+          val tmpSum: Double = resultOne + resultTwo
           if(tmpSum == Math.rint(tmpSum)) {
-            val addition = "Result: " + result(0) + " + " + result(1) + " = " + tmpSum.toInt
+            val addition: String = "Result: " + result(0) + " + " + result(1) + " = " + tmpSum.toInt
             sender() ! addition
           }
           else{
-            val addition = "Result: " + result(0) + " + " + result(1) + " = " + tmpSum
+            val addition: String = "Result: " + result(0) + " + " + result(1) + " = " + tmpSum
             sender() ! addition
           }
         }
@@ -76,16 +77,16 @@ class CalculationBot extends Actor{
   class SubtractionBot extends Actor {
     override def receive: Receive = {
       case msg:String => {
-        val result = "\\-".r.split(msg)
+        val result: Array[String] = "\\-".r.split(msg)
 
-        val numberOne = Try {
+        val numberOne: Option[Double] = Try {
           result(0).toDouble
         }.toOption
-        val numberTwo = Try {
+        val numberTwo: Option[Double] = Try {
           result(1).toDouble
         }.toOption
-        var resultOne = 0.0
-        var resultTwo = 0.0
+        var resultOne: Double = 0.0
+        var resultTwo: Double = 0.0
 
         if (numberOne != None && numberTwo != None) {
           numberOne match {
@@ -95,14 +96,14 @@ class CalculationBot extends Actor{
             case Some(number: Double) => resultTwo = number
           }
 
-          val tmpSubtraction = resultOne - resultTwo
+          val tmpSubtraction: Double = resultOne - resultTwo
 
           if (tmpSubtraction == Math.rint(tmpSubtraction)) {
-            val subtraction = "Result: " + result(0) + " - " + result(1) + " = " + tmpSubtraction.toInt
+            val subtraction: String = "Result: " + result(0) + " - " + result(1) + " = " + tmpSubtraction.toInt
             sender() ! subtraction
           }
           else {
-            val subtraction = "Result: " + result(0) + " - " + result(1) + " = " + tmpSubtraction
+            val subtraction: String = "Result: " + result(0) + " - " + result(1) + " = " + tmpSubtraction
             sender() ! subtraction
           }
         }
@@ -115,12 +116,12 @@ class CalculationBot extends Actor{
   class MultiplicationBot extends Actor {
     override def receive: Receive = {
       case msg:String => {
-        val result = "\\*".r.split(msg)
+        val result: Array[Double] = "\\*".r.split(msg)
 
-        val numberOne = Try { result(0).toDouble }.toOption
-        val numberTwo = Try { result(1).toDouble }.toOption
-        var resultOne = 0.0
-        var resultTwo = 0.0
+        val numberOne: Option[Double] = Try { result(0).toDouble }.toOption
+        val numberTwo: Option[Double] = Try { result(1).toDouble }.toOption
+        var resultOne: Double = 0.0
+        var resultTwo: Double = 0.0
 
         if(numberOne != None && numberTwo != None) {
           numberOne match {
@@ -130,13 +131,13 @@ class CalculationBot extends Actor{
             case Some(number: Double) => resultTwo = number
           }
 
-          val tmpMultiplication = resultOne * resultTwo
+          val tmpMultiplication: Double = resultOne * resultTwo
           if (tmpMultiplication == Math.rint(tmpMultiplication)) {
-            val multiplication = "Result: " + result(0) + " * " + result(1) + " = " + tmpMultiplication.toInt
+            val multiplication: String = "Result: " + result(0) + " * " + result(1) + " = " + tmpMultiplication.toInt
             sender() ! multiplication
           }
           else {
-            val multiplication = "Result: " + result(0) + " * " + result(1) + " = " + tmpMultiplication
+            val multiplication: String = "Result: " + result(0) + " * " + result(1) + " = " + tmpMultiplication
             sender() ! multiplication
           }
         }
@@ -149,12 +150,12 @@ class CalculationBot extends Actor{
   class DivisionBot extends Actor {
     override def receive: Receive = {
       case msg:String => {
-        val result = "\\/".r.split(msg)
+        val result: Array[String] = "\\/".r.split(msg)
 
-        val numberOne = Try { result(0).toDouble }.toOption
-        val numberTwo = Try { result(1).toDouble }.toOption
-        var resultOne = 0.0
-        var resultTwo = 0.0
+        val numberOne: Option[Double] = Try { result(0).toDouble }.toOption
+        val numberTwo: Option[Double] = Try { result(1).toDouble }.toOption
+        var resultOne: Double = 0.0
+        var resultTwo: Double = 0.0
 
         if(numberOne != None && numberTwo != None) {
           numberOne match {
@@ -168,13 +169,13 @@ class CalculationBot extends Actor{
             sender() ! "This is not fair ;-)"
           }
           else {
-            val tmpDivision = resultOne / resultTwo
+            val tmpDivision: Double = resultOne / resultTwo
             if (tmpDivision == Math.rint(tmpDivision)) {
-              val division = "Result: " + result(0) + " / " + result(1) + " = " + tmpDivision.toInt
+              val division: String = "Result: " + result(0) + " / " + result(1) + " = " + tmpDivision.toInt
               sender() ! division
             }
             else {
-              val division = "Result: " + result(0) + " / " + result(1) + " = " + tmpDivision
+              val division: String = "Result: " + result(0) + " / " + result(1) + " = " + tmpDivision
               sender() ! division
             }
           }
