@@ -1,7 +1,8 @@
 import akka.NotUsed
-import akka.actor.{ActorSystem, Props}
-import akka.stream.ClosedShape
+import akka.actor.{ActorRef, ActorSystem, Props}
+import akka.stream.{ClosedShape, FanInShape2, FlowShape, Graph, SinkShape, SourceShape, UniformFanOutShape}
 import akka.stream.scaladsl.{Broadcast, Flow, GraphDSL, RunnableGraph, Sink, Source, Zip}
+
 import scala.collection.mutable.Queue
 import scala.collection.mutable.ListBuffer
 import Controller.DiscordBot
@@ -13,41 +14,41 @@ import Model.Message
 object Main{
 
   // Source
-  implicit val sourceSystem = ActorSystem("sourceSystem")
-  val discordBot = sourceSystem.actorOf(Props[DiscordBot], name = "discordBot")
+  implicit val sourceSystem: ActorSystem = ActorSystem("sourceSystem")
+  val discordBot: ActorRef = sourceSystem.actorOf(Props[DiscordBot], name = "discordBot")
 
-  val producer = new Producer
-  var sinkQueue = new Queue[ProducerContent]
+  val producer: Producer = new Producer
+  var sinkQueue: Queue[ProducerContent] = new Queue[ProducerContent]
 
   // step 1 - setting up the fundamentals for the graph
-  val graph = GraphDSL.create(){ implicit builder:
+  val graph: Graph[ClosedShape.type, NotUsed] = GraphDSL.create(){ implicit builder:
     GraphDSL.Builder[NotUsed] =>
     import GraphDSL.Implicits._
 
     // step 2 - add the necessary components of this graph
-    val input = builder.add(Source(readSource()))
+    val input: SourceShape[String] = builder.add(Source(readSource()))
 
-    val pasteSpaceBetweenArguments= builder.add(Flow[String].map(string => string.replace('%', ' ')))
-    val messageParserModel = new MessageParserModel()
-    val convertsStringToMessage = builder.add(Flow[String].map(message => messageParserModel.generateMessageFromString(message)))
+    val pasteSpaceBetweenArguments: FlowShape[String, String] = builder.add(Flow[String].map(string => string.replace('%', ' ')))
+    val messageParserModel: MessageParserModel = new MessageParserModel()
+    val convertsStringToMessage: FlowShape[String, Option[Message]] = builder.add(Flow[String].map(message => messageParserModel.generateMessageFromString(message)))
 
-    val convertOptionToMessage = builder.add(Flow[Option[Message]].map(message => message.getOrElse(Message(null, "", ""))))
+    val convertOptionToMessage: FlowShape[Option[Message], Message] = builder.add(Flow[Option[Message]].map(message => message.getOrElse(Message(null, "", ""))))
 
-    val convertMessageToUser = builder.add(Flow[Message].map(message => message.user))
-    val convertMessageToWord = builder.add(Flow[Message].map(message => message.message.split(" ").length))
-    val convertMessageToChar = builder.add(Flow[Message].map(message => message.message.length))
+    val convertMessageToUser: FlowShape[Message, String] = builder.add(Flow[Message].map(message => message.user))
+    val convertMessageToWord: FlowShape[Message, Int] = builder.add(Flow[Message].map(message => message.message.split(" ").length))
+    val convertMessageToChar: FlowShape[Message, Int] = builder.add(Flow[Message].map(message => message.message.length))
 
-    val convertTuplesToProducerContent = builder.add(Flow[(String, (Int, Int))].map(message => ProducerContent(message._1, message._2._1, message._2._2)))
+    val convertTuplesToProducerContent: FlowShape[(String, (Int, Int)), ProducerContent] = builder.add(Flow[(String, (Int, Int))].map(message => ProducerContent(message._1, message._2._1, message._2._2)))
 
 
     //val output = builder.add(Sink.foreach[ProducerContent](println))
-    val output = builder.add(Sink.foreach[ProducerContent](sinkQueue.enqueue(_)))
+    val output: SinkShape[ProducerContent] = builder.add(Sink.foreach[ProducerContent](sinkQueue.enqueue(_)))
 
-    val broadcast = builder.add(Broadcast[Message](3))
+    val broadcast: UniformFanOutShape[Message, Message] = builder.add(Broadcast[Message](3))
 
-    val wordZip = builder.add(Zip[Int, Int])
+    val wordZip: FanInShape2[Int, Int, (Int, Int)] = builder.add(Zip[Int, Int])
 
-    val zip = builder.add(Zip[String, (Int, Int)])
+    val zip: FanInShape2[String, (Int, Int), (String, (Int, Int))] = builder.add(Zip[String, (Int, Int)])
 
     // step 3 - tying up the components*/
 
@@ -79,7 +80,7 @@ object Main{
   }
 
   def readSource(): List[String] ={
-    var lineBuffer = new ListBuffer[String]()
+    var lineBuffer: ListBuffer[String] = new ListBuffer[String]()
     for(line <- scala.io.Source.fromFile("Source.txt").getLines()){
       lineBuffer += line
     }

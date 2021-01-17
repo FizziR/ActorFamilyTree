@@ -7,15 +7,15 @@ import Model.ProducerContent
 
 class Producer {
 
-  val props = new Properties()
+  val props: Properties = new Properties()
   props.put("bootstrap.servers", "localhost:9092")
   props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer")
   props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer")
 
-  val producer = new KafkaProducer[String, String](props)
+  val producer: KafkaProducer[String, String] = new KafkaProducer[String, String](props)
 
-  val TOPIC_METADATA = "metadata"
-  val KEY_METADATA = "data"
+  val TOPIC_METADATA: String = "metadata"
+  val KEY_METADATA: String = "data"
 
   var VALUES: List[ProducerContent] = List()
 
@@ -26,14 +26,14 @@ class Producer {
     else{
       VALUES = VALUES.map(valuePair => if(valuePair.author.equals(producerInput.author)) ProducerContent(valuePair.author, valuePair.wordCount + producerInput.wordCount, valuePair.characterCount + producerInput.characterCount) else valuePair)
     }
-    val valueList = VALUES.map(content => (content.author, content.wordCount, content.characterCount))
-    val metadata = new ProducerRecord(TOPIC_METADATA, KEY_METADATA, valueList.asJson.toString())
+    val valueList: List[(String, Int, Int)] = VALUES.map(content => (content.author, content.wordCount, content.characterCount))
+    val metadata: ProducerRecord[String, String] = new ProducerRecord(TOPIC_METADATA, KEY_METADATA, valueList.asJson.toString())
     Thread.sleep(500)
     producer.send(metadata)
 
     //producer.close()
   }
-  def createJSON(key: String) = s"""
+  def createJSON(key: String): String = s"""
       {
         "$key": [
           ${createJSONMetaDataArray()}
@@ -51,7 +51,7 @@ class Producer {
     })
     arrayString
   }
-  def getJSONMetaData(producerContent: ProducerContent) = s"""
+  def getJSONMetaData(producerContent: ProducerContent): String = s"""
   {
     "author": "${producerContent.author}",
     "words": ${producerContent.wordCount},
