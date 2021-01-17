@@ -76,7 +76,7 @@ object Main{
 
   def readSource(): List[String] ={
     var lineBuffer = new ListBuffer[String]()
-    for(line <- scala.io.Source.fromFile("Source.txt").getLines()){
+    for(line <- scala.io.Source.fromFile("Resources//Source.txt").getLines()){
       lineBuffer += line
     }
     lineBuffer.toList
