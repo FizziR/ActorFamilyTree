@@ -1,15 +1,14 @@
+package Model.Lectures
+
 import akka.actor.{Actor, ActorRef, Props}
 import akka.event.{Logging, LoggingAdapter}
 import akka.pattern.ask
 import akka.util.Timeout
-
 import scala.concurrent.Await
 import scala.concurrent.duration.DurationInt
-
 import scala.language.postfixOps
 
 class LectureBot extends Actor{
-  val log: LoggingAdapter = Logging(context.system, this)
   val scalaBasic1: ActorRef = context.actorOf(Props[ScalaBasic1], name = "basic1")
   val scalaBasic2: ActorRef = context.actorOf(Props[ScalaBasic2], name = "basic2")
   val scalaTests: ActorRef = context.actorOf(Props[ScalaTests], name = "tests")
@@ -20,7 +19,7 @@ class LectureBot extends Actor{
   implicit val timeout: Timeout = Timeout(5 seconds)
 
   override def receive: Receive = {
-    case msg:String if msg.equals("Basics") => //scalaBasic1 ! msg
+    case msg:String if msg.equals("Basics") =>
       val future = scalaBasic1 ? msg.substring(0)
       val result = Await.result(future, timeout.duration)
       sender() ! result

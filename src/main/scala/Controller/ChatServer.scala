@@ -1,13 +1,15 @@
+package Controller
+
 import akka.actor.{Actor, Props}
-import akka.event.Logging
 import akka.pattern.ask
 import akka.util.Timeout
-
 import scala.concurrent.Await
 import scala.concurrent.duration.DurationInt
+import Model.Messages.MessageBot
+import Model.Calculations.CalculationBot
+import Model.Lectures.LectureBot
 
 class ChatServer extends Actor {
-  val log = Logging(context.system, this)
   val messageBot = context.actorOf(Props[MessageBot], name = "messageBot")
   val calculationBot = context.actorOf(Props[CalculationBot], name = "calculationBot")
   val lectureBot = context.actorOf(Props[LectureBot], name = "lectureBot")
@@ -31,7 +33,7 @@ class ChatServer extends Actor {
              val result = Await.result(future, timeout.duration)
              sender() ! result
            }
-           case _ => log.info("No bot implemented yet")
+           case _ =>
          }
       }
   }

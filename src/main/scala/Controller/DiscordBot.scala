@@ -1,9 +1,9 @@
-import java.io.{BufferedWriter, File, FileWriter}
+package Controller
 
-import ackcord.{APIMessage, ClientSettings, data}
-import ackcord.requests.{CreateMessage, CreateMessageData, GetChannelMessage, GetChannelMessages, GetChannelMessagesData}
+import java.io.{BufferedWriter, File, FileWriter}
+import ackcord.{APIMessage, ClientSettings}
+import ackcord.requests.{CreateMessage, CreateMessageData}
 import akka.actor.{Actor, Props}
-import akka.event.Logging
 import akka.pattern.ask
 import akka.util.Timeout
 
@@ -11,9 +11,7 @@ import scala.concurrent.Await
 import scala.concurrent.duration.{Duration, DurationInt}
 import io.circe.parser._
 
-
 class DiscordBot extends Actor {
-  val log = Logging(context.system, this)
   val chatServer = context.actorOf(Props[ChatServer], name = "chatServer")
 
   val fileContent = scala.io.Source.fromFile("Credentials/discordToken.json").getLines().mkString
@@ -23,7 +21,6 @@ class DiscordBot extends Actor {
 
   val clientSettings = ClientSettings(token)
   val client = Await.result(clientSettings.createClient(), Duration.Inf)
-
 
   implicit val timeout: Timeout = Timeout(3 seconds)
 
@@ -39,6 +36,9 @@ class DiscordBot extends Actor {
         if (message.content.equals("!Hello")) {
           self ! message.content + message.authorUsername
         }
+          /*********************************
+            Gather all messages on !Start
+           ********************************/
         /*else if (message.content.equals("!Start")) {
 
           var listBuffer = new ListBuffer[(String, String, String)]()
@@ -80,9 +80,6 @@ class DiscordBot extends Actor {
           clientSettings.system.terminate()
         }
       }
-      else {
-        log.info(message.content)
-      }
     }
   }
   }
@@ -92,7 +89,6 @@ class DiscordBot extends Actor {
     case msg: String => {
       val future = chatServer ? msg.substring(1)
       val result = Await.result(future, timeout.duration)
-      log.info(result.toString)
       actorOutput = result.toString
     }
     case _ =>

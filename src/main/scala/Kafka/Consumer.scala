@@ -1,12 +1,9 @@
+package Kafka
 
 import java.util.Properties
 import java.util
-
-import Kafka.ProducerContent
 import org.apache.kafka.clients.consumer.KafkaConsumer
-
 import scala.collection.JavaConverters._
-import io.circe.parser.decode
 
 object Consumer extends App{
 
@@ -26,7 +23,6 @@ object Consumer extends App{
     println("Polling..")
     val records = consumer.poll(1000)
     for (record<-records.asScala){
-      //println("MESSAGE: " + record.topic() + " - " + record.key() + " -> " + record.value())
       println(record.value())
     }
   }

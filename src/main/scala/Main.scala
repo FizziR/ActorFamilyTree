@@ -1,14 +1,11 @@
 import Kafka.ProducerContent
 import akka.NotUsed
 import akka.actor.{ActorSystem, Props}
-import akka.stream.{ClosedShape, FlowShape}
+import akka.stream.ClosedShape
 import akka.stream.scaladsl.{Broadcast, Flow, GraphDSL, RunnableGraph, Sink, Source, Zip}
-
 import scala.collection.mutable.Queue
 import scala.collection.mutable.ListBuffer
-
-// Start implementing Spark
-
+import Controller.DiscordBot
 
 object Main{
 
@@ -16,6 +13,7 @@ object Main{
   implicit val sourceSystem = ActorSystem("sourceSystem")
   val discordBot = sourceSystem.actorOf(Props[DiscordBot], name = "discordBot")
 
+  import Kafka.Producer
   val producer = new Producer
   var sinkQueue = new Queue[ProducerContent]
 
@@ -24,8 +22,11 @@ object Main{
     GraphDSL.Builder[NotUsed] =>
     import GraphDSL.Implicits._
 
-    // step 2 - add the necessary components of this graph
+  // step 2 - add the necessary components of this graph
     val input = builder.add(Source(readSource()))
+
+    import Model.MessageParser.MessageParserModel
+    import Model.Message
 
     val pasteSpaceBetweenArguments= builder.add(Flow[String].map(string => string.replace('%', ' ')))
     val messageParserModel = new MessageParserModel()
@@ -39,8 +40,6 @@ object Main{
 
   val convertTuplesToProducerContent = builder.add(Flow[(String, (Int, Int))].map(message => ProducerContent(message._1, message._2._1, message._2._2)))
 
-
-    //val output = builder.add(Sink.foreach[Kafka.ProducerContent](println))
     val output = builder.add(Sink.foreach[ProducerContent](sinkQueue.enqueue(_)))
 
     val broadcast = builder.add(Broadcast[Message](3))
@@ -52,15 +51,11 @@ object Main{
     // step 3 - tying up the components*/
 
     input ~> pasteSpaceBetweenArguments ~> convertsStringToMessage ~> convertOptionToMessage ~> broadcast
-
     broadcast.out(0) ~> convertMessageToUser ~> zip.in0
     broadcast.out(1) ~> convertMessageToWord ~> wordZip.in0
     broadcast.out(2) ~> convertMessageToChar ~> wordZip.in1
-
                                  wordZip.out ~> zip.in1
-
     zip.out ~> convertTuplesToProducerContent ~> output
-
     ClosedShape
   }
 

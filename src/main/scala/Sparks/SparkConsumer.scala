@@ -1,18 +1,13 @@
+package Sparks
+
 import Kafka.ProducerContent
-import SparkConsumer.oldValueSumOfWords
-import Sparks.AnalyzingData
 import org.apache.kafka.clients.consumer.ConsumerRecord
 import org.apache.spark.streaming.kafka010.ConsumerStrategies.Subscribe
-import org.apache.kafka.common.serialization.StringDeserializer
-import org.apache.spark.sql.types.{IntegerType, StringType, StructField}
-import org.apache.spark.sql.{DataFrame, SparkSession}
+import org.apache.spark.sql.SparkSession
 import org.apache.spark.streaming.dstream.{DStream, InputDStream}
 import org.apache.spark.streaming.kafka010.{KafkaUtils, _}
 import org.apache.spark.streaming.{Seconds, StreamingContext}
-import org.apache.spark.{SparkConf, SparkContext}
-
-import scala.compat.java8.FunctionConverters.enrichAsJavaFunction
-
+import org.apache.spark.SparkConf
 
 object SparkConsumer {
 
@@ -35,8 +30,6 @@ object SparkConsumer {
       "enable.auto.commit" -> (false: java.lang.Boolean)
     )
 
-    //val kafkaParams=kafkaConfig.asJava
-    //val sc = new StreamingContext(spark.sparkContext, Seconds(1))
     val topics = Array("messagedata")
 
     val kafkaStream: InputDStream[ConsumerRecord[String, ProducerContent]] = KafkaUtils.createDirectStream[String, ProducerContent](
@@ -63,7 +56,6 @@ object SparkConsumer {
     discordData1Second.foreachRDD(rdd =>
     if(rdd.isEmpty()) println("Es gab keine neuen Daten...")
     else {
-      //dataBase.show()
       dataBase = dataBase.union(rdd.toDF("Author", "Words", "Character"))
 
       val dataListWithOffset = rdd.collect().map { case (author, wordCount, characterCount) => (author, wordCount, characterCount) }.toList
@@ -94,8 +86,7 @@ object SparkConsumer {
       println("Map Count: " + oldValuesSumOfMessages + "\nMap Words: " + oldValueSumOfWords +
         "\nMap Chars: " + oldValuesSumOfChars)
 
-    }
-    )
+    })
     sparkStreamingContext.start()
     sparkStreamingContext.awaitTermination()
   }

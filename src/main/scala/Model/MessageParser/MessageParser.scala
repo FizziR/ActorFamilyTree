@@ -1,3 +1,5 @@
+package Model.MessageParser
+
 import akka.http.scaladsl.model.DateTime.fromIsoDateTimeString
 import scala.util.parsing.combinator.RegexParsers
 
@@ -8,6 +10,7 @@ class MessageParser extends RegexParsers{
   def userName = "[a-zA-zäÄöÖüÜß0-9]+(\\s)*[a-zA-zäÄöÖüÜß0-9]*".r
   def message = ".*".r
 
+  import Model.Message
   def messageParser: Parser[Message]=
     dateTime ~ space ~ userName ~ space ~ message ^^{
       case dateTime ~ _ ~ userName ~ _ ~ message =>
@@ -16,9 +19,5 @@ class MessageParser extends RegexParsers{
           messageParsing
         }
     }
-
-
-
-
 }
 

@@ -1,8 +1,6 @@
 package Kafka
 
-import java.io.ByteArrayOutputStream
 import java.util
-
 import com.fasterxml.jackson.databind.ObjectMapper
 import com.fasterxml.jackson.module.scala.{DefaultScalaModule, ScalaObjectMapper}
 import org.apache.kafka.common.serialization.Serializer

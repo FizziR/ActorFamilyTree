@@ -19,7 +19,7 @@ class MessageDeserializer extends Deserializer[ProducerContent]{
     var message = ProducerContent(null, 0, 0)
     tryMessage match {
       case Success(value: ProducerContent) => message = value
-      case Failure(exception) =>
+      case Failure(_) =>
     }
     message
   }
