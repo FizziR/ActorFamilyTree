@@ -6,15 +6,15 @@ import java.util.concurrent.Future
 
 class Producer {
 
-  val props = new Properties()
+  val props: Properties = new Properties()
   props.put("bootstrap.servers", "localhost:9092")
   props.put("key.serializer", "org.apache.kafka.common.serialization.StringSerializer")
   props.put("value.serializer", "Kafka.MessageSerializer")
 
-  val producer = new KafkaProducer[String, ProducerContent](props)
+  val producer: KafkaProducer[String, ProducerContent] = new KafkaProducer[String, ProducerContent](props)
 
-  val TOPIC_MESSAGEDATA = "messagedata"
-  val KEY_MESSAGEDATA = "data"
+  val TOPIC_MESSAGEDATA: String = "messagedata"
+  val KEY_MESSAGEDATA: String = "data"
 
   var VALUES: List[ProducerContent] = List()
 

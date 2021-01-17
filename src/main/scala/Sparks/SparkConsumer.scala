@@ -7,21 +7,23 @@ import org.apache.spark.sql.SparkSession
 import org.apache.spark.streaming.dstream.{DStream, InputDStream}
 import org.apache.spark.streaming.kafka010.{KafkaUtils, _}
 import org.apache.spark.streaming.{Seconds, StreamingContext}
-import org.apache.spark.SparkConf
+import org.apache.spark.{SparkConf, sql}
+
+import scala.collection.mutable
 
 object SparkConsumer {
 
   var offset = 0
-  var oldValuesSumOfMessages = collection.mutable.Map[String, Int]()
-  var oldValueSumOfWords  = collection.mutable.Map[String, Int]()
-  var oldValuesSumOfChars = collection.mutable.Map[String, Int]()
+  var oldValuesSumOfMessages: mutable.Map[String, Int] = collection.mutable.Map[String, Int]()
+  var oldValueSumOfWords: mutable.Map[String, Int] = collection.mutable.Map[String, Int]()
+  var oldValuesSumOfChars: mutable.Map[String, Int] = collection.mutable.Map[String, Int]()
   def main(args: Array[String]) {
 
-    val sparkConfig = new SparkConf().setMaster("local[*]").setAppName("DiscordStream")
-    val sparkStreamingContext = new StreamingContext(sparkConfig, Seconds(1))
+    val sparkConfig: SparkConf = new SparkConf().setMaster("local[*]").setAppName("DiscordStream")
+    val sparkStreamingContext: StreamingContext = new StreamingContext(sparkConfig, Seconds(1))
     sparkStreamingContext.sparkContext.setLogLevel("ERROR")
 
-    val kafkaConfig = Map[String, Object](
+    val kafkaConfig: Map[String, Object] = Map[String, Object](
       "bootstrap.servers" -> "localhost:9092",
       "key.deserializer" -> "org.apache.kafka.common.serialization.StringDeserializer",
       "value.deserializer" -> "Kafka.MessageDeserializer",
@@ -32,7 +34,7 @@ object SparkConsumer {
 
     //val kafkaParams=kafkaConfig.asJava
     //val sc = new StreamingContext(spark.sparkContext, Seconds(1))
-    val topics = Array("messagedata")
+    val topics: Array[String] = Array("messagedata")
 
     val kafkaStream: InputDStream[ConsumerRecord[String, ProducerContent]] = KafkaUtils.createDirectStream[String, ProducerContent](
       sparkStreamingContext,
@@ -51,26 +53,26 @@ object SparkConsumer {
 
     import spark.implicits._
 
-    var dataBase = Seq(("Test", 0, 0)).toDF("Author", "Words", "Character")
+    var dataBase: sql.DataFrame = Seq(("Test", 0, 0)).toDF("Author", "Words", "Character")
     dataBase.createOrReplaceTempView("dataBase")
 
-    val analyzingData = new AnalyzingData
+    val analyzingData: AnalyzingData = new AnalyzingData
     discordData1Second.foreachRDD(rdd =>
     if(rdd.isEmpty()) println("Es gab keine neuen Daten...")
     else {
       //dataBase.show()
       dataBase = dataBase.union(rdd.toDF("Author", "Words", "Character"))
 
-      val dataListWithOffset = rdd.collect().map { case (author, wordCount, characterCount) => (author, wordCount, characterCount) }.toList
+      val dataListWithOffset: List[(String, Int, Int)] = rdd.collect().map { case (author, wordCount, characterCount) => (author, wordCount, characterCount) }.toList
       println("Length of dataList with offset: " + dataListWithOffset.length)
 
-      val authorWithCounts = analyzingData.getUsersWhoWrote(sparkStreamingContext.sparkContext, dataListWithOffset)
+      val authorWithCounts: Array[(String, Int)] = analyzingData.getUsersWhoWrote(sparkStreamingContext.sparkContext, dataListWithOffset)
       println("Authors with count: " + authorWithCounts.mkString(""))
 
-      val authorWithSumOfWords = analyzingData.getSumOfWords(sparkStreamingContext.sparkContext, dataListWithOffset)
+      val authorWithSumOfWords: Array[(String, Int)] = analyzingData.getSumOfWords(sparkStreamingContext.sparkContext, dataListWithOffset)
       println("Authors with sum of words: " + authorWithSumOfWords.mkString(""))
 
-      val authorWithSumOfChars = analyzingData.getSumOfChars(sparkStreamingContext.sparkContext, dataListWithOffset)
+      val authorWithSumOfChars: Array[(String, Int)] = analyzingData.getSumOfChars(sparkStreamingContext.sparkContext, dataListWithOffset)
       println("Authors with sum of chars: " + authorWithSumOfChars.mkString(""))
 
       authorWithCounts.map(authorWithMessages => {

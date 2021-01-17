@@ -14,7 +14,7 @@ class MessageSerializer extends Serializer[ProducerContent]{
       null
     }
     else{
-      val objectMapper = new ObjectMapper() with ScalaObjectMapper
+      val objectMapper: ObjectMapper with ScalaObjectMapper = new ObjectMapper() with ScalaObjectMapper
       objectMapper.registerModule(DefaultScalaModule)
       println("Serialized: " + objectMapper.writeValueAsString(data))
       objectMapper.writeValueAsString(data).getBytes
