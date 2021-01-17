@@ -20,7 +20,7 @@ To implement event driven functionality to the ActorFamilyTree project, the Kafk
 The consumer on teh other side was able to evaluate each Message Type and provides a dynamic overall statistic for each message available.
 
 ### Definition of Spark
-Spark 
+Spark paralizes the specific message calculations and acts like a Kafka Consumer within the architecture.
 
 ## Build information
 [![Build Status](https://travis-ci.org/FizziR/ActorFamilyTree.svg?branch=master)](https://travis-ci.org/FizziR/ActorFamilyTree) [![Coverage Status](https://coveralls.io/repos/github/FizziR/ActorFamilyTree/badge.svg)](https://coveralls.io/github/FizziR/ActorFamilyTree)
