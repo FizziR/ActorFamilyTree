@@ -9,3 +9,6 @@ The base functionality is defined as closed Actor System which uses each actor a
 The scope of function can be extracted from the Tree diagram shown below.
 
 ![Actor Family Tree](./Resources/Actor_Diagram.png)
+
+## Build information
+[![Build Status](https://travis-ci.org/FizziR/ActorFamilyTree.svg?branch=master)](https://travis-ci.org/FizziR/ActorFamilyTree) [![Coverage Status](https://coveralls.io/repos/github/FizziR/ActorFamilyTree/badge.svg)](https://coveralls.io/github/FizziR/ActorFamilyTree)
