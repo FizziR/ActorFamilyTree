@@ -1,8 +1,8 @@
-import Model.Message.MessageBot
+import Model.Messages.MessageBot
 import org.scalatest.matchers.must.Matchers
-import org.scalatest.wordspec.{AnyWordSpec, AnyWordSpecLike}
-import akka.testkit.{ImplicitSender, TestActors, TestKit}
-import akka.actor.{Actor, ActorContext, ActorRef, ActorSystem, Props}
+import org.scalatest.wordspec.AnyWordSpecLike
+import akka.testkit.{ImplicitSender, TestKit}
+import akka.actor.{ActorSystem, Props}
 import org.scalatest.BeforeAndAfterAll
 
 

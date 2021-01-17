@@ -2,6 +2,8 @@ import org.scalatest.matchers.must.Matchers
 import org.scalatest.matchers.should.Matchers.convertToAnyShouldWrapper
 import org.scalatest.wordspec.AnyWordSpec
 import akka.http.scaladsl.model.DateTime
+import Model.MessageParser.MessageParserModel
+import Model.Message
 
 class MessageParserModelSpec extends AnyWordSpec  with Matchers {
 
