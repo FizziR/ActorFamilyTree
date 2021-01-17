@@ -1,5 +1,6 @@
+package Model.Messages
+
 import akka.actor.{Actor, Props}
-import akka.event.Logging
 import akka.pattern.ask
 import akka.util.Timeout
 
@@ -7,7 +8,6 @@ import scala.concurrent.Await
 import scala.concurrent.duration.DurationInt
 
 class MessageBot extends Actor {
-  val log = Logging(context.system, this)
   val helloBot = context.actorOf(Props[HelloBot], name = "helloBot")
   val goodbyeBot = context.actorOf(Props[GoodbyeBot], name = "goodbyeBot")
   val pingBot = context.actorOf(Props[PingBot], name = "pingBot")
@@ -35,15 +35,12 @@ class MessageBot extends Actor {
 }
 
 class HelloBot extends Actor {
-  val log = Logging(context.system, this)
   override def receive: Receive = {
     case msg:String => sender() ! s"Hello ${msg.substring(5)}! How are you doing?"
   }
 }
 
 class GoodbyeBot extends Actor {
-  val log = Logging(context.system, this)
-
   override def receive: Receive = {
     case "Goodbye" => sender() ! "Is it already time for leaving? Goodbye!"
   }

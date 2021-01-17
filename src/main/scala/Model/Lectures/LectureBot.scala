@@ -1,15 +1,13 @@
+package Model.Lectures
+
 import akka.actor.{Actor, ActorRef, Props}
-import akka.event.{Logging, LoggingAdapter}
 import akka.pattern.ask
 import akka.util.Timeout
-
 import scala.concurrent.Await
 import scala.concurrent.duration.DurationInt
-
 import scala.language.postfixOps
 
 class LectureBot extends Actor{
-  val log: LoggingAdapter = Logging(context.system, this)
   val scalaBasic1: ActorRef = context.actorOf(Props[ScalaBasic1], name = "basic1")
   val scalaBasic2: ActorRef = context.actorOf(Props[ScalaBasic2], name = "basic2")
   val scalaTests: ActorRef = context.actorOf(Props[ScalaTests], name = "tests")
@@ -61,7 +59,6 @@ class LectureBot extends Actor{
 }
 
 class ScalaBasic1 extends Actor{
-  val log: LoggingAdapter = Logging(context.system, this)
   val basicsOne: String =
     """
       |Hello
@@ -76,7 +73,6 @@ class ScalaBasic1 extends Actor{
 }
 
 class ScalaBasic2 extends Actor{
-  val log: LoggingAdapter = Logging(context.system, this)
   val basicsTwo: String =
     """
       |Hello
@@ -91,7 +87,6 @@ class ScalaBasic2 extends Actor{
 }
 
 class ScalaTests extends Actor{
-  val log: LoggingAdapter = Logging(context.system, this)
   val tests: String =
     """
       |Hello
@@ -106,7 +101,6 @@ class ScalaTests extends Actor{
 }
 
 class FunctionalStyleAndMonads extends Actor{
-  val log: LoggingAdapter = Logging(context.system, this)
   val functionsAndMonads: String =
     """
       |Hello
@@ -124,7 +118,6 @@ class FunctionalStyleAndMonads extends Actor{
 
 class ScalaDSLs extends Actor{
   implicit val timeout: Timeout = Timeout(3 seconds)
-  val log: LoggingAdapter = Logging(context.system, this)
   val internalDSL: ActorRef = context.actorOf(Props[InternalDSL], name = "internalDSL")
   val externalDSL: ActorRef = context.actorOf(Props[ExternalDSL], name = "externalDSL")
   val dsl: String =
@@ -153,7 +146,6 @@ class ScalaDSLs extends Actor{
 }
 
 class ScalaActors extends Actor{
-  val log: LoggingAdapter = Logging(context.system, this)
   var actors: String =
     """
       |Hello
@@ -168,7 +160,6 @@ class ScalaActors extends Actor{
 }
 
 class InternalDSL extends Actor{
-  val log: LoggingAdapter = Logging(context.system, this)
   var internalDSL: String =
     """
       |Hello
@@ -184,7 +175,6 @@ class InternalDSL extends Actor{
 }
 
 class ExternalDSL extends Actor{
-  val log: LoggingAdapter = Logging(context.system, this)
   var externalDSL: String =
     """
       |Hello

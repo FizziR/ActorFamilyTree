@@ -1,7 +1,9 @@
-import java.util.Properties
+package Kafka
 
+import java.util.Properties
 import io.circe.syntax.EncoderOps
 import org.apache.kafka.clients.producer.{KafkaProducer, ProducerRecord}
+import Model.ProducerContent
 
 class Producer {
 

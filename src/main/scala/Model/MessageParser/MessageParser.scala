@@ -1,5 +1,8 @@
+package Model.MessageParser
+
 import akka.http.scaladsl.model.DateTime.fromIsoDateTimeString
 import scala.util.parsing.combinator.RegexParsers
+import Model.Message
 
 class MessageParser extends RegexParsers{
 
@@ -16,9 +19,5 @@ class MessageParser extends RegexParsers{
           messageParsing
         }
     }
-
-
-
-
 }
 

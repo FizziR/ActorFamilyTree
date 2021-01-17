@@ -1,3 +1,6 @@
+package Model.MessageParser
+
+import Model.Message
 
 class MessageParserModel extends MessageParser{
   val failure = "Failure"
@@ -16,5 +19,4 @@ class MessageParserModel extends MessageParser{
       }
     }
   }
-
 }

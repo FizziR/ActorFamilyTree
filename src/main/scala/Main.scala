@@ -1,10 +1,14 @@
 import akka.NotUsed
 import akka.actor.{ActorSystem, Props}
-import akka.stream.{ClosedShape, FlowShape}
+import akka.stream.ClosedShape
 import akka.stream.scaladsl.{Broadcast, Flow, GraphDSL, RunnableGraph, Sink, Source, Zip}
-
 import scala.collection.mutable.Queue
 import scala.collection.mutable.ListBuffer
+import Controller.DiscordBot
+import Kafka.Producer
+import Model.ProducerContent
+import Model.MessageParser.MessageParserModel
+import Model.Message
 
 object Main{
 

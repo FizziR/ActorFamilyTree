@@ -1,16 +1,13 @@
-import akka.actor.Status.Success
+package Model.Calculations
+
 import akka.actor.{Actor, Props}
-import akka.event.Logging
 import akka.pattern.ask
 import akka.util.Timeout
-import com.fasterxml.jackson.databind.JsonSerializer
-
 import scala.concurrent.Await
 import scala.concurrent.duration.DurationInt
 import scala.util.Try
 
 class CalculationBot extends Actor{
-    val log = Logging(context.system, this)
     val additionBot = context.actorOf(Props[AdditionBot], name = "additionBot")
     val subtractionBot = context.actorOf(Props[SubtractionBot], name = "subtractionBot")
     val multiplicationBot = context.actorOf(Props[MultiplicationBot], name = "multiplicationBot")
@@ -44,7 +41,6 @@ class CalculationBot extends Actor{
   }
 
   class AdditionBot extends Actor {
-    val log = Logging(context.system, this)
     override def receive: Receive = {
       case msg:String => {
         val result = "\\+".r.split(msg)
@@ -78,7 +74,6 @@ class CalculationBot extends Actor{
     }
   }
   class SubtractionBot extends Actor {
-    val log = Logging(context.system, this)
     override def receive: Receive = {
       case msg:String => {
         val result = "\\-".r.split(msg)
@@ -118,7 +113,6 @@ class CalculationBot extends Actor{
     }
   }
   class MultiplicationBot extends Actor {
-    val log = Logging(context.system, this)
     override def receive: Receive = {
       case msg:String => {
         val result = "\\*".r.split(msg)
@@ -153,7 +147,6 @@ class CalculationBot extends Actor{
     }
   }
   class DivisionBot extends Actor {
-    val log = Logging(context.system, this)
     override def receive: Receive = {
       case msg:String => {
         val result = "\\/".r.split(msg)

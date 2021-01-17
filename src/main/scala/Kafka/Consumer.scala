@@ -1,9 +1,8 @@
+package Kafka
 
 import java.util.Properties
 import java.util
-
 import org.apache.kafka.clients.consumer.KafkaConsumer
-
 import scala.collection.JavaConverters._
 import io.circe.parser.decode
 
