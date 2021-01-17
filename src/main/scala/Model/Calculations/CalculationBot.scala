@@ -116,7 +116,7 @@ class CalculationBot extends Actor{
   class MultiplicationBot extends Actor {
     override def receive: Receive = {
       case msg:String => {
-        val result: Array[Double] = "\\*".r.split(msg)
+        val result: Array[String] = "\\*".r.split(msg)
 
         val numberOne: Option[Double] = Try { result(0).toDouble }.toOption
         val numberTwo: Option[Double] = Try { result(1).toDouble }.toOption

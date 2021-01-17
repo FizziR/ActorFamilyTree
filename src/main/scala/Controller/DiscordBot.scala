@@ -39,7 +39,7 @@ class DiscordBot extends Actor {
         }
         else if (message.content.equals("!Start")) {
 
-          var listBuffer: ListBuffer[(String, String, String] = new ListBuffer[(String, String, String)]()
+          var listBuffer: ListBuffer[(String, String, String)] = new ListBuffer[(String, String, String)]()
           var messageId: Option[data.MessageId] = Some(message.id)
           var iterations: Int = 0
           do{
