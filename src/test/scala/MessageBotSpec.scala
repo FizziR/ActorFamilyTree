@@ -1,9 +1,9 @@
 import org.scalatest.matchers.must.Matchers
-import org.scalatest.wordspec.{AnyWordSpec, AnyWordSpecLike}
-import akka.testkit.{ImplicitSender, TestActors, TestKit}
-import akka.actor.{Actor, ActorRef, ActorSystem, Props, ActorContext}
+import org.scalatest.wordspec.AnyWordSpecLike
+import akka.testkit.{ImplicitSender, TestKit}
+import akka.actor.{ActorSystem, Props}
 import org.scalatest.BeforeAndAfterAll
-
+import Model.Messages.MessageBot
 
 class MessageBotSpec()
   extends TestKit(ActorSystem("chatBot"))

@@ -1,9 +1,9 @@
 import akka.NotUsed
 import akka.actor.{ActorSystem, Props}
 import akka.stream.ClosedShape
-import akka.stream.scaladsl.{Broadcast, Flow, GraphDSL, RunnableGraph, Sink, Source, Zip}
-
+import akka.stream.scaladsl.{Flow, GraphDSL, RunnableGraph, Sink, Source}
 import scala.collection.mutable.ListBuffer
+import Controller.DiscordBot
 
 object Main{
 
@@ -25,20 +25,10 @@ object Main{
         case _ => ("", "", "")
       }
     }))
-
     val output = builder.add(Sink.foreach[(String, String, String)](println))
 
-
-    //val broadcast = builder.add(Broadcast[String](2))
-    //val zip = builder.add(Zip[(String, String, String), String])
-
     // step 3 - tying up the components
-
     input ~> splitStringsInTuples ~> output
-
-    /*input ~> broadcast
-    broadcast.out(0) ~> splitStringsInTuples ~> zip.in0
-    zip.out ~> output*/
 
     ClosedShape
   }
