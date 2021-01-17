@@ -1,7 +1,8 @@
+import Controller.ChatServer
 import org.scalatest.matchers.must.Matchers
 import org.scalatest.wordspec.{AnyWordSpec, AnyWordSpecLike}
 import akka.testkit.{ImplicitSender, TestActors, TestKit}
-import akka.actor.{Actor, ActorRef, ActorSystem, Props, ActorContext}
+import akka.actor.{Actor, ActorContext, ActorRef, ActorSystem, Props}
 import org.scalatest.BeforeAndAfterAll
 
 class ChatServerSpec ()
